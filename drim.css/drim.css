@@ -6,7 +6,7 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -37,7 +37,7 @@ header {
 }
 
 .menu__icon span {
-    padding: 0.1rem;
+    padding: 0.12rem;
     margin: 0.1rem;
     background-color: black;
 }
@@ -52,9 +52,10 @@ header {
 .about h2 {
     display: block;
     width: 30%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 4rem;
     color: #45A4D1;
+    text-transform: uppercase;
 }
 
 .about_btn {
@@ -73,9 +74,205 @@ header {
 .next_screen {
     box-sizing: border-box;
     width: 100%;
-    padding: 2rem 0;
+    padding: 4rem 0;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
     color: #BE4F81;
 }
+
+.services, .philosophy, .apply{
+    box-sizing: border-box;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.services h2, .philosophy h2, .our_works h2, .apply h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #45A4D1;
+    text-transform: uppercase;
+}
+
+.service_type, .philosophy_content, .work_examples {
+    width: 100%;
+    display: flex;
+    margin: 4rem auto 0;
+}
+
+.service_type_item {
+    box-sizing: border-box;
+    width: 33%;
+    margin: 0 auto;
+    background-color: #A34F9E;
+    padding: 2rem 1rem;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.service_type_item:hover {
+    background-color: #45A4D1;
+
+}
+
+.service_type_item:hover p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.service_type_item:hover span {
+    color: rgba(255, 255, 255, 1);
+}
+
+.service_type_item_logo {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+}
+
+.service_type_item p, .service_type_item span {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0);
+    line-height: 1.5rem;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.service_type_item h3, .apply_project_info h3, .apply_contacts h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.service_type_item span {
+    display: block;
+    margin: 4rem auto 0;
+}
+
+.philosophy_logo, .philosophy_text {
+    width: 50%;
+    margin: 0 1rem 0 0;
+}
+
+.philosophy_logo {
+    background-color: #45A4D1;
+}
+
+.philosophy_btn {
+    margin: 2rem 0 0;
+    width: 40%;
+}
+
+.our_works {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.work_examples_col {
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.work_examples_item {
+    box-sizing: border-box;
+    padding: 10rem 14rem;
+    background-color: #45A4D1;
+    margin: 1rem;
+}
+
+.work_examples_btn {
+    width: 25%;
+    margin: 2rem auto 0;
+}
+
+.our_works h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #45A4D1;
+    text-transform: uppercase;
+    display: block;
+    margin: 1.2rem;
+}
+
+.apply {
+    border: 3px solid #45A4D1;
+}
+
+.apply h2, .apply p {
+    text-align: center;
+}
+
+.apply_content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apply_content input {
+    border: none;
+}
+
+
+.apply_project_info, .apply_contacts {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.apply_project_info h3, .apply_contacts h3{
+    color: #45A4D1;
+}
+
+.apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input  {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+.apply_service div {
+    padding: 0.5rem 0;
+}
+
+.apply_service input {
+    margin-right: 1rem;
+}
+
+.apply_task input, .apply_contacts input  {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.agreement {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.apply_btn {
+    width: 25%;
+    margin: 1rem 0;
+}
+
+.apply_contacts input{ 
+    padding: 0.5rem;
+    color: #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.apply_task input {
+    padding: 0.8rem;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+
+
