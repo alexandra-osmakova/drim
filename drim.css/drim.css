@@ -176,10 +176,34 @@ header {
     color: rgba(255, 255, 255, 1); /* rgba used instead of hex to change opacity on :hover */
 }
 
+.service_type_item h3 {
+    line-height: 1.5rem;
+    line-height: 2rem;
+    color: #ffffff;
+
+}
+
 .service_type_item_logo {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: #ffffff;
+}
+
+.first_service_logo {
+    background-image: url(../img/Icons/service_type_logo1.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.second_service_logo {
+    background-image: url(../img/Icons/service_type_logo2.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.third_service_logo {
+    background-image: url(../img/Icons/service_type_logo3.svg);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -195,9 +219,9 @@ header {
     transition: all 0.5s ease;
 }
 
-.service_type_item h3, .apply_project_info h3, .apply_contacts h3 {
+.apply_project_info h3, .apply_contacts h3 {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 4rem;
     color: #ffffff;
 }
 
@@ -298,6 +322,7 @@ header {
     position: absolute;
     top: 1.5rem; 
     left:  1.5rem;
+    font-size: 1.5rem;
 }
 
 .work_example_third {
@@ -355,6 +380,9 @@ header {
 
 
 .apply {
+    padding: 6rem;
+    box-sizing: border-box;
+    margin: 8rem auto 0;
     border: 3px solid #45A4D1; /* px used instead of rem */
 }
 
@@ -362,14 +390,19 @@ header {
     text-align: center;
 }
 
+
+
+.apply p {
+    font-size: 0.8rem;
+    color: #333333;
+}
+
 .apply_content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
-
-
 
 .apply_project_info, .apply_contacts {
     width: 50%;
@@ -400,23 +433,47 @@ header {
 }
 
 .apply_service_checkbox span {
+    font-size: 0.8rem;
+    color: #333333;
+    text-align: center;
     margin-left: 1.5rem;
 }
 
+.apply_service_checkbox_wrap {
+    position: relative;
+}
+
+.apply_service_checkbox_wrap img {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    opacity: 0;
+}
   
 .apply_service_checkbox .apply_service_checkbox_wrap {
-    width: 1rem;
-    height: 1rem;
-    border: solid 1px black; /* px used instead of rem */
+    width: 1.25rem;
+    height: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #999999;/* px used instead of rem */
     display: inline-block;
 }
   
 .apply_service_checkbox input[type="checkbox"] {
     display: none;
 }
-  
+
+
 .apply_service_checkbox input:checked + .apply_service_checkbox_wrap {
-    background-color: #A34F9E;
+    border: 1px solid #e3187d;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.apply_service_checkbox input:checked + .apply_service_checkbox_wrap img{
+    opacity: 1;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -436,17 +493,18 @@ header {
 }
 
 .apply_btn {
-    width: 25%;
-    margin: 1rem 0;
+    width: 35%;
+    margin: 4.5rem 0 0;
 }
 
 .apply_service_text {
     width: 100%;
-    height: 2rem;
-    padding: 0.5rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    height: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 2.8rem;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
     border-bottom: 1px solid #C0C0C0; /* px used instead of rem */
 }
 
@@ -459,11 +517,11 @@ header {
 .fileupload-label {
     display: block;
     position: absolute;
-    border: none;
+    border: unset;
     left: 0;
-    width: 1rem;
-    height: 1rem;
-    background-image: url('https://image.flaticon.com/icons/svg/45/45538.svg');
+    width: auto;
+    height: auto;
+    background-image: url(../img/Icons/clip.svg);
     background-size: cover;
     background-position: center;
   }
@@ -475,7 +533,7 @@ header {
   }
   
 .fileupload-url {
-    border: none;
+    border: unset;
     margin-bottom: 0;
   }
   
