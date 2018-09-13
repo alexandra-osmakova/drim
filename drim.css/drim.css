@@ -61,12 +61,7 @@ header {
     width: 100%;
     height: 100%;
     top: -30rem;
-    right: -45rem;
-    /*background-image: url(../img/about_background.svg);
-        width: 84.8rem;
-    height: 82.8rem;
-    background-size: cover;
-    background-position: center;*/
+    right: -40rem;
 }
 
 .about {
@@ -108,12 +103,6 @@ header {
 
 }
 
-.services, .philosophy, .apply{
-    box-sizing: border-box;
-    width: 80%;
-    margin: 2rem auto;
-    padding: 2rem;
-}
 
 .services h2, .philosophy h2, .our_works h2, .apply h2 {
     font-size: 2rem;
@@ -122,12 +111,14 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
+    margin-left: 2rem;
 }
 
-.service_type, .philosophy_content, .work_examples {
-    width: 100%;
+.service_type, .philosophy_content {
     display: flex;
-    margin: 6.75rem auto 0;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    margin: 2rem auto;
 }
 
 .service_type > div {
@@ -137,9 +128,14 @@ header {
 .service_type_item {
     box-sizing: border-box;
     margin: 4rem 0.5rem;
-    background-color: #A34F9E;
     padding: 2rem 1rem;
-    height: 20rem;
+    height: 28rem;
+    background-blend-mode: overlay;
+
+    background:-webkit-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background:-o-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background:-moz-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background:linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -147,10 +143,28 @@ header {
     transition: all 0.5s ease;
 }
 
+.service_type_item_first {
+    background-image: url(../img/service_type_img1.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.service_type_item_second {
+    background-image: url(../img/service_type_img2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.service_type_item_third{
+    background-image: url(../img/service_type_img3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 .service_type_item:hover {
     background-color: #45A4D1;
     margin: 2rem 0.5rem;
-    height: 25rem;
+    height: 32rem;
 
 }
 
@@ -184,7 +198,6 @@ header {
 .service_type_item h3, .apply_project_info h3, .apply_contacts h3 {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 300;
     color: #ffffff;
 }
 
@@ -193,37 +206,146 @@ header {
     margin: 4rem auto 0;
 }
 
+.philosophy {
+    text-align: left;
+}
+
 .philosophy_logo, .philosophy_text {
-    width: 50%;
     margin: 0 1rem 0 0;
 }
 
 .philosophy_logo {
-    background-color: #45A4D1;
+    position: relative;
+}
+
+.philosophy_logo span {
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-weight: bold;
+    background: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.philosophy_logo div {
+    position: absolute;
+    top: 8.5rem;
+    right: 7.9rem;
+    width: 2rem;
+    height: 2rem;
+    background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+.philosophy_text {
+    padding: 0 2rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: #333333;
+    font-weight: bold;
 }
 
 .philosophy_btn {
-    margin: 2rem 0 0;
+    margin: 2.6rem 0 0;
     width: 40%;
 }
 
-.our_works {
-    box-sizing: border-box;
+.our_works, .philosophy, .services, .apply {
     width: 80%;
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: 0 auto;
 }
 
-.work_examples_col {
-    margin: 0 auto;
-    flex-direction: column;
+.work_examples {
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
 }
 
 .work_examples_item {
+    width: 45%;
     box-sizing: border-box;
     padding: 10rem 14rem;
     background-color: #45A4D1;
     margin: 1rem;
+    position: relative;
+}
+
+.work_example_first {
+    background-image: url(../img/our_works_img1.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scale(-1, 1)
+}
+
+.work_example_first img {
+    position: absolute;
+    top: 1.5rem; 
+    right: 1.5rem;
+    transform: scale(-1, 1);
+}
+
+.work_example_second {
+    background-image: url(../img/our_works_img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work_example_second span {
+    position: absolute;
+    top: 1.5rem; 
+    left:  1.5rem;
+}
+
+.work_example_third {
+    background-image: url(../img/our_works_img3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work_example_third img {
+    position: absolute;
+    top: 1.5rem; 
+    left: 1.5rem;
+}
+
+.work_example_fourth {
+    background-image: url(../img/our_works_img4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.work_example_fourth img {
+    position: absolute;
+    top: 1.5rem; 
+    left: 1.5rem;
+}
+
+.work_example_fifth {
+    background-image: url(../img/our_works_img5.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.work_example_fifth img {
+    position: absolute;
+    top: 1.5rem; 
+    left: 1.5rem;
+}
+
+.work_example_sixth {
+    background-image: url(../img/our_works_img6.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.work_example_sixth img {
+    position: absolute;
+    top: 1.5rem; 
+    left: 1.5rem;
 }
 
 .work_examples_btn {
@@ -231,14 +353,6 @@ header {
     margin: 2rem auto 0;
 }
 
-.our_works h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: #45A4D1;
-    text-transform: uppercase;
-    display: block;
-    margin: 1.2rem;
-}
 
 .apply {
     border: 3px solid #45A4D1; /* px used instead of rem */
