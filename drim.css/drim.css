@@ -305,8 +305,10 @@ header {
 }
 
 .circle_content_item {
+    width: 20rem;
     position: absolute;
     display: flex;
+    align-items: center;
 }
 
 .circle_step {
@@ -337,52 +339,55 @@ header {
     transition: all 0.5s ease;
 }
 
+.circle_content_item h3 {
+    margin: 0 2rem;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .first_step {
     top: -5.5rem;
-    left: 13rem;
+    left: 6.5rem;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.first_step div {
+    margin-top: 2rem;
 }
 
 .second_step {
-    width: 20rem;
-    top: 5rem;
+    top: 5.2rem;
     left: 26.5rem;
-    align-items: center;
-}
-
-.second_step h3, .third_step h3 .fouth_step h3, .seventh_step h3 {
-    margin: 0 2rem;
 }
 
 
 .third_step {
     top: 17.3rem;
     left: 29.8rem;
-    align-items: center;
 }
 
 .fouth_step {
+    width: 23rem;
     top: 28rem;
     left: 21.6rem;
-    width: 20rem;
 }
 
 .fifth_step {
-    top: 27.7rem;
-    left: -1.3rem;
+    top: 28rem;
+    left: -5rem;
 }
 
 .sixth_step {
-    top: 17rem;
-    left: -5rem;
+    top: 17.3rem;
+    left: -9rem;
 }
 
 .seventh_step{
     top: 4.5rem;
     left: -13.2rem;
-    align-items: center;
 
 }
 
@@ -393,15 +398,42 @@ header {
     font-weight: bold;
 }
 
-.circle_step:hover{
+.circle_content_item:hover .circle_step{
     color: #ffffff;
     background-color: #40a1d3;
     border: 1px solid rgba(18,71,97,0.38);  /* px used instead of rem */
     box-shadow: 0 0.4rem 0.8rem rgba(18,71,97,0.38);  /* rgba used instead of hex to change opacity on :hover */
 }
 
-.circle_step:hover span {
+.circle_content_item:hover span {
     color: #ffffff;
+}
+
+.circle_content_item:hover h3 {
+    color: #e3187d;
+}
+
+.circle_text_item {
+    padding: 3rem;
+    height: 22rem;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+}
+
+.circle_text_item p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    color: #333333;
+    text-align: center;
+}
+
+.second_step_text, .third_step_text {
+    opacity: 0;
+}
+
+.circle_text_visible {
+    opacity: 1;
 }
 
 .our_works, .philosophy, .services, .apply {
