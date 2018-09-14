@@ -299,6 +299,10 @@ header {
     position: relative;
 }
 
+.work_examples_item img {
+    width: 5.8rem;
+}
+
 .work_example_first {
     background-image: url(../img/our_works_img1.jpg);
     background-size: cover;
@@ -573,10 +577,80 @@ header {
   background-image: url(../img/Icons/clip.svg);
   background-size: contain;
   background-position: center;
-
 }
 
+footer {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    padding: 4rem 0 2rem;
+    display: flex;
+    box-sizing: border-box;
+}
 
+.footer_work_types, .footer_contacts, .footer_social_links, .footer_rights_logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer_FAQ {
+    width: 15%;
+}
+
+.footer_work_types span, .footer_FAQ span, .footer_contacts span, .footer_social_links span, .footer_rights_logo span, .footer_rights_logo a {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    color: #333333;
+}
+
+.footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
+    line-height: 1.5rem;
+}
+
+.footer_contacts_item_tytle, .footer_social_links_tytle {
+    font-weight: bold;
+}
+.styled_footer_item {
+    color: #e3187d;
+    text-decoration: underline;
+    text-decoration-color: #e3187d;
+}
+
+.social_link_item {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem;
+    
+}
+
+.social_link_first {
+    background-image: url(../img/Icons/vk-social-network-logo.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.social_link_second {
+    background-image: url(../img/Icons/instagram-social-network-logo-of-photo-camera.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer_rights_logo {
+    justify-content: flex-end;
+}
+
+.footer_logo {
+    height: 2.6rem;
+    width: 8.1rem;
+    background-image: url(../img/Logo\ 4.1.png);
+    background-size:  cover;
+    background-position: center;
+}
 
 
 
