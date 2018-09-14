@@ -167,16 +167,13 @@
                 <div class="apply_task">
                     <h4>Опишите задачу</h4>
                     <input class='apply_service_text ' type="text">
-                    <form class='apply_add_file' action="#">
-                        <div class="fileupload-wrapper">
-                            <label for="fileupload" class="fileupload-label">
-                                <input type="file" id="fileupload" class="fileupload" />
-                            </label>
-                            <input name="filename" id="filename" disabled class="fileupload-url" />
-                        </div>
-
-                        <span>Прикрепить ТЗ</span>
-                    </form>
+                    <div class="file-input-wrapper">
+                        <button class="btn-file-input">
+                            <div class='load_logo'></div>
+                            <span>Прикрепить ТЗ</span>
+                        </button>
+                        <input type="file" name="file" />
+                    </div>
                 </div>
                 <span class="agreement">Отправляя заявку, вы соглашаетесь с
                     <a href="#">политикой конфиденциальности</a>
