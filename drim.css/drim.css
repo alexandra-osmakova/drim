@@ -277,6 +277,17 @@ header {
     width: 40%;
 }
 
+.circle_block {
+    width: 100%;
+}
+
+.circle_block h2 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+
 .circle_content {
     position: relative;
     box-sizing: border-box;
@@ -293,8 +304,12 @@ header {
     margin: 6rem auto;
 }
 
-.circle_step {
+.circle_content_item {
     position: absolute;
+    display: flex;
+}
+
+.circle_step {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,6 +318,11 @@ header {
     border-radius: 100%;
     background-color: #ffffff;
     border: 1px solid #e3177d;  /* px used instead of rem */
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .circle_step span {
@@ -310,44 +330,81 @@ header {
     line-height: 2.6rem;
     color: #e3187d;
     text-align: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .first_step {
-    top: -1.5rem;
-    left: 10.6rem;
+    top: -5.5rem;
+    left: 13rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .second_step {
-    top: 3.5rem;
-    left: 20.9rem;
+    width: 20rem;
+    top: 5rem;
+    left: 26.5rem;
+    align-items: center;
 }
 
+.second_step h3, .third_step h3 .fouth_step h3, .seventh_step h3 {
+    margin: 0 2rem;
+}
+
+
 .third_step {
-    top: 13.3rem;
-    left: 23.3rem;
+    top: 17.3rem;
+    left: 29.8rem;
+    align-items: center;
 }
 
 .fouth_step {
-    top: 21.3rem;
-    left: 4.3rem;
+    top: 28rem;
+    left: 21.6rem;
+    width: 20rem;
 }
 
 .fifth_step {
-    top: 21.3rem;
-    left: 18.3rem;
-}
-
-.sixth_step {
-    top: 13.1rem;
+    top: 27.7rem;
     left: -1.3rem;
 }
 
-.seventh_step{
-    top: 3.6rem;
-    left: 0.8rem;
+.sixth_step {
+    top: 17rem;
+    left: -5rem;
 }
 
-.our_works, .philosophy, .services, .apply, .circle_block {
+.seventh_step{
+    top: 4.5rem;
+    left: -13.2rem;
+    align-items: center;
+
+}
+
+.circle_content_item h3 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #40a2d3;
+    font-weight: bold;
+}
+
+.circle_step:hover{
+    color: #ffffff;
+    background-color: #40a1d3;
+    border: 1px solid rgba(18,71,97,0.38);  /* px used instead of rem */
+    box-shadow: 0 0.4rem 0.8rem rgba(18,71,97,0.38);  /* rgba used instead of hex to change opacity on :hover */
+}
+
+.circle_step:hover span {
+    color: #ffffff;
+}
+
+.our_works, .philosophy, .services, .apply {
     width: 80%;
     margin: 0 auto;
 }
