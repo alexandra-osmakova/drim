@@ -463,9 +463,22 @@ header {
     width: 45%;
     box-sizing: border-box;
     padding: 10rem 14rem;
-    background-color: #45A4D1;
     margin: 1rem;
     position: relative;
+}
+
+.work_example_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 179, 246, 0);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .work_examples_item img {
@@ -661,7 +674,7 @@ header {
 
 .apply_service_checkbox input:checked ~ span {
     text-decoration: underline;
-    text-decoration-color: #e3177d;
+    color: #e3177d;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -678,7 +691,7 @@ header {
 
 .apply_service_checkbox span:hover {
     text-decoration: underline;
-    text-decoration-color: #e3177d;
+    color: #e3177d;
 }
 
 .apply_task input, .apply_contacts input  {
@@ -787,7 +800,7 @@ footer {
 .styled_footer_item {
     color: #e3187d;
     text-decoration: underline;
-    text-decoration-color: #e3187d;
+    color: #e3187d;
 }
 
 .social_link_item {
