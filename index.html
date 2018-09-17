@@ -7,11 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./drim.css/drim.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
+        <div class="header_decoration_first"></div>
+        <div data-aos="fade-right" class="header_decoration_second">
+            <img src="./img/decoration_line.svg" alt="">
+        </div>
         <div class="header_logo">
             <img src="./img/Logo 4.1.png" alt="">
         </div>
@@ -53,11 +58,13 @@
     <section class="about">
         <h2>Делаем идеальный интернет маркетинг</h2>
         <div class="about_btn btn">Пройти тест →</div>
-        <div class="next_screen">
-            <img src="./img/down_scroll.svg" alt="">
+        <div class="next_screen down">
+            <img class = 'about_arrow down'src="./img/down_scroll.svg" alt="">
         </div>
     </section>
     <section class="services">
+        <div class="service_decoration_first"></div>
+        <div class="service_decoration_second"></div>
         <h2>услуги</h2>
         <div class="service_type">
             <div class="service_type_item">
@@ -115,6 +122,8 @@
         </div>
     </section>
     <section class="circle_block">
+        <div class="circle_decoration_first"></div>
+        <div class="circle_decoration_second"></div>
         <h2>Видение</h2>
         <div class="circle_content">
             <div class="circle_content_text">
@@ -263,6 +272,8 @@
         <div class="work_examples_btn btn">Больше проектов →</div>
     </section>
     <section class="apply">
+        <div class="apply_decoration_first"></div>
+        <div class="apply_decoration_second"></div>
         <h2>Отправить заявку</h2>
         <p>Заполните форму заявки, мы перезвоним вам в ближайшее время и обсудим ваш проект </p>
         <div class="apply_content">
@@ -273,21 +284,21 @@
                     <label class="apply_service_checkbox">
                         <input type="checkbox" name="development">
                         <div class="apply_service_checkbox_wrap">
-                            <img src="./img/Icons/check_arrow.svg" alt="">
+                            <img src="./img/Icons/tick.svg" alt="">
                         </div>
                         <span>Разработка сайтов</span>
                     </label>
                     <label class="apply_service_checkbox">
                         <input type="checkbox" name="support">
                         <div class="apply_service_checkbox_wrap">
-                            <img src="./img/Icons/check_arrow.svg" alt="">
+                            <img src="./img/Icons/tick.svg" alt="">
                         </div>
                         <span>Техническая поддержка</span>
                     </label>
                     <label class="apply_service_checkbox">
                         <input type="checkbox" name="advertising">
                         <div class="apply_service_checkbox_wrap">
-                            <img src="./img/Icons/check_arrow.svg" alt="">
+                            <img src="./img/Icons/tick.svg" alt="">
                         </div>
                         <span>Продвижение и реклама</span>
                     </label>
@@ -323,40 +334,43 @@
     </section>
     <footer>
         <div class="footer_work_types">
-            <span>Разработка сайтов</span>
-            <span>Техническая поддержка</span>
-            <span>Продвижение и реклама</span>
+            <span class='footer_line'>Разработка сайтов</span>
+            <span class='footer_line'>Техническая поддержка</span>
+            <span class='footer_line'>Продвижение и реклама</span>
         </div>
         <div class="footer_FAQ">
-            <span>О компании</span>
+            <span class='footer_line'>О компании</span>
             <span class='styled_footer_item'>Кейсы</span>
-            <span>FAQ</span>
-            <span>Контакты</span>
+            <span class='footer_line'>FAQ</span>
+            <span class='footer_line'>Контакты</span>
         </div>
         <div class="footer_contacts">
             <div class="footer_contacts_item">
-                <span class="footer_contacts_item_tytle">Телефон для связи:</span>
-                <span>+7 (812) 418-85-89</span>
+                <span class="footer_line footer_contacts_item_tytle">Телефон для связи:</span>
+                <span class='footer_line'>+7 (812) 418-85-89</span>
             </div>
             <div class="footer_contacts_item">
-                <span class="footer_contacts_item_tytle">Электронный адрес:</span>
-                <span>info@drimagency.ru</span>
+                <span class="footer_line footer_contacts_item_tytle">Электронный адрес:</span>
+                <span class='footer_line'>info@drimagency.ru</span>
             </div>
         </div>
         <div class="footer_social_links">
-            <span class="footer_social_links_tytle">Социальные сети:</span>
-            <div class="social_link_item social_link_first"></div>
-            <div class="social_link_item social_link_second"></div>
+            <span class="footer_line footer_social_links_tytle">Социальные сети:</span>
+            <div>
+                <div class="social_link_item social_link_first"></div>
+                <div class="social_link_item social_link_second"></div>
+            </div>
         </div>
         <div class="footer_rights_logo">
             <div class="footer_logo"></div>
-            <span>© 2018 DRIM. Все права защищены</span>
-            <a href="#">Политика конфиденциальности</a>
+            <span class='footer_line'>© 2018 DRIM. Все права защищены</span>
+            <a class='footer_line' href="#">Политика конфиденциальности</a>
         </div>
         <div class="footer_background">
-            <img src="./img/footer_background2.svg" alt="">
+            <img src="./img/footer_background4.svg" alt="">
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./drim.js/drim.js"></script>
 </body>
 

@@ -5,9 +5,9 @@ window.onload = function() {
 	text[0].classList.add('circle_text_visible')
 }
 
-wrap.addEventListener('mouseover', go, false);
+wrap.addEventListener('mouseover', go_visible, false);
 
-function go(e) {
+function go_visible(e) {
 	if (e.target.classList.contains('circle_content_item')) {
         var target = e.target.dataset.number;
     for(var i = 0; i < text.length; i++) {
@@ -20,3 +20,7 @@ function go(e) {
     }
   }
 };
+
+<script>
+  AOS.init();
+</script>
