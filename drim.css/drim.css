@@ -129,8 +129,9 @@ header {
     position: relative;
     box-sizing: border-box;
     margin: 4rem 0.5rem;
-    padding: 2rem 1rem;
+    padding: 4rem 2rem 2rem;
     height: 28rem;
+    overflow: hidden;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -183,10 +184,17 @@ header {
 }
 
 .service_type_item:hover {
-    background-color: #45A4D1;
     margin: 2rem 0.5rem;
     height: 32rem;
+    box-shadow: 0px 11px 16px rgba(0,43,59,0.32);
+}
 
+.service_type_item:hover .service_type_background {
+    opacity: 0;
+}
+
+.service_type_item:hover .service_type_wrap {
+    background: #40a1d3;
 }
 
 .service_type_item:hover p {
@@ -197,6 +205,14 @@ header {
     color: rgba(255, 255, 255, 1); /* rgba used instead of hex to change opacity on :hover */
 }
 
+.service_type_item:hover .service_type_item_logo {
+    width: 10rem;
+    height: 10rem;
+    top: -9rem;
+    left: -6rem;
+    opacity: 0.1;
+}
+
 .service_type_item h3 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -204,8 +220,11 @@ header {
 }
 
 .service_type_item_logo {
+    position: absolute;
     width: 2.5rem;
     height: 2.5rem;
+    top: -4rem;
+    left: 0rem;
 }
 
 .first_service_logo {
@@ -439,6 +458,7 @@ header {
     position: absolute;
     top: 8rem;
     left: 0;
+    opacity: 0;
 }
 
 .circle_text_item p {
@@ -446,10 +466,6 @@ header {
     line-height: 1.4rem;
     color: #333333;
     text-align: center;
-}
-
-.second_step_text, .third_step_text {
-    opacity: 0;
 }
 
 .circle_text_visible {
@@ -475,6 +491,11 @@ header {
     padding: 6rem 6rem 6rem 4rem;
     margin: 1rem;
     position: relative;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .work_example_wrap {
@@ -502,6 +523,11 @@ header {
     font-size: 0.8rem;
     line-height: 1.3rem;
     position: relative;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .work_item_btn {
@@ -510,11 +536,37 @@ header {
     font-size: 0.8rem;
     line-height: 1.3rem;
     color: rgba(255,255,255,0);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .work_examples_item div {
     display: flex;
     justify-content: space-between;
+}
+
+.hover_logo {
+    opacity: 0;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.work_example_third:hover .hover_logo{
+    opacity: 1;
+}
+
+.work_example_third:hover .work_example_third img {
+    opacity: 0;
+}
+
+.work_examples_item:hover {
+    box-shadow: 0px 11px 16px rgba(0,43,59,0.32);
 }
 
 .work_examples_item:hover .work_example_wrap {
@@ -610,11 +662,15 @@ header {
 
 
 .apply {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
     padding: 6rem;
     box-sizing: border-box;
     margin: 8rem auto 0;
     border: 3px solid #45A4D1; /* px used instead of rem */
 }
+
 
 .apply h2, .apply p {
     text-align: center;
@@ -647,10 +703,15 @@ header {
     color: #45A4D1;
 }
 
-.apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input {
+.apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5rem;
+}
+
+.apply_contacts h4 {
+    color: #B9B9B9;
+    margin: 0;
 }
 
 .apply_service input {
@@ -748,6 +809,10 @@ header {
     margin-top: 1rem;
 }
 
+.agreement a {
+    color: #00b3f6;
+}
+
 .apply_btn {
     width: 35%;
     margin: 4.5rem 0 0;
@@ -808,6 +873,7 @@ footer {
     position: relative;
     margin: 0 auto;
     width: 80%;
+    height: 20rem;
     padding: 4rem 0 2rem;
     display: flex;
     box-sizing: border-box;
@@ -819,6 +885,7 @@ footer {
     width: 20%;
     margin: 0 auto;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 .footer_FAQ {
@@ -831,6 +898,10 @@ footer {
     font-size: 0.8rem;
     line-height: 2rem;
     color: #333333;
+}
+
+.footer_work_types span {
+    color: #ffffff;
 }
 
 .footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
@@ -875,6 +946,20 @@ footer {
     background-image: url(../img/Logo\ 4.1.png);
     background-size:  cover;
     background-position: center;
+}
+
+.footer_background {
+    height: 10rem;
+    overflow-y: hidden;
+}
+
+.footer_background img {
+    position: absolute;
+    top: -39rem;
+    left: -72rem;
+    top: -14rem;
+    left: -17rem;
+
 }
 
 
