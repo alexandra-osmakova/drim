@@ -138,18 +138,29 @@ header {
     transition: all 0.5s ease;
 }
 
+.service_type_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .service_type_wrap {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.9;
-    background-blend-mode: difference;
+    opacity: 0.8;
     background:-webkit-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
     background:-o-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
     background:-moz-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
     background:linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+}
+
+.service_type_content {
+    position: relative;
 }
 
 
@@ -187,10 +198,9 @@ header {
 }
 
 .service_type_item h3 {
-    line-height: 1.5rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     color: #ffffff;
-
 }
 
 .service_type_item_logo {
@@ -462,7 +472,7 @@ header {
 .work_examples_item {
     width: 45%;
     box-sizing: border-box;
-    padding: 10rem 14rem;
+    padding: 6rem 6rem 6rem 4rem;
     margin: 1rem;
     position: relative;
 }
@@ -473,7 +483,8 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 179, 246, 0);
+    background-color: #00b3f6;
+    opacity: 0;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -485,18 +496,49 @@ header {
     width: 5.8rem;
 }
 
+.work_examples_item p {
+    margin: 2rem 0;
+    color: rgba(255,255,255,0);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    position: relative;
+}
+
+.work_item_btn {
+    margin: 1rem 0;
+    position: relative;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: rgba(255,255,255,0);
+}
+
+.work_examples_item div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work_examples_item:hover .work_example_wrap {
+    opacity: 0.7;
+}
+
+.work_examples_item:hover p {
+    color: rgba(255,255,255,1);
+}
+
+.work_examples_item:hover span {
+    color: rgba(255,255,255,1);
+}
+
 .work_example_first {
     background-image: url(../img/our_works_img1.jpg);
     background-size: cover;
     background-position: center;
-    transform: scale(-1, 1)
 }
 
 .work_example_first img {
     position: absolute;
     top: 1.5rem; 
-    right: 1.5rem;
-    transform: scale(-1, 1);
+    left: 1.5rem;
 }
 
 .work_example_second {
@@ -505,7 +547,8 @@ header {
     background-position: center;
 }
 
-.work_example_second span {
+.work_example_logo {
+    display: block;
     position: absolute;
     top: 1.5rem; 
     left:  1.5rem;
