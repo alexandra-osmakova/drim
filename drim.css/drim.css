@@ -26,11 +26,11 @@ header {
     left: -1.5rem;
     width: 5.6rem;
     height: 5.6rem;;
-    border-radius: 100%;
+    border-radius: 5.6rem;
     background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
-    -moz-box-shadow: inset 20px 20px 20px rgba(255, 255, 255, .4), inset -20px -20px 20px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 20px 20px 20px rgba(255, 255, 255, .4), inset -20px -20px 20px rgba(0, 0, 0, .4);
-    box-shadow: inset 20px 20px 20px rgba(255, 255, 255, .4), inset -20px -20px 20px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);   /* rgba used for opacity */
+    box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
 }
 
 .header_decoration_second {
@@ -78,7 +78,6 @@ header {
 .header_background {
     position: absolute;
     width: 100%;
-    height: 100%;
     top: -32rem;
     right: -40rem;
 }
@@ -123,7 +122,7 @@ header {
 
 .next_screen img {
     opacity:0.4;
-    text-indent:-9999px;
+    text-indent:-625rem;
     transform-origin: 50% 50%;
 }
 
@@ -141,7 +140,7 @@ header {
 }
 
 
-.services h2, .philosophy h2, .our_works h2, .apply h2, .circle_block h2 {
+.title_style {
     font-size: 2rem;
     line-height: 4.4rem;
     color: #40a2d3;
@@ -169,7 +168,7 @@ header {
     width: 2.5rem;
     height: 2.5rem;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
-    border-radius: 100%;
+    border-radius: 2.5rem;
 }
 
 .service_decoration_second {
@@ -178,8 +177,8 @@ header {
     right: -7rem;
     width: 1rem;
     height: 1rem;
-    border-radius: 100%;
-    filter: blur(3px);
+    border-radius: 1rem;
+    filter: blur(3px); /* px used instead of rem */
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
 }
 
@@ -250,7 +249,7 @@ header {
 .service_type_item:hover {
     margin: 2rem 0.5rem;
     height: 32rem;
-    box-shadow: 0px 11px 16px rgba(0,43,59,0.32);
+    box-shadow: 0rem 0.7rem 1rem rgba(0,43,59,0.32); /* rgba used instead of hex to change opacity */
 }
 
 .service_type_item:hover .service_type_background {
@@ -322,7 +321,7 @@ header {
     transition: all 0.5s ease;
 }
 
-.apply_project_info h3, .apply_contacts h3 {
+.apply_title {
     font-size: 1.5rem;
     line-height: 4rem;
     color: #ffffff;
@@ -369,7 +368,7 @@ header {
     width: 2rem;
     height: 2rem;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
-    border-radius: 100%;
+    border-radius: 2rem;
     opacity: 0.8;
     filter: blur(3px);  /* px used instead of rem */
 }
@@ -398,9 +397,9 @@ header {
     right: 5rem;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 100%;
+    border-radius: 2.5rem;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
-    filter: blur(3px);
+    filter: blur(3px);  /* px used instead of rem  */
 }
 
 .circle_decoration_second {
@@ -409,7 +408,7 @@ header {
     left: 8rem;
     width: 1.6rem;
     height: 1.6rem;;
-    border-radius: 100%;
+    border-radius: 1.6rem;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
 }
 
@@ -434,7 +433,7 @@ header {
     background-image: url(../img/circle.svg);
     background-size: cover;
     background-position: center;
-    padding: 20%;
+    padding: 16rem;
 }
 
 .circle_content_btn {
@@ -455,7 +454,7 @@ header {
     align-items: center;
     width: 3.6rem;
     height: 3.6rem;
-    border-radius: 100%;
+    border-radius: 3.6rem;
     background-color: #ffffff;
     border: 1px solid #e3177d;  /* px used instead of rem */
 
@@ -578,7 +577,7 @@ header {
 
 .our_works, .philosophy, .services, .apply {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 6rem;
 }
 
 .our_works {
@@ -633,7 +632,7 @@ header {
 
 .work_examples_item p {
     margin: 2rem 0;
-    color: rgba(255,255,255,0);
+    color: rgba(255,255,255,0);  /* rgba used instead of hex to change opacity */
     font-size: 0.8rem;
     line-height: 1.3rem;
     position: relative;
@@ -649,7 +648,7 @@ header {
     position: relative;
     font-size: 0.8rem;
     line-height: 1.3rem;
-    color: rgba(255,255,255,0);
+    color: rgba(255,255,255,0); /* rgba used instead of hex to change opacity */
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -680,7 +679,7 @@ header {
 }
 
 .work_examples_item:hover {
-    box-shadow: 0px 11px 16px rgba(0,43,59,0.32);
+    box-shadow: 0rem 0.7rem 1rem rgba(0,43,59,0.32); /* rgba used instead of hex to change opacity */
 }
 
 .work_examples_item:hover .work_example_wrap {
@@ -692,7 +691,7 @@ header {
 }
 
 .work_examples_item:hover span {
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1); /* rgba used instead of hex to change opacity */
 }
 
 .work_example_first {
@@ -791,11 +790,11 @@ header {
     left: -9.5rem;
     width: 5.6rem;
     height: 5.6rem;
-    border-radius: 100%;
+    border-radius: 5.6rem;
     background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
-    -moz-box-shadow: inset 20px 20px 20px rgba(255, 255, 255, .4), inset -20px -20px 20px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 20px 20px 20px rgba(255, 255, 255, .4), inset -20px -20px 20px rgba(0, 0, 0, .4);
-    box-shadow: inset 20px 20px 20px rgba(255, 255, 255, .4), inset -20px -20px 20px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);  /* rgba used instead of hex to change opacity */
+    box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
 }
 
 .apply_decoration_second {
@@ -804,12 +803,18 @@ header {
     right: 22rem;
     width: 2rem;
     height: 2rem;
-    filter: blur(3px);
+    filter: blur(3px);  /* px used instead of rem */
     border-radius: 100%;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
 }
 
-.apply h2, .apply p {
+.pagination {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.apply_text_style {
     text-align: center;
 }
 
@@ -878,15 +883,15 @@ header {
 .apply_service_checkbox_wrap img {
     position: absolute;
     width: 60%;
-    top: 25%;
-    left: 25%;
+    top: 0.2rem;
+    left: 0.3rem;
     opacity: 0;
 }
   
 .apply_service_checkbox .apply_service_checkbox_wrap {
     width: 1.25rem;
     height: 1.2rem;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     border: 1px solid #999999;/* px used instead of rem */
     display: inline-block;
 }
@@ -897,7 +902,7 @@ header {
 
 
 .apply_service_checkbox input:checked + .apply_service_checkbox_wrap {
-    border: 1px solid #e3187d;
+    border: 1px solid #e3187d; /* px used instead of rem */
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1105,5 +1110,16 @@ footer {
     bottom: 0
 }
 
-
+.pagination_circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin: 0.3rem;
+    background-color: black;
+    border-radius: 0.3rem;
+  }
+  
+  .pagination_circle_activ {
+    background-color: white;
+    border: 1px solid pink /* px used instead of rem */
+  }
 
