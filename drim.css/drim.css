@@ -35,7 +35,7 @@ header {
 
 .header_decoration_second {
     position: absolute;
-    top: 0rem;
+    top: 15rem;
     left: 0;
 }
 
@@ -181,6 +181,12 @@ header {
     border-radius: 100%;
     filter: blur(3px);
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
+}
+
+.service_decoration_third {
+    position: absolute;
+    top: 1.8rem;
+    left: -8rem;
 }
 
 .service_type_item {
@@ -329,6 +335,13 @@ header {
 
 .philosophy {
     text-align: left;
+    position: relative;
+}
+
+.philosophy_decoration_first {
+    position: absolute;
+    top: 1.8rem;
+    left: -8rem;
 }
 
 .philosophy_logo, .philosophy_text {
@@ -398,6 +411,12 @@ header {
     height: 1.6rem;;
     border-radius: 100%;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
+}
+
+.circle_decoration_third {
+    position: absolute;
+    top: 1.8rem;
+    left: 0rem;
 }
 
 .circle_block h2 {
@@ -562,12 +581,22 @@ header {
     margin: 0 auto;
 }
 
+.our_works {
+    position: relative;
+}
+
 .work_examples {
     margin: 2rem auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 0 1rem;
+}
+
+.our_work_decoration_first {
+    position: absolute;
+    top: 1.8rem;
+    left: -8rem;
 }
 
 .work_examples_item {

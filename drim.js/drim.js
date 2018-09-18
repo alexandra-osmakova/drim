@@ -21,6 +21,4 @@ function go_visible(e) {
   }
 };
 
-<script>
   AOS.init();
-</script>
