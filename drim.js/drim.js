@@ -48,8 +48,9 @@ function scrolling(el) {
        		pagination[i].classList.add("pagination_circle_activ");
         }
     } else {
-    		pagination[i].classList.remove("pagination_circle_activ");
-    }
+    		//pagination[i].classList.remove("pagination_circle_activ");
+            console.log(pagination[0].classList.replace())
+        }
 }
 
 
