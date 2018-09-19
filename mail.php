@@ -1,7 +1,7 @@
 <?php 
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $apply_task = $_POST('apply_task');
+    $apply_task = $_POST['apply_task'];
 
     $email_from = 'alexandra.osmakova@gmail.com';
 
@@ -17,5 +17,5 @@
 
     mail($to, $email_subject, $email_body, $headers);
 
-    header("Location: index.html");
+    header("Location: index.html?sended=true");
 ?>

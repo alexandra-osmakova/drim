@@ -825,7 +825,7 @@ header {
     color: #333333;
 }
 
-.apply_content {
+.apply_content, form {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -1116,15 +1116,15 @@ footer {
     top: 22rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 6rem;
+    right: 6.3rem;
     list-style: none;
   }
   #pagination li {
     position: relative;
     margin: 0.5rem 0;
-    background: #fff;
+    background: #ffff;
     border-radius: 0.3rem;
-    border: 1px solid #3fa1d3;   /* px used instead of rem */
+    border: 1px solid #00b3f6;   /* px used instead of rem */
     width: 0.3rem;
     height: 0.3rem;
     transition: all .2s ease;
@@ -1140,13 +1140,21 @@ footer {
     height: 0.3rem;
     left: 0;
     top: 0;
-    background: #ffffff;
     border-radius: 0.3rem;
   }
   
-  body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5) {
+
+
+  body.page1 #pagination li:nth-of-type(1),
+  body.page2 #pagination li:nth-of-type(2),
+  body.page3 #pagination li:nth-of-type(3),
+  body.page4 #pagination li:nth-of-type(4),
+  body.page5 #pagination li:nth-of-type(5),
+  body.page6 #pagination li:nth-of-type(6)  {
     -webkit-transform: scale(2);
             transform: scale(2);
+            background: #ffff;
+            border: 1px solid #e3187d;
   }
   
 

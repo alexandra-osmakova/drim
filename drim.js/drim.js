@@ -23,45 +23,56 @@ function go_visible(e) {
 
 AOS.init();
 
-
 function pagination() {
-
-    var offset = document.body.scrollTop;
+    var offset = document.documentElement.scrollTop;
     var windowHeight = document.documentElement.clientHeight;
     var body = document.body;
 
     switch (true) {
-        case (offset > (windowHeight * 4.75)):
-        body.classList.add('page6');
+        case (offset > (windowHeight * 5.75)):
+            body.classList = 'page6';
             break;
         case (offset > (windowHeight * 3.75)):
-            body.classList.add('page5');
+            body.classList = 'page5';
             break;
         case (offset > (windowHeight * 2.75)):
-            body.classList.add('page4');
+            body.classList = 'page4';
             break;
         case (offset > (windowHeight * 1.75)):
-            body.classList.add('page3');
+            body.classList = 'page3';
             break;
         case (offset > (windowHeight * .75)):
-            body.classList.add('page2');
+            body.classList = 'page2';
             break;
         default:
-            body.classList.add('page1');
+            body.classList = 'page1';
     }
 }
 
 pagination();
 
-  window.addEventListener("scroll", pagination);
+window.addEventListener("scroll", pagination);
 
-  var pagination_items = document.querySelectorAll('.section');
-  
-  $(document).on('click', 'a[href^="#"]', function(e) {
-      e.preventDefault();
-
-
-      $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
-      }, 500);
-  });
+var linkNav = document.querySelectorAll('[href^="#"]'), 
+    V =  0.2; 
+for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function(e) { 
+        e.preventDefault(); 
+        var w = window.pageYOffset,  
+            hash = this.href.replace(/[^#]*(.*)/, '$1'); 
+        t = document.querySelector(hash).getBoundingClientRect().top, 
+            start = null;
+        requestAnimationFrame(step); 
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {
+                requestAnimationFrame(step)
+            } else {
+                location.hash = hash 
+            }
+        }
+    }, false);
+}

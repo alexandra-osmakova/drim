@@ -291,18 +291,12 @@
             <div class="work_examples_btn btn">Больше проектов →</div>
         </section>
         <section id="page6" class="apply section">
-            <div class="pagination">
-                <div class="pagination_circle"></div>
-                <div class="pagination_circle"></div>
-                <div class="pagination_circle"></div>
-                <div class="pagination_circle"></div>
-            </div>
             <div class="apply_decoration_first"></div>
             <div class="apply_decoration_second"></div>
             <h2 class="title_style apply_text_style">Отправить заявку</h2>
             <p class="apply_text_style">Заполните форму заявки, мы перезвоним вам в ближайшее время и обсудим ваш проект </p>
             <div class="apply_content">
-                <form id = 'contact_form' method = 'post' action="./drim.php/drim.php">
+                <form id="contact_form" method='post' action="/mail.php">
                     <div class="apply_project_info">
                         <h3 class="apply_title ">Информация о проекте</h3>
                         <div class="apply_service">
@@ -330,11 +324,11 @@
                             </label>
                         </div>
                         <h4>Название вашей компании</h4>
-                        <input name = 'company_name' class='apply_service_text' type="text">
+                        <input name='company_name' class='apply_service_text' type="text">
                         <div class="apply_task">
                             <h4>Опишите задачу</h4>
                             <br>
-                            <textarea name = 'apply_task' name="area" cols=”25” rows=”5” wrap=”on”></textarea>
+                            <textarea name='apply_task' name="area" cols=”25” rows=”5” wrap=”on”></textarea>
                             <div class="file-input-wrapper">
                                 <button class="btn-file-input">
                                     <div class='load_logo'></div>
@@ -350,11 +344,11 @@
                     <div class="apply_contacts">
                         <h3 class="apply_title">Контактная информация</h3>
                         <h4>Ваше имя</h4>
-                        <input name = 'name' class='apply_service_text' type="text">
+                        <input name='name' class='apply_service_text' type="text">
                         <h4>Номер телефона</h4>
-                        <input name = 'phone' class='apply_service_text' type="text">
+                        <input name='phone' class='apply_service_text' type="text">
                         <h4>Электронный адрес</h4>
-                        <input name = 'email' class='apply_service_text' type="text">
+                        <input name='email' class='apply_service_text' type="text">
                     </div>
                     <input class="apply_btn btn form_control submit" type="submit" value="Отправить заявку →">
                 </form>
@@ -421,7 +415,6 @@
         </li>
     </ul>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="./drim.js/drim.js"></script>
 </body>
 
