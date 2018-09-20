@@ -1128,7 +1128,7 @@ footer {
   #pagination li {
     position: relative;
     margin: 0.3rem 0;
-    background: #ffff;
+    background-color: #ffffff;
     border-radius: 0.2rem;
     border: 1px solid #00b3f6;   /* px used instead of rem */
     width: 0.2rem;
@@ -1163,8 +1163,99 @@ footer {
   body.page6 #pagination li:nth-of-type(6)  {
     -webkit-transform: scale(2);
             transform: scale(2);
-            background: #ffff;
+            background-color: #ffffff;
             border: 1px solid #e3187d;
   }
+
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    .header_logo img, .footer_logo {
+        width: 8.5rem;
+    }
+
+    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+        font-size: 1.1rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first {
+        left: -9rem;
+    }
+
+    .service_type_item {
+        height: 30rem;
+    }
+
+    .service_type_item:hover {
+        height: 34rem;
+    }
+
+    .service_type_item h3 {
+        font-size: 1.7rem;
+    }
+
+    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item {
+        font-size: 1rem;
+    }
+
+    .circle_content {
+        padding: 18rem;
+    }
+
+    .circle_text_item {
+        padding: 5rem;
+    }
+
+    .first_step {
+        left: 8.5rem;
+    }
+
+    .second_step {
+        left: 30.5rem;
+    }
+
+    .third_step {
+        left: 33.8rem;
+    }
+
+    .fouth_step {
+        top: 29rem;
+        left: 28.6rem;
+    }
+
+    .fifth_step {
+        top: 29rem;
+        left: -8rem;
+    }
+
+    .sixth_step {
+        top: 16.9rem;
+        left: -9.5rem;
+    }
+
+    .seventh_step {
+        left: -12.2rem;
+    }
+
+    .work_examples_item_company_logo {
+        width: 6.2rem
+    }
+
+    .apply_decoration_first {
+        left: -10.5rem;
+    }
+
+    .footer_background img {
+        left: -16.5rem;
+    }
+}
   
 
