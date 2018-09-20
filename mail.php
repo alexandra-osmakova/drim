@@ -8,36 +8,25 @@
     $development = $_POST['development'];
     $support = $_POST['support'];
     $advertising = $_POST['advertising'];
-    $boundary = md5(rend());
-
-    $headers = array(
-        'MIME Version: 1.0'.
-        'From: {$email_from}'.
-        'Content-Type: multipart/mixed; boundary = {$boundary}'
-        );
-
-    $message = array(
-        "--{$boundary}".
-        "Content-Type: text/plain: charset = utf-8 ".
-        "Content-Transform-Encoding: 7bit".
-        "".
-        chunk_split($body).
-        "--{$boundary}".
-        "Content-Type: ($file['type']); name = ($file ['name'])".
-        "Content-Disposition: attachment; filename = ($file [name]).
-        "Content-Transfer-Encoding: base64".
-        "".
-        chunk_split(base64_encode(file_get_contacts($file['path']))).
-        "--{$boundary}--".
-    )
-
-    if(isset($_FILE['uploaded_file'])) {
-        $file = array();
-        'name' => $_FILE['file']['name'],
-        'size' => $_FILE['file']['size'],
-        'type' => $_FILE['file']['type'],
-        'path' => $_FILE['file']['tmp_name'],
-    }
+    $file_name=$_FILES['file']['tmp_name'];
+    $file_type=$_FILES['file']['type'];
+    
+    $boundary = md5(date('r', time()));
+    $headers = "MIME-Version: 1.0\r\n";
+	$headers .= "From: <dilipagarwal142kk@gmail.com>\r\n";
+    $headers .= "Content-Type: multipart/mixed; boundary=" . $boundary . "\r\n"; 
+    
+    $message = "\r\n\r\n--" . $boundary . "\r\n"; 
+	$message .= "Content-type: text/plain; charset=\"iso-8859-1\"\r\n";
+	$message .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
+	$message .= $msg."\r\n";
+    $message .= "";
+    $message .= "\r\n\r\n--" . $boundary . "\r\n";
+    $message .= "Content-type:".$file_type."\r\n";
+	$message .= "Content-Transfer-Encoding: base64\r\n";
+    $message .= "Content-Disposition: attachment; filename=".$file_name."\r\n"; 
+    $message .= base64_encode(file_get_contents($file_name)); 
+	$message .= "\r\n\r\n--" . $boundary . "--"; 
 
     $email_from = 'alexandra.osmakova@gmail.com';
 
@@ -51,10 +40,6 @@
                     "Development: $development.\n".
                     "Support: $support.\n".
                     "Advertising: $advertising.\n".
-                    "File details:
-                            Name: {$file['name']}.
-                            Size: {$file['size']}.
-                            Type: {$file['type']}";
 
 
 
@@ -66,5 +51,5 @@
     $to = "alexandra.osmakova@gmail.com";
     $headers = "From: $email_from \r\n";
 
-    $ok = mail($to, $email_subject, $email_body, implode('\r\n', $message). implode('\r\n', $headers) $file, $headers);
+    $ok = mail($to, $email_subject, $message, $email_body, $headers);
 ?>
