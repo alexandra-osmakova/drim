@@ -296,7 +296,7 @@
             <h2 class="title_style apply_text_style">Отправить заявку</h2>
             <p class="apply_text_style">Заполните форму заявки, мы перезвоним вам в ближайшее время и обсудим ваш проект </p>
             <div class="apply_content">
-                <form id="contact_form" method='post' action="/mail.php">
+                <form id="contact_form" enctype="multipart/form-data" method='post' action="/mail.php">
                     <div class="apply_project_info">
                         <h3 class="apply_title ">Информация о проекте</h3>
                         <div class="apply_service">
@@ -334,7 +334,7 @@
                                     <div class='load_logo'></div>
                                     <span>Прикрепить ТЗ</span>
                                 </button>
-                                <input type="file" name="file" />
+                                <input type="file" name="uploaded_file" />
                             </div>
                         </div>
                         <span class="agreement">Отправляя заявку, вы соглашаетесь с

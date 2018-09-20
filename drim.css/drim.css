@@ -837,9 +837,6 @@ header {
     margin: 0 auto;
 }
 
-.apply_contacts input {
-    padding: 0 0 2rem;
-}
 
 .apply_project_info h3, .apply_contacts h3{
     color: #45A4D1;
@@ -1143,6 +1140,10 @@ footer {
     border-radius: 0.3rem;
   }
   
+  .first_screen_pagination {
+      background: #ffffff;
+  }
+
 
 
   body.page1 #pagination li:nth-of-type(1),
