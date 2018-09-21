@@ -1158,7 +1158,7 @@ footer {
     -webkit-transform: scale(2);
             transform: scale(2);
             background-color: #ffffff;
-            border: 1px solid #e3187d;
+            border: 1px solid #e3187d;   /* px used instead of rem */
   }
 
   @media screen and (min-width: 1300px) and (max-width: 1440px) {
@@ -1566,7 +1566,7 @@ footer {
 
     .menu__icon span {
         width: 2.3rem;
-        height: 3px;
+        height: 0.18rem;
         margin: 0.2rem;
     }
 
@@ -1810,7 +1810,7 @@ footer {
 
     .menu__icon span {
         width: 3rem;
-        height: 3px;
+        height: 0.18rem;
     }
 
     .btn {
@@ -2079,7 +2079,7 @@ footer {
 
     .menu__icon span {
         width: 3.1rem;
-        height: 4px;
+        height: 0.25rem
     }
 
     .btn {
@@ -2388,7 +2388,7 @@ footer {
 
     .menu__icon span {
         width: 3.1rem;
-        height: 4px;
+        height: 0.25rem;
     }
 
     .btn {
