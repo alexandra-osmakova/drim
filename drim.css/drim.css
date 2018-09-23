@@ -2,13 +2,13 @@ html, body {
     width: 100%;
     height: 100%;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 header {
@@ -43,15 +43,19 @@ header {
     width: 50%;
 }
 
+.header_contacts_info {
+    z-index: 2;
+}
+
 .header_logo img{
     width: 6.5rem;
 }
 
 .header_contacts {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 2;
 }
 
 .header_contacts_info span {
@@ -60,6 +64,10 @@ header {
     line-height: 4rem;
     color: #ffffff;
     font-family: "Montserrat";
+}
+
+.header_burger_menu {
+    z-index: 2;
 }
 
 .menu__icon {
@@ -77,9 +85,9 @@ header {
 
 .header_background {
     position: absolute;
-    width: 100%;
-    top: -32rem;
-    right: -40rem;
+    width: 200%;
+    top: -28rem;
+    right: -36rem;
 }
 
 .about {
@@ -447,12 +455,12 @@ header {
 .circle_content {
     position: relative;
     box-sizing: border-box;
-    width: 40%;
+    width: 32rem;
+    height: 32.2rem;
     margin: 2rem auto;
     background-image: url(../img/circle.svg);
     background-size: cover;
     background-position: center;
-    padding: 16rem;
 }
 
 .circle_content_btn {
@@ -503,7 +511,7 @@ header {
     transition: all 0.5s ease;
 }
 
-.first_step {
+.first_step {   
     top: -5.5rem;
     left: 6.5rem;
     flex-direction: column;
@@ -1165,8 +1173,11 @@ footer {
 
     body {
         font-size: 16px;
-        overflow-x: hidden;
-        box-sizing: border-box;
+    }
+
+    .header_background {
+        top: -28rem;
+        right: -36rem;
     }
 
     .btn {
@@ -1205,44 +1216,10 @@ footer {
         font-size: 1rem;
     }
 
-    .circle_content {
-        padding: 18rem;
-    }
-
-    .circle_text_item {
-        padding: 5rem;
-    }
-
-    .first_step {
-        left: 8.5rem;
-    }
-
-    .second_step {
-        left: 30.5rem;
-    }
-
-    .third_step {
-        left: 33.8rem;
-    }
-
-    .fouth_step {
-        top: 29rem;
-        left: 28.6rem;
-    }
-
-    .fifth_step {
-        top: 29rem;
-        left: -8rem;
-    }
-
-    .sixth_step {
-        top: 16.9rem;
-        left: -9.5rem;
-    }
-
-    .seventh_step {
-        left: -12.2rem;
-    }
+   .circle_content {
+       width: 32rem;
+       height: 32rem;
+   }
 
     .work_examples_item_company_logo {
         width: 6.2rem
@@ -1271,14 +1248,22 @@ footer {
         top: -18rem;
         left: -18.5rem;    
     }
+
+    footer {
+        height: 19rem;
+        padding: 7rem 1rem 0;
+    }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1600px) {
 
     body {
         font-size: 18px;
-        overflow-x: hidden;
-        box-sizing: border-box;
+    }
+
+    .header_background {
+        top: -33rem;
+        right: -42rem;
     }
 
     .btn {
@@ -1322,31 +1307,32 @@ footer {
         left: -10rem;
     }
 
-    .circle_content {
-        padding: 20rem;
-    }
+   .circle_content {
+        width: 38rem;
+        height: 38rem;
+    } 
 
     .first_step {
-        left: 10rem;
+        left: 9.5rem;
     }
 
     .second_step {
-        left: 33rem;
+        left: 32rem;
     }
 
     .third_step {
         top: 19.3rem;
-        left: 37.8rem;
+        left: 35.8rem;
     }
 
     .fouth_step {
         top: 33rem;
-        left: 31.6rem;
+        left: 27.6rem;
     }
 
     .fifth_step {
         top: 32.5rem;
-        left: -7rem;
+        left: -5rem;
     }
 
     .sixth_step {
@@ -1360,7 +1346,8 @@ footer {
     }
 
     .circle_text_item {
-        top: 14rem;
+        top: 12rem;
+        padding: 4rem;
     }
 
     .work_examples_item_company_logo {
@@ -1403,13 +1390,21 @@ footer {
         top: -22rem;
         left: -20.5rem;
     }
+
+    footer {
+        height: 17rem;
+        padding: 6rem 1rem 0;
+    }
 }
 
 @media screen and (min-width: 1601px) and (max-width: 1800px) {
     body {
         font-size: 18px;
-        overflow-x: hidden;
-        box-sizing: border-box;
+    }
+
+    .header_background {
+        top: -36rem;
+        right: -46rem;
     }
 
     .header_logo img, .footer_logo {
@@ -1467,45 +1462,47 @@ footer {
         right: 9rem;
     }
 
-    .circle_content {
-        padding: 23rem;
-    }
+   .circle_content {
+        width: 40rem;
+        height: 40rem;
+    } 
 
     .circle_text_item {
-        top: 14rem;
+        top: 10rem;
     }
 
     .first_step {
-        left: 13rem;
+        left: 10rem;
     }
 
     .second_step {
-        top: 8.2rem;
-        left: 39.5rem;
+        top: 7.2rem;
+        left: 34.5rem;
     }
 
     .third_step {
-        top: 24.3rem;
-        left: 43.8rem;
+        top: 23.3rem;
+        left: 37rem;
     }
 
     .fouth_step {
-        top: 38rem;
-        left: 36.6rem;
+        top: 35rem;
+        left: 28.6rem;    
     }
 
     .fifth_step {
-        top: 38rem;
+        top: 35rem;
+        left: -4.2rem;
     }
 
     .sixth_step {
-        top: 23.3rem;
-        left: -9rem;
+        top: 22.3rem;
+        left: -9rem;    
     }
 
     .seventh_step {
-        top: 7.7rem;
-        left: -12.2rem;
+        top: 6.7rem;
+        left: -13.2rem;
     }
 
     .work_examples_item {
@@ -1551,7 +1548,7 @@ footer {
     }
 
     .footer_background img {
-        width: 47%;
+        width: 50%;
         top: -22rem;
         left: -25.5rem;    
     }
@@ -1560,8 +1557,6 @@ footer {
 @media screen and (min-width: 1801px) and (max-width: 2000px) {
     body {
         font-size: 19px;
-        overflow-x: hidden;
-        box-sizing: border-box;
     }
 
     .menu__icon span {
@@ -1583,8 +1578,8 @@ footer {
     }
 
     .header_background {
-        top: -30rem;
-        right: -66rem;
+        top: -40rem;
+        right: -57rem;    
     }
 
     .header_logo img, .footer_logo {
@@ -1679,12 +1674,19 @@ footer {
     }
 
 
-    .circle_content {
-        padding: 25rem;
+   .circle_content {
+        width: 41rem;
+        height: 41.2rem;
+    } 
+    
+    .circle_content_item {
+        width: 24rem;
+
     }
 
     .circle_text_item {
-        top: 15rem;
+        top: 6rem;
+        padding: 5rem;
     }
 
     .circle_step {
@@ -1694,36 +1696,37 @@ footer {
     }
 
     .first_step {
-        left: 15.5rem
+        left: 9rem;
     }
 
     .second_step {
         top: 8.2rem;
-        left: 42.5rem;
+        left: 35.5rem;
     }
 
     .third_step {
-        top: 27.3rem;
-        left: 47.3rem;
+        top: 25.3rem;
+        left: 37.3rem;
     }
 
     .fouth_step {
-        top: 42rem;
-        left: 39.6rem;
+        top: 37rem;
+        left: 26.6rem;
     }
 
     .fifth_step {
-        top: 41rem;
+        top: 36.5rem;
+        left: -2rem;
     }
 
     .sixth_step {
-        top: 25.5rem;
+        top: 24.2rem;
         left: -9.5rem;
     }
 
     .seventh_step {
         top: 7.8rem;
-        left: -11.2rem;
+        left: -14rem;
     }
 
     .work_examples_item {
@@ -1794,8 +1797,6 @@ footer {
 @media screen and (min-width: 2001px) and (max-width: 2200px) {
     body {
         font-size: 20px;
-        overflow-x: hidden;
-        box-sizing: border-box;
     }
 
     .header_decoration_first {
@@ -1826,8 +1827,8 @@ footer {
     }
 
     .header_background {
-        top: -30rem;
-        right: -66rem;
+        top: -46rem;
+        right: -61rem;      
     }
 
     .header_logo img, .footer_logo {
@@ -1860,7 +1861,7 @@ footer {
 
     .circle_content_btn {
         margin: 9rem auto;
-    }
+    } 
 
     .work_examples_btn {
         margin: 5rem auto 0;
@@ -1914,8 +1915,9 @@ footer {
     }
 
     .circle_content {
-        padding: 28rem;
-    }
+        width: 43rem;
+        height: 43.2rem;
+    } 
 
     .circle_decoration_first {
         width: 3rem;
@@ -1930,7 +1932,8 @@ footer {
     }
 
     .circle_text_item {
-        top: 18rem;
+        top: 7rem;
+        padding: 5rem;
     }
 
     .circle_content_item {
@@ -1949,37 +1952,38 @@ footer {
     }
 
     .first_step {
-        left: 17.5rem;
+        left: 11rem;
     }
 
     .second_step {
-        top: 10.2rem;
-        left: 48.5rem;
+        top: 8.2rem;
+        left: 37.5rem;
     }
 
     .third_step {
-        top: 31.3rem;
-        left: 52.8rem;
+        top: 25.3rem;
+        left: 38.8rem;
     }
 
     .fouth_step {
         width: 26rem;
-        top: 48rem;
-        left: 42.6rem;
+        top: 39rem;
+        left: 27.6rem;
     }
 
     .fifth_step {
-        top: 46rem;
+        top: 38.7rem;
+        left: -2rem;
     }
 
     .sixth_step {
-        top: 28.3rem;
+        top: 24.3rem;
         left: -10rem;
     }
 
     .seventh_step {
-        top: 9rem;
-        left: -13.2rem;
+        top: 8rem;
+        left: -16.2rem;
     }
 
     .work_examples_item {
@@ -2073,8 +2077,6 @@ footer {
 @media screen and (min-width: 2201px) and (max-width: 2400px) {
     body {
         font-size: 21px;
-        overflow-x: hidden;
-        box-sizing: border-box;
     }
 
     .menu__icon span {
@@ -2095,8 +2097,8 @@ footer {
     }
 
     .header_background {
-        top: -30rem;
-        right: -66rem;
+        top: -52rem;
+        right: -65rem;           
     }
 
     .header_logo img, .footer_logo {
@@ -2197,12 +2199,14 @@ footer {
         border-radius: 2.6rem;
     }
 
-    .circle_content {
-        padding: 30rem;
-    }
+   .circle_content {
+        width: 44rem;
+        height: 44.2rem;
+    } 
 
     .circle_text_item {
-        top: 16rem;
+        top: 8rem;
+        padding: 5rem
     }
 
     .circle_content_item {
@@ -2222,38 +2226,38 @@ footer {
 
     .first_step {
         top: -5.5rem;
-        left: 17.5rem;
+        left: 10.5rem;
     }
 
     .second_step {
-        top: 10.2rem;
-        left: 51.5rem;
+        top: 8.2rem;
+        left: 38.5rem;
     }
 
     .third_step {
-        top: 31.3rem;
-        left: 56.8rem;
+        top: 25.3rem;
+        left: 40.8rem;
     }
 
     .fouth_step {
         width: 26rem;
-        top: 50rem;
-        left: 46.6rem;
+        top: 38rem;
+        left: 30.6rem;
     }
 
     .fifth_step {
-        top: 49rem;
-        left: -6rem;
+        top: 38rem;
+        left: -4rem;
     }
 
     .sixth_step {
-        top: 30.3rem;
-        left: -11rem;
+        top: 24rem;
+        left: -10rem;
     }
 
     .seventh_step {
-        top: 9.5rem;
-        left: -12.2rem;
+        top: 7.5rem;
+        left: -15.2rem;
     }
 
     .work_examples_item {
@@ -2363,13 +2367,11 @@ footer {
 @media screen and (min-width: 2401px) and (max-width: 2560px) {
     body {
         font-size: 22px;
-        overflow-x: hidden;
-        box-sizing: border-box;
     }
 
     .header_background {
-        top: -28rem;
-        right: -84rem;      
+        top: -56rem;
+        right: -70rem;  
     }
 
     .header_logo img, .footer_logo {
@@ -2378,6 +2380,7 @@ footer {
 
     .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
         font-size: 2.1rem;
+        line-height: 2.5rem;
     }
 
     .header_decoration_first {
@@ -2497,12 +2500,13 @@ footer {
     }
 
     .circle_content {
-        padding: 32rem;
-    }
+        width: 46rem;
+        height: 46.2rem;
+    } 
 
     .circle_text_item {
-        top: 16rem;
-        padding: 5rem;
+        top: 0rem;
+        padding: 6rem;    
     }
 
     .circle_content_item {
@@ -2528,37 +2532,37 @@ footer {
 
     .first_step {
         top: -6.5rem;
-        left: 17.5rem;    
+        left: 8.5rem;  
     }
 
     .second_step {
-        top: 11.2rem;
-        left: 54.5rem;
+        top: 8.2rem;
+        left: 38.5rem;    
     }
 
     .third_step {
-        top: 36.3rem;
-        left: 59.8rem;
+        top: 24.6rem;
+        left: 41.8rem;
     }
 
     .fouth_step {
-        top: 55rem;
-        left: 47.6rem;
+        top: 40rem;
+        left: 30.6rem;
     }
 
     .fifth_step {
-        top: 53.5rem;
-        left: -3rem;
+        top: 40rem;
+        left: -5rem;
     }
 
     .sixth_step {
-        top: 33.3rem;
-        left: -11rem;
+        top: 24.3rem;
+        left: -12rem;
     }
 
     .seventh_step {
-        top: 10.5rem;
-        left: -15rem;
+        top: 7.5rem;
+        left: -18rem;
     }
 
     .circle_content_btn {
