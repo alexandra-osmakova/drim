@@ -91,6 +91,7 @@ header {
     width: 200%;
     top: -28rem;
     right: -36rem;
+    overflow-x: hidden;
 }
 
 .about {
