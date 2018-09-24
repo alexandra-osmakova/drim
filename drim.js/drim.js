@@ -76,3 +76,10 @@ for (var i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
+
+window.addEventListener("scroll", overflow);
+
+function overflow() {
+    document.documentElement.classList.toggle('no_scroll'); /* класс прибавляеься к html*/
+    
+}

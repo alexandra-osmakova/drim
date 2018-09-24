@@ -2,13 +2,16 @@ html, body {
     width: 100%;
     height: 100%;
     font-size: 16px;
-    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+}
+
+.no_scroll {
+    overflow-x: hidden;
 }
 
 header {
@@ -817,12 +820,6 @@ header {
     filter: blur(3px);  /* px used instead of rem */
     border-radius: 100%;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
-}
-
-.pagination {
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
 }
 
 .apply_text_style {
