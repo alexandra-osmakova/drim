@@ -83,18 +83,17 @@ function overflow() {
     document.documentElement.classList.add('no_scroll'); 
 }
 
-var burger_menu = document.getElementsByClassName('menu__icon')[0];
+var menu__icon = document.getElementsByClassName('menu__icon')[0];
 var menu = document.getElementsByClassName('menu')[0];
-var close_menu = document.getElementsByClassName('close_menu')[0];
 
-burger_menu.addEventListener('click', menu_open);
+menu__icon.addEventListener('click', menu_open);
 
 function menu_open() {
-    menu.classList.add('menu_visible');
+    menu.classList.toggle('menu_visible');
 }
 
-close_menu.addEventListener('click', menu_close);
+var header_burger_menu = document.getElementsByClassName("header_burger_menu")[0];
 
-function menu_close() {
-    menu.classList.remove('menu_visible');
-}
+menu__icon.addEventListener('click', function () {
+    header_burger_menu.classList.toggle('menu_state_open');
+})

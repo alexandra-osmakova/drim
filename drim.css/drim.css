@@ -52,11 +52,7 @@ header {
 }
 
 .full_menu {
-    width: 45%;
-}
-
-.menu_logo, .close_menu {
-    width: 27.5%;
+    width: 70%;
 }
 
 .full_menu ul {
@@ -108,14 +104,10 @@ header {
     color: #333333!important;
 }
 
-.close_menu {
-    position: relative;
-}
-
 .close{
     position: absolute;
-    top: 0.3rem;
-    right: 0.3rem;
+    top: 0rem;
+    right: -1.5rem;
     width: 1.6rem;
     height: 1.6rem;
     cursor: pointer;
@@ -131,8 +123,8 @@ header {
 .close:after {
     content: "";
     position: absolute;
-    top: 1.3rem;
-    left: 0.6rem;
+    top: 0;
+    left: 0;
     width: 1.6rem;
     height: 0.1rem;
     background:   #ffffff;
@@ -193,21 +185,68 @@ header {
 }
 
 .header_burger_menu {
-    z-index: 2;
+    z-index: 1001;
 }
 
 .menu__icon {
+    display: inline-block;
+    margin-top: 1.2rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    position: relative;
     cursor: pointer;
-    width: 2rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .menu__icon span {
-    background-color: #ffffff;
-    width: 2.1rem;
-    height: 2px;  /* px used instead of rem */
-    margin: 0.2rem
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    
+    transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+    top: 0;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+    top: 0.5rem;
+}
+
+.menu__icon span:nth-child(4) {
+    top: 1rem;
+}
+
+.header_burger_menu.menu_state_open .menu__icon span:nth-child(1) {
+    top: 1rem;
+    width: 0%;
+    left: 50%;
+}
+
+.header_burger_menu.menu_state_open .menu__icon span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.header_burger_menu.menu_state_open .menu__icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.header_burger_menu.menu_state_open .menu__icon span:nth-child(4) {
+    top: 1rem;
+    width: 0%;
+    left: 50%;
+}
+
+
+.header_burger_menu.menu_state_open .menu__icon span:nth-child(1) {
+top: 1rem;
+width: 0%;
+left: 50%;
 }
 
 .header_background {
@@ -1775,12 +1814,6 @@ footer {
         font-size: 19px;
     }
 
-    .menu__icon span {
-        width: 2.3rem;
-        height: 0.18rem;
-        margin: 0.2rem;
-    }
-
     .header_decoration_first {
         width: 5.8rem;
         height: 5.8rem;
@@ -2009,11 +2042,6 @@ footer {
         width: 6rem;
         height: 6rem;
         border-radius: 6rem;
-    }
-
-    .menu__icon span {
-        width: 3rem;
-        height: 0.18rem;
     }
 
     .btn {
@@ -2274,11 +2302,6 @@ footer {
 @media screen and (min-width: 2201px) and (max-width: 2400px) {
     body {
         font-size: 21px;
-    }
-
-    .menu__icon span {
-        width: 3.1rem;
-        height: 0.25rem
     }
 
     .btn {
@@ -2580,11 +2603,6 @@ footer {
         border-radius: 7.6rem;
     }
 
-    .menu__icon span {
-        width: 3.1rem;
-        height: 0.25rem;
-    }
-
     .btn {
         border-radius: 3rem;
     }
@@ -2855,5 +2873,3 @@ footer {
         height: 6rem;
     }
 }
-  
-
