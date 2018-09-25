@@ -543,6 +543,17 @@ header {
     background-position: center;
 }
 
+.fourth_service_logo {
+    background-image: url(../img/Icons/service_type_logo4.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fifth_service_logo {
+    background-image: url(../img/Icons/service_type_logo5.svg);
+    background-size: cover;
+    background-position: center;
+}
 
 .service_type_item p, .service_type_item span {
     font-size: 0.8rem;
@@ -891,9 +902,13 @@ header {
 }
 
 .work_item_btn {
+    opacity: 0;
     font-size: 0.8rem;
     line-height: 1.3rem;
     color: rgb(255,255,255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -902,10 +917,14 @@ header {
 }
 
 .work_section_down_btn {
-    opacity: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    opacity: 1;
+    left: 2rem;
+    right: 2rem;
+    bottom: 1.5rem;
 }
 
 .work_section_down_btn .arrow_btn {
@@ -941,8 +960,7 @@ header {
     color: rgba(255,255,255,1);  /* rgba used instead of hex to change opacity */
 }
 
-.work_examples_item:hover .work_section_down_btn {
-    position: relative;
+.work_examples_item:hover .work_item_btn {
     opacity: 1;
 }
 
@@ -1402,10 +1420,6 @@ footer {
         font-size: 1.1rem;
     }
 
-    .about h2 {
-        font-size: 3rem;
-    }
-
     .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first {
         left: -9rem;
     }
@@ -1486,10 +1500,6 @@ footer {
 
     .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
         font-size: 1.1rem;
-    }
-
-    .about h2 {
-        font-size: 3rem;
     }
 
     .service_type_item {
@@ -1623,10 +1633,6 @@ footer {
 
     .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
         font-size: 1.2rem;
-    }
-
-    .about h2 {
-        font-size: 3rem;
     }
 
     .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
@@ -1808,10 +1814,6 @@ footer {
 
     .next_screen img {
         width: 1.3rem;
-    }
-
-    .about h2 {
-        font-size: 3rem;
     }
 
     .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
@@ -2067,11 +2069,6 @@ footer {
         margin: 5rem auto 0;
     }
 
-    .about h2 {
-        font-size: 3.2rem;
-        line-height: 4rem;
-    }
-
     .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
         left: -14rem;
     }
@@ -2323,12 +2320,6 @@ footer {
 
     .work_examples_btn {
         margin: 8rem auto 0;
-    }
-
-    .about h2 {
-        font-size: 4.2rem;
-        line-height: 5rem;
-
     }
 
     .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
@@ -2604,11 +2595,6 @@ footer {
 
     .next_screen img {
         width: 1.5rem;
-    }
-
-    .about h2 {
-        font-size: 3.8rem;
-        line-height: 4.75rem;
     }
 
     .header_logo img, .footer_logo {
