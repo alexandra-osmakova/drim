@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     font-size: 16px;
@@ -17,10 +18,22 @@ body {
 header {
     position: relative;
     width: 100%;
-    padding: 0rem 4rem;
+    padding: 3rem 8rem;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    background-image: url(../img/header_background_img.svg);
+    background-position: right;
+    background-size: cover;
+}
+
+.header_contact_section, .header_nav_section {
+    width: 100%;
+}
+
+.header_contact_section {
+    display: flex;
 }
 
 .menu {
@@ -36,8 +49,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    box-sizing: border-box; 
-    opacity: 0;   
+    box-sizing: border-box;
+    opacity: 0;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -101,10 +114,10 @@ header {
 }
 
 .styled_full_menu_item {
-    color: #333333!important;
+    color: #333333 !important;
 }
 
-.close{
+.close {
     position: absolute;
     top: 0rem;
     right: -1.5rem;
@@ -127,7 +140,7 @@ header {
     left: 0;
     width: 1.6rem;
     height: 0.1rem;
-    background:   #ffffff;
+    background: #ffffff;
 }
 
 .close:before {
@@ -149,15 +162,18 @@ header {
     top: -1rem;
     left: -1.5rem;
     width: 5.6rem;
-    height: 5.6rem;;
+    height: 5.6rem;
+    ;
     border-radius: 5.6rem;
     background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
     -moz-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);   /* rgba used for opacity */
+    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
+    /* rgba used for opacity */
     box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
 }
 
-.header_logo, .header_contacts {
+.header_logo,
+.header_contacts {
     width: 50%;
 }
 
@@ -165,8 +181,9 @@ header {
     z-index: 2;
 }
 
-.header_logo img{
-    width: 5.5rem;
+.header_logo img {
+    width: 8.1rem;
+    height: 2.6rem;
 }
 
 .header_contacts {
@@ -206,7 +223,7 @@ header {
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    
+
     transition: .25s ease-in-out;
 }
 
@@ -214,7 +231,8 @@ header {
     top: 0;
 }
 
-.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+.menu__icon span:nth-child(2),
+.menu__icon span:nth-child(3) {
     top: 0.5rem;
 }
 
@@ -244,24 +262,17 @@ header {
 
 
 .header_burger_menu.menu_state_open .menu__icon span:nth-child(1) {
-top: 1rem;
-width: 0%;
-left: 50%;
-}
-
-.header_background {
-    position: absolute;
-    width: 200%;
-    top: -28rem;
-    right: -36rem;
-    overflow-x: hidden;
+    top: 1rem;
+    width: 0%;
+    left: 50%;
 }
 
 .about {
+    position: relative;
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     margin: 0 auto 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
 }
 
 .about ul {
@@ -275,7 +286,7 @@ left: 50%;
 
 .about li {
     margin: 0 0 1.7rem;
-} 
+}
 
 .about a {
     text-decoration: unset;
@@ -304,7 +315,8 @@ left: 50%;
     color: #333333;
     display: block;
     margin: 0;
-    color: rgba(227, 24, 125, 0); /* rgba used instead of hex to change opacity on hover */
+    color: rgba(227, 24, 125, 0);
+    /* rgba used instead of hex to change opacity on hover */
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -318,7 +330,7 @@ left: 50%;
 
 .about_title_item:hover .underline_title {
     left: 4.2rem;
-    color: rgba(227, 24, 125, 1); 
+    color: rgba(227, 24, 125, 1);
 }
 
 .about_title_item:hover a {
@@ -327,8 +339,8 @@ left: 50%;
 
 .company_name {
     font-size: 0.8rem;
-    line-height: 2.1rem;  
-    color: #333333;  
+    line-height: 2.1rem;
+    color: #333333;
 }
 
 
@@ -351,7 +363,7 @@ left: 50%;
 }
 
 .btn:hover {
-    box-shadow: 0px 5px 16px rgba(14,76,107,0.39);
+    box-shadow: 0px 5px 16px rgba(14, 76, 107, 0.39);
 }
 
 .about_btn {
@@ -370,19 +382,26 @@ left: 50%;
 }
 
 .next_screen img {
-    opacity:0.4;
-    text-indent:-625rem;
+    opacity: 0.4;
+    text-indent: -625rem;
     transform-origin: 50% 50%;
 }
 
 .down {
     -webkit-animation: downarrow 1s infinite alternate ease-in-out;
-  }
+}
 
-  @-webkit-keyframes downarrow {
-    0% { -webkit-transform: translateY(0); opacity: 0.4 }
-    100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
-  }
+@-webkit-keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9
+    }
+}
 
 .services {
     position: relative;
@@ -399,7 +418,8 @@ left: 50%;
     margin-left: 2rem;
 }
 
-.service_type, .philosophy_content {
+.service_type,
+.philosophy_content {
     display: flex;
     padding: 0 2rem;
     box-sizing: border-box;
@@ -427,7 +447,8 @@ left: 50%;
     width: 1rem;
     height: 1rem;
     border-radius: 1rem;
-    filter: blur(3px); /* px used instead of rem */
+    filter: blur(3px);
+    /* px used instead of rem */
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
 }
 
@@ -473,10 +494,10 @@ left: 50%;
     right: 0;
     bottom: 0;
     opacity: 0.8;
-    background:-webkit-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
-    background:-o-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
-    background:-moz-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
-    background:linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background: -webkit-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background: -o-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background: -moz-linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
+    background: linear-gradient(-74deg, rgb(227, 23, 125) 0%, rgb(63, 161, 211) 80%);
 }
 
 .service_type_content {
@@ -496,7 +517,7 @@ left: 50%;
     background-position: center;
 }
 
-.service_type_item_third{
+.service_type_item_third {
     background-image: url(../img/service_type_img4.jpeg);
     background-size: cover;
     background-position: center;
@@ -517,7 +538,8 @@ left: 50%;
 .service_type_item:hover {
     margin: 0rem 0.5rem;
     height: 32rem;
-    box-shadow: 0rem 0.7rem 1rem rgba(0,43,59,0.32); /* rgba used instead of hex to change opacity */
+    box-shadow: 0rem 0.7rem 1rem rgba(0, 43, 59, 0.32);
+    /* rgba used instead of hex to change opacity */
 }
 
 .service_type_item:hover .service_type_background {
@@ -531,11 +553,13 @@ left: 50%;
 }
 
 .service_type_item:hover p {
-    color: rgba(255, 255, 255, 1);  /* rgba used instead of hex to change opacity on :hover */
+    color: rgba(255, 255, 255, 1);
+    /* rgba used instead of hex to change opacity on :hover */
 }
 
 .service_type_item:hover span {
-    color: rgba(255, 255, 255, 1); /* rgba used instead of hex to change opacity on :hover */
+    color: rgba(255, 255, 255, 1);
+    /* rgba used instead of hex to change opacity on :hover */
 }
 
 .service_type_item:hover .details_btn {
@@ -594,9 +618,11 @@ left: 50%;
     background-position: center;
 }
 
-.service_type_item p, .service_type_item span {
+.service_type_item p,
+.service_type_item span {
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0);  /* rgba used instead of hex to change opacity on :hover */
+    color: rgba(255, 255, 255, 0);
+    /* rgba used instead of hex to change opacity on :hover */
     line-height: 1.5rem;
 
     -o-transition: all 0.5s ease;
@@ -608,7 +634,8 @@ left: 50%;
 .details_btn {
     position: absolute;
     bottom: 2rem;
-    opacity: 0;;
+    opacity: 0;
+    ;
     margin: 4rem 0 0;
     display: flex;
     justify-content: flex-start;
@@ -636,7 +663,8 @@ left: 50%;
     left: -8rem;
 }
 
-.philosophy_logo, .philosophy_text {
+.philosophy_logo,
+.philosophy_text {
     margin: 0 1rem 0 0;
 }
 
@@ -663,7 +691,8 @@ left: 50%;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
     border-radius: 2rem;
     opacity: 0.8;
-    filter: blur(3px);  /* px used instead of rem */
+    filter: blur(3px);
+    /* px used instead of rem */
 }
 
 .philosophy_text {
@@ -692,7 +721,8 @@ left: 50%;
     height: 2.5rem;
     border-radius: 2.5rem;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
-    filter: blur(3px);  /* px used instead of rem  */
+    filter: blur(3px);
+    /* px used instead of rem  */
 }
 
 .circle_decoration_second {
@@ -700,7 +730,8 @@ left: 50%;
     top: 19rem;
     left: 8rem;
     width: 1.6rem;
-    height: 1.6rem;;
+    height: 1.6rem;
+    ;
     border-radius: 1.6rem;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
 }
@@ -749,7 +780,8 @@ left: 50%;
     height: 3.6rem;
     border-radius: 3.6rem;
     background-color: #ffffff;
-    border: 1px solid #e3177d;  /* px used instead of rem */
+    border: 1px solid #e3177d;
+    /* px used instead of rem */
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -777,7 +809,7 @@ left: 50%;
     transition: all 0.5s ease;
 }
 
-.first_step {   
+.first_step {
     top: -5.5rem;
     left: 6.5rem;
     flex-direction: column;
@@ -815,7 +847,7 @@ left: 50%;
     left: -9rem;
 }
 
-.seventh_step{
+.seventh_step {
     top: 4.5rem;
     left: -13.2rem;
 
@@ -828,11 +860,13 @@ left: 50%;
     font-weight: bold;
 }
 
-.circle_content_item:hover .circle_step{
+.circle_content_item:hover .circle_step {
     color: #ffffff;
     background-color: #40a1d3;
-    border: 1px solid rgba(18,71,97,0.38);  /* px used instead of rem */
-    box-shadow: 0 0.4rem 0.8rem rgba(18,71,97,0.38);  /* rgba used instead of hex to change opacity on :hover */
+    border: 1px solid rgba(18, 71, 97, 0.38);
+    /* px used instead of rem */
+    box-shadow: 0 0.4rem 0.8rem rgba(18, 71, 97, 0.38);
+    /* rgba used instead of hex to change opacity on :hover */
 }
 
 .circle_content_item:hover span {
@@ -868,7 +902,10 @@ left: 50%;
     opacity: 1;
 }
 
-.our_works, .philosophy, .services, .apply {
+.our_works,
+.philosophy,
+.services,
+.apply {
     width: 80%;
     margin: 0 auto 6rem;
 }
@@ -929,7 +966,8 @@ left: 50%;
 
 .work_examples_item p {
     margin: 2rem 0;
-    color: rgba(255,255,255, 0); /* rgba used instead of hex to change opacity */
+    color: rgba(255, 255, 255, 0);
+    /* rgba used instead of hex to change opacity */
     font-size: 0.8rem;
     line-height: 1.3rem;
     position: relative;
@@ -944,7 +982,7 @@ left: 50%;
     opacity: 0;
     font-size: 0.8rem;
     line-height: 1.3rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -979,7 +1017,7 @@ left: 50%;
     transition: all 0.5s ease;
 }
 
-.work_example_third:hover .hover_logo{
+.work_example_third:hover .hover_logo {
     opacity: 1;
 }
 
@@ -988,7 +1026,8 @@ left: 50%;
 }
 
 .work_examples_item:hover {
-    box-shadow: 0rem 0.7rem 1rem rgba(0,43,59,0.32); /* rgba used instead of hex to change opacity */
+    box-shadow: 0rem 0.7rem 1rem rgba(0, 43, 59, 0.32);
+    /* rgba used instead of hex to change opacity */
 }
 
 .work_examples_item:hover .work_example_wrap {
@@ -996,7 +1035,8 @@ left: 50%;
 }
 
 .work_examples_item:hover p {
-    color: rgba(255,255,255,1);  /* rgba used instead of hex to change opacity */
+    color: rgba(255, 255, 255, 1);
+    /* rgba used instead of hex to change opacity */
 }
 
 .work_examples_item:hover .work_item_btn {
@@ -1065,7 +1105,8 @@ left: 50%;
     padding: 6rem;
     box-sizing: border-box;
     margin: 8rem auto 0;
-    border: 3px solid #45A4D1; /* px used instead of rem */
+    border: 3px solid #45A4D1;
+    /* px used instead of rem */
 }
 
 .apply_decoration_first {
@@ -1077,7 +1118,8 @@ left: 50%;
     border-radius: 5.6rem;
     background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
     -moz-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);  /* rgba used instead of hex to change opacity */
+    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
+    /* rgba used instead of hex to change opacity */
     box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
 }
 
@@ -1087,7 +1129,8 @@ left: 50%;
     right: 22rem;
     width: 2rem;
     height: 2rem;
-    filter: blur(3px);  /* px used instead of rem */
+    filter: blur(3px);
+    /* px used instead of rem */
     border-radius: 100%;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
 }
@@ -1103,24 +1146,31 @@ left: 50%;
     color: #333333;
 }
 
-.apply_content, form {
+.apply_content,
+form {
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.apply_project_info, .apply_contacts {
+.apply_project_info,
+.apply_contacts {
     width: 50%;
     margin: 0 auto;
 }
 
 
-.apply_project_info h3, .apply_contacts h3{
+.apply_project_info h3,
+.apply_contacts h3 {
     color: #45A4D1;
 }
 
-.apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+.apply_service h4,
+.apply_service span,
+.apply_project_info h4,
+.apply_contacts input,
+.apply_contacts h4 {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5rem;
@@ -1162,22 +1212,24 @@ left: 50%;
     left: 0.3rem;
     opacity: 0;
 }
-  
+
 .apply_service_checkbox .apply_service_checkbox_wrap {
     width: 1.25rem;
     height: 1.2rem;
     border-radius: 0.3rem;
-    border: 1px solid #999999;/* px used instead of rem */
+    border: 1px solid #999999;
+    /* px used instead of rem */
     display: inline-block;
 }
-  
+
 .apply_service_checkbox input[type="checkbox"] {
     display: none;
 }
 
 
-.apply_service_checkbox input:checked + .apply_service_checkbox_wrap {
-    border: 1px solid #e3187d; /* px used instead of rem */
+.apply_service_checkbox input:checked+.apply_service_checkbox_wrap {
+    border: 1px solid #e3187d;
+    /* px used instead of rem */
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1185,7 +1237,7 @@ left: 50%;
     transition: all 0.5s ease;
 }
 
-.apply_service_checkbox input:checked + .apply_service_checkbox_wrap img{
+.apply_service_checkbox input:checked+.apply_service_checkbox_wrap img {
     opacity: 1;
 
     -o-transition: all 0.5s ease;
@@ -1194,7 +1246,7 @@ left: 50%;
     transition: all 0.5s ease;
 }
 
-.apply_service_checkbox input:checked ~ span {
+.apply_service_checkbox input:checked~span {
     text-decoration: underline;
     color: #e3177d;
 
@@ -1216,7 +1268,8 @@ left: 50%;
     color: #e3177d;
 }
 
-.apply_task input, .apply_contacts input  {
+.apply_task input,
+.apply_contacts input {
     width: 80%;
 }
 
@@ -1236,7 +1289,8 @@ left: 50%;
     margin: 4.5rem 0 0;
 }
 
-.apply textarea, .apply_service_text {
+.apply textarea,
+.apply_service_text {
     resize: none;
     width: 80%;
     height: 1rem;
@@ -1245,7 +1299,8 @@ left: 50%;
     border-top: unset;
     border-left: unset;
     border-right: unset;
-    border-bottom: 1px solid #C0C0C0; /* px used instead of rem */
+    border-bottom: 1px solid #C0C0C0;
+    /* px used instead of rem */
 }
 
 
@@ -1255,14 +1310,16 @@ left: 50%;
     overflow: hidden;
     position: relative;
 }
-.file-input-wrapper > input[type="file"] {
+
+.file-input-wrapper>input[type="file"] {
     font-size: 2.2rem;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
 }
-.file-input-wrapper > .btn-file-input {
+
+.file-input-wrapper>.btn-file-input {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -1281,11 +1338,11 @@ left: 50%;
 }
 
 .load_logo {
-  width: 1rem;
-  height: 1rem;
-  background-image: url(../img/Icons/clip.svg);
-  background-size: contain;
-  background-position: center;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../img/Icons/clip.svg);
+    background-size: contain;
+    background-position: center;
 }
 
 footer {
@@ -1298,7 +1355,10 @@ footer {
     box-sizing: border-box;
 }
 
-.footer_work_types, .footer_contacts, .footer_social_links, .footer_rights_logo {
+.footer_work_types,
+.footer_contacts,
+.footer_social_links,
+.footer_rights_logo {
     flex-direction: column;
     width: 20%;
     margin: 0 auto;
@@ -1327,13 +1387,17 @@ footer {
     color: #ffffff;
 }
 
-.footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
+.footer_contacts_item span,
+.footer_rights_logo span,
+.footer_rights_logo a {
     line-height: 1.5rem;
 }
 
-.footer_contacts_item_tytle, .footer_social_links_tytle {
+.footer_contacts_item_tytle,
+.footer_social_links_tytle {
     font-weight: bold;
 }
+
 .styled_footer_item {
     text-decoration: underline;
     color: #e3187d;
@@ -1347,7 +1411,7 @@ footer {
     width: 1rem;
     height: 1rem;
     margin: 0 1rem;
-    
+
 }
 
 .social_link_first {
@@ -1369,8 +1433,10 @@ footer {
 .footer_logo {
     height: 2.6rem;
     width: 8.1rem;
-    background-image: url(../img/Logo\ 4.1.png);
-    background-size:  cover;
+    margin-bottom: 0.5rem;
+    background-image: url(../img/Logo\ 4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -1393,22 +1459,26 @@ footer {
     transform: translateY(-50%);
     right: 6.3rem;
     list-style: none;
-  }
-  #pagination li {
+}
+
+#pagination li {
     position: relative;
     margin: 0.3rem 0;
     background-color: #ffffff;
     border-radius: 0.2rem;
-    border: 1px solid #00b3f6;   /* px used instead of rem */
+    border: 1px solid #00b3f6;
+    /* px used instead of rem */
     width: 0.2rem;
     height: 0.2rem;
     transition: all .2s ease;
-  }
-  #pagination li:hover {
+}
+
+#pagination li:hover {
     -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  #pagination a {
+    transform: scale(1.5);
+}
+
+#pagination a {
     position: absolute;
     text-decoration: none;
     width: 0.2rem;
@@ -1416,50 +1486,59 @@ footer {
     left: 0;
     top: 0;
     border-radius: 0.2rem;
-  }
-  
-  .first_screen_pagination {
-      background: #ffffff;
-  }
+}
+
+.first_screen_pagination {
+    background: #ffffff;
+}
+
+.pagination_invisible {
+    opacity: 0;
+}
 
 
-
-  body.page1 #pagination li:nth-of-type(1),
-  body.page2 #pagination li:nth-of-type(2),
-  body.page3 #pagination li:nth-of-type(3),
-  body.page4 #pagination li:nth-of-type(4),
-  body.page5 #pagination li:nth-of-type(5),
-  body.page6 #pagination li:nth-of-type(6)  {
+body.page1 #pagination li:nth-of-type(1),
+body.page2 #pagination li:nth-of-type(2),
+body.page3 #pagination li:nth-of-type(3),
+body.page4 #pagination li:nth-of-type(4),
+body.page5 #pagination li:nth-of-type(5),
+body.page6 #pagination li:nth-of-type(6) {
     -webkit-transform: scale(2);
-            transform: scale(2);
-            background-color: #ffffff;
-            border: 1px solid #e3187d;   /* px used instead of rem */
-  }
+    transform: scale(2);
+    background-color: #ffffff;
+    border: 1px solid #e3187d;
+    opacity: 1;
+    /* px used instead of rem */
+}
 
-  @media screen and (min-width: 1300px) and (max-width: 1440px) {
+@media screen and (min-width: 1300px) and (max-width: 1440px) {
 
     body {
         font-size: 16px;
-    }
-
-    .header_background {
-        top: -28rem;
-        right: -36rem;
     }
 
     .btn {
         border-radius: 2.2rem
     }
 
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 8.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 1.1rem;
     }
 
-    .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -9rem;
     }
 
@@ -1475,14 +1554,22 @@ footer {
         font-size: 1.7rem;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item {
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item {
         font-size: 1rem;
     }
 
-   .circle_content {
-       width: 32rem;
-       height: 32rem;
-   }
+    .circle_content {
+        width: 32rem;
+        height: 32rem;
+    }
 
     .work_examples_item_company_logo {
         width: 6.2rem
@@ -1499,7 +1586,7 @@ footer {
 
     .btn-file-input span {
         margin-left: 1rem;
-        font-size: 0.9rem;    
+        font-size: 0.9rem;
     }
 
     .footer_background img {
@@ -1509,7 +1596,7 @@ footer {
     .footer_background img {
         width: 47%;
         top: -18rem;
-        left: -18.5rem;    
+        left: -18.5rem;
     }
 
     footer {
@@ -1524,20 +1611,22 @@ footer {
         font-size: 18px;
     }
 
-    .header_background {
-        top: -33rem;
-        right: -42rem;
-    }
-
     .btn {
         border-radius: 2.5rem;
     }
 
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 8.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 1.1rem;
     }
 
@@ -1558,18 +1647,28 @@ footer {
         height: 2.7rem;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item {
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item {
         font-size: 1rem;
     }
 
-    .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -10rem;
     }
 
-   .circle_content {
+    .circle_content {
         width: 38rem;
         height: 38rem;
-    } 
+    }
 
     .first_step {
         left: 9.5rem;
@@ -1632,7 +1731,7 @@ footer {
 
     .btn-file-input span {
         margin-left: 1.2rem;
-        font-size: 0.9rem;    
+        font-size: 0.9rem;
     }
 
     .agreement {
@@ -1661,20 +1760,24 @@ footer {
         font-size: 18px;
     }
 
-    .header_background {
-        top: -36rem;
-        right: -46rem;
-    }
-
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 9.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 1.2rem;
     }
 
-    .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -12rem;
     }
 
@@ -1703,7 +1806,16 @@ footer {
         height: 44rem;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item, .circle_text_item p {
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item,
+    .circle_text_item p {
         font-size: 1.1rem;
         line-height: 2.2rem;
     }
@@ -1717,10 +1829,10 @@ footer {
         right: 9rem;
     }
 
-   .circle_content {
+    .circle_content {
         width: 40rem;
         height: 40rem;
-    } 
+    }
 
     .circle_text_item {
         top: 10rem;
@@ -1742,7 +1854,7 @@ footer {
 
     .fouth_step {
         top: 35rem;
-        left: 28.6rem;    
+        left: 28.6rem;
     }
 
     .fifth_step {
@@ -1752,7 +1864,7 @@ footer {
 
     .sixth_step {
         top: 22.3rem;
-        left: -9rem;    
+        left: -9rem;
     }
 
     .seventh_step {
@@ -1783,7 +1895,7 @@ footer {
 
     .btn-file-input span {
         margin-left: 1.3rem;
-        font-size: 1rem;    
+        font-size: 1rem;
     }
 
     .agreement {
@@ -1798,14 +1910,16 @@ footer {
         margin: 1rem;
     }
 
-    .footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a {
+    .footer_contacts_item span,
+    .footer_rights_logo span,
+    .footer_rights_logo a {
         line-height: 1.7rem;
     }
 
     .footer_background img {
         width: 50%;
         top: -22rem;
-        left: -25.5rem;    
+        left: -25.5rem;
     }
 }
 
@@ -1820,16 +1934,18 @@ footer {
         border-radius: 5.8rem;
     }
 
-    .header_background {
-        top: -40rem;
-        right: -57rem;    
-    }
-
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 10.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 1.2rem;
     }
 
@@ -1849,7 +1965,9 @@ footer {
         width: 1.3rem;
     }
 
-    .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -13rem;
     }
 
@@ -1893,9 +2011,20 @@ footer {
         width: 120%;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item, .circle_text_item p, 
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item,
+    .circle_text_item p,
 
-    .footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
+    .footer_contacts_item span,
+    .footer_rights_logo span,
+    .footer_rights_logo a {
         font-size: 1.3rem;
         line-height: 2.5rem;
     }
@@ -1909,15 +2038,15 @@ footer {
     .circle_decoration_second {
         width: 1.9rem;
         height: 1.9rem;
-        border-radius: 1.9rem;    
+        border-radius: 1.9rem;
     }
 
 
-   .circle_content {
+    .circle_content {
         width: 41rem;
         height: 41.2rem;
-    } 
-    
+    }
+
     .circle_content_item {
         width: 24rem;
 
@@ -1981,7 +2110,7 @@ footer {
     }
 
     .apply {
-        padding: 9rem;  
+        padding: 9rem;
     }
 
     .load_logo {
@@ -1991,7 +2120,7 @@ footer {
 
     .btn-file-input span {
         margin-left: 1.3rem;
-        font-size: 1rem;    
+        font-size: 1rem;
     }
 
     .apply_service_checkbox .apply_service_checkbox_wrap {
@@ -2029,7 +2158,7 @@ footer {
     .footer_background img {
         width: 47%;
         top: -22rem;
-        left: -25.5rem;    
+        left: -25.5rem;
     }
 }
 
@@ -2056,16 +2185,18 @@ footer {
         width: 1.3rem;
     }
 
-    .header_background {
-        top: -46rem;
-        right: -61rem;      
-    }
-
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 9.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 1.7rem;
     }
 
@@ -2091,13 +2222,15 @@ footer {
 
     .circle_content_btn {
         margin: 9rem auto;
-    } 
+    }
 
     .work_examples_btn {
         margin: 5rem auto 0;
     }
 
-    .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -14rem;
     }
 
@@ -2116,16 +2249,27 @@ footer {
 
     .service_type_item h3 {
         font-size: 1.8rem;
-        line-height: 2.5rem;    
+        line-height: 2.5rem;
     }
 
     .service_type_item_logo {
         top: -4.7rem;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item, .circle_text_item p, 
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item,
+    .circle_text_item p,
 
-    .footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
+    .footer_contacts_item span,
+    .footer_rights_logo span,
+    .footer_rights_logo a {
         font-size: 1.3rem;
         line-height: 3rem;
     }
@@ -2142,7 +2286,7 @@ footer {
     .circle_content {
         width: 43rem;
         height: 43.2rem;
-    } 
+    }
 
     .circle_decoration_first {
         width: 3rem;
@@ -2167,7 +2311,7 @@ footer {
 
     .circle_content_item h3 {
         font-size: 1.6rem;
-        line-height: 1.6rem;    
+        line-height: 1.6rem;
     }
 
     .circle_step {
@@ -2234,7 +2378,7 @@ footer {
     .apply_service_checkbox .apply_service_checkbox_wrap {
         width: 1.75rem;
         height: 1.7rem;
-        border-radius: 0.6rem;    
+        border-radius: 0.6rem;
     }
 
     .apply_service_checkbox_wrap img {
@@ -2259,7 +2403,7 @@ footer {
 
     .btn-file-input span {
         margin-left: 1.5rem;
-        font-size: 1rem;    
+        font-size: 1rem;
     }
 
     .title_style {
@@ -2269,7 +2413,7 @@ footer {
 
     .apply_title {
         font-size: 2rem;
-        line-height: 4.5rem;    
+        line-height: 4.5rem;
     }
 
     .agreement {
@@ -2295,7 +2439,7 @@ footer {
     .footer_background img {
         width: 44%;
         top: -19rem;
-        left: -26rem;    
+        left: -26rem;
     }
 }
 
@@ -2316,16 +2460,18 @@ footer {
         width: 1.5rem;
     }
 
-    .header_background {
-        top: -52rem;
-        right: -65rem;           
-    }
-
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 9.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 1.9rem;
     }
 
@@ -2345,7 +2491,9 @@ footer {
         margin: 8rem auto 0;
     }
 
-    .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -16rem;
     }
 
@@ -2382,12 +2530,23 @@ footer {
 
     .service_type_item h3 {
         font-size: 1.8rem;
-        line-height: 2.5rem;    
+        line-height: 2.5rem;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item, .circle_text_item p, 
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item,
+    .circle_text_item p,
 
-    .footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
+    .footer_contacts_item span,
+    .footer_rights_logo span,
+    .footer_rights_logo a {
         font-size: 1.3rem;
         line-height: 3.5rem;
     }
@@ -2413,10 +2572,10 @@ footer {
         border-radius: 2.6rem;
     }
 
-   .circle_content {
+    .circle_content {
         width: 44rem;
         height: 44.2rem;
-    } 
+    }
 
     .circle_text_item {
         top: 8rem;
@@ -2429,7 +2588,7 @@ footer {
 
     .circle_content_item h3 {
         font-size: 1.6rem;
-        line-height: 1.6rem;    
+        line-height: 1.6rem;
     }
 
     .circle_step {
@@ -2489,6 +2648,7 @@ footer {
         left: 3.5rem;
         top: 3.5rem;
     }
+
     .apply {
         padding: 15rem;
     }
@@ -2522,7 +2682,7 @@ footer {
 
     .apply_title {
         font-size: 2.3rem;
-        line-height: 4.5rem;    
+        line-height: 4.5rem;
     }
 
     .load_logo {
@@ -2532,15 +2692,15 @@ footer {
 
     .btn-file-input span {
         margin-left: 2rem;
-        font-size: 1.3rem;    
+        font-size: 1.3rem;
     }
 
     .agreement {
         font-size: 1.5rem;
-        line-height: 1.8rem; 
+        line-height: 1.8rem;
         margin-top: 2rem;
     }
-    
+
 
     apply_btn {
         margin: 7rem 0 0;
@@ -2565,10 +2725,11 @@ footer {
     .footer_background img {
         width: 47%;
         top: -29rem;
-        left: -30.8rem;    
+        left: -30.8rem;
     }
 
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 14.5rem;
     }
 
@@ -2583,16 +2744,18 @@ footer {
         font-size: 22px;
     }
 
-    .header_background {
-        top: -56rem;
-        right: -70rem;  
-    }
-
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 9.5rem;
     }
 
-    .header_contacts_info span, .btn, .apply_service h4, .apply_service span, .apply_project_info h4, .apply_contacts input, .apply_contacts h4 {
+    .header_contacts_info span,
+    .btn,
+    .apply_service h4,
+    .apply_service span,
+    .apply_project_info h4,
+    .apply_contacts input,
+    .apply_contacts h4 {
         font-size: 2.1rem;
         line-height: 2.5rem;
     }
@@ -2615,11 +2778,14 @@ footer {
         width: 1.5rem;
     }
 
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 13.5rem;
     }
 
-    .service_decoration_third,  .philosophy_decoration_first, .our_work_decoration_first {
+    .service_decoration_third,
+    .philosophy_decoration_first,
+    .our_work_decoration_first {
         left: -16rem;
     }
 
@@ -2627,6 +2793,7 @@ footer {
         width: 3.5rem;
         height: 3.5rem;
         border-radius: 3.5rem'
+
     }
 
     .service_decoration_second {
@@ -2668,9 +2835,20 @@ footer {
         line-height: 3rem;
     }
 
-    .service_type_item p, .service_type_item span, .philosophy_text, .work_examples_item p, .work_item_btn, .apply p, .apply_service_checkbox span, .footer_line, .styled_footer_item, .circle_text_item p, 
+    .service_type_item p,
+    .service_type_item span,
+    .philosophy_text,
+    .work_examples_item p,
+    .work_item_btn,
+    .apply p,
+    .apply_service_checkbox span,
+    .footer_line,
+    .styled_footer_item,
+    .circle_text_item p,
 
-    .footer_contacts_item span, .footer_rights_logo span, .footer_rights_logo a  {
+    .footer_contacts_item span,
+    .footer_rights_logo span,
+    .footer_rights_logo a {
         font-size: 1.7rem;
         line-height: 3.7rem;
     }
@@ -2703,11 +2881,11 @@ footer {
     .circle_content {
         width: 46rem;
         height: 46.2rem;
-    } 
+    }
 
     .circle_text_item {
         top: 0rem;
-        padding: 6rem;    
+        padding: 6rem;
     }
 
     .circle_content_item {
@@ -2717,13 +2895,13 @@ footer {
     .circle_content_item h3 {
         font-size: 1.9rem;
         line-height: 1.9rem;
-      
+
     }
 
     .circle_step {
         width: 5.6rem;
         height: 5.6rem;
-        border-radius: 5.6rem;    
+        border-radius: 5.6rem;
     }
 
     .circle_step span {
@@ -2733,12 +2911,12 @@ footer {
 
     .first_step {
         top: -6.5rem;
-        left: 8.5rem;  
+        left: 8.5rem;
     }
 
     .second_step {
         top: 8.2rem;
-        left: 38.5rem;    
+        left: 38.5rem;
     }
 
     .third_step {
@@ -2824,15 +3002,15 @@ footer {
 
     .apply_title {
         font-size: 2.5rem;
-        line-height: 4.7rem;    
+        line-height: 4.7rem;
     }
 
     .agreement {
         font-size: 1.7rem;
-        line-height: 2rem; 
+        line-height: 2rem;
         margin-top: 4rem;
     }
-    
+
     .load_logo {
         width: 2rem;
         height: 2rem;
@@ -2840,7 +3018,7 @@ footer {
 
     .btn-file-input span {
         margin-left: 3rem;
-        font-size: 1.4rem;    
+        font-size: 1.4rem;
     }
 
     apply_btn {
@@ -2862,10 +3040,11 @@ footer {
     .footer_background img {
         width: 47%;
         top: -29rem;
-        left: -32.8rem; 
+        left: -32.8rem;
     }
 
-    .header_logo img, .footer_logo {
+    .header_logo img,
+    .footer_logo {
         width: 14.5rem;
     }
 

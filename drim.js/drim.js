@@ -27,21 +27,30 @@ function pagination() {
     var offset = document.documentElement.scrollTop;
     var windowHeight = document.documentElement.clientHeight;
     var body = document.body;
+    var pagination = document.getElementById('pagination')
 
     switch (true) {
+        case (offset > (windowHeight * 7.75)):
+            pagination.classList.add('pagination_invisible');
+        break;
         case (offset > (windowHeight * 5.75)):
+            pagination.classList = '';
             body.classList = 'page6';
             break;
         case (offset > (windowHeight * 3.75)):
+            pagination.classList = '';
             body.classList = 'page5';
             break;
         case (offset > (windowHeight * 2.75)):
+            pagination.classList = '';
             body.classList = 'page4';
             break;
         case (offset > (windowHeight * 1.75)):
+            pagination.classList = '';
             body.classList = 'page3';
             break;
         case (offset > (windowHeight * .75)):
+            pagination.classList = '';
             body.classList = 'page2';
             break;
         default:
@@ -77,11 +86,11 @@ for (var i = 0; i < linkNav.length; i++) {
     }, false);
 }
 
-window.addEventListener("scroll", overflow);
+/*window.addEventListener("scroll", overflow);
 
 function overflow() {
     document.documentElement.classList.add('no_scroll'); 
-}
+} */
 
 var menu__icon = document.getElementsByClassName('menu__icon')[0];
 var menu = document.getElementsByClassName('menu')[0];
