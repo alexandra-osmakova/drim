@@ -23,17 +23,26 @@ header {
     justify-content: space-between;
     box-sizing: border-box;
     flex-wrap: wrap;
-    background-image: url(../img/header_background_img.svg);
-    background-position: right;
-    background-size: cover;
 }
 
-.header_contact_section, .header_nav_section {
+.header_contact_section,
+.header_nav_section {
     width: 100%;
+    z-index: 2;
 }
 
 .header_contact_section {
     display: flex;
+}
+
+.header_background {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header_background img {
+    width: 95rem;
 }
 
 .menu {
@@ -1521,9 +1530,43 @@ body.page6 #pagination li:nth-of-type(6) {
         border-radius: 2.2rem
     }
 
+    header,
+    .menu {
+        padding: 4rem 8rem;
+
+    }
+
+    .menu_visible {
+        height: 51rem;
+    }
+
+    .header_background img {
+        width: 111rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
     .header_logo img,
     .footer_logo {
-        width: 8.5rem;
+        width: 12.1rem;
+        height: 3.9rem;
     }
 
     .header_contacts_info span,
@@ -1615,9 +1658,52 @@ body.page6 #pagination li:nth-of-type(6) {
         border-radius: 2.5rem;
     }
 
+    header,
+    .menu {
+        padding: 6rem 10rem;
+
+    }
+
+    .menu_visible {
+        height: 60rem;
+    }
+
+    .header_background img {
+        width: 125rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
+    .menu__icon {
+        width: 3rem;
+        height: 3.3rem
+    }
+
+    .menu__icon span {
+        height: 3px;
+    }
+
     .header_logo img,
     .footer_logo {
-        width: 8.5rem;
+        width: 12.1rem;
+        height: 3.9rem;
     }
 
     .header_contacts_info span,
@@ -1665,6 +1751,16 @@ body.page6 #pagination li:nth-of-type(6) {
         left: -10rem;
     }
 
+
+    .details_btn {
+        bottom: 3rem;
+    }
+
+    .work_section_down_btn {
+        left: 3.2rem;
+        right: 3.2rem;
+    }
+
     .circle_content {
         width: 38rem;
         height: 38rem;
@@ -1704,8 +1800,13 @@ body.page6 #pagination li:nth-of-type(6) {
     }
 
     .circle_text_item {
-        top: 12rem;
+        top: 10rem;
         padding: 4rem;
+    }
+
+    .circle_text_item p {
+        font-size: 1rem;
+        line-height: 1.8rem;
     }
 
     .work_examples_item_company_logo {
@@ -1760,9 +1861,52 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 18px;
     }
 
+    header,
+    .menu {
+        padding: 8rem 14rem;
+
+    }
+
+    .menu_visible {
+        height: 60rem;
+    }
+
+    .header_background img {
+        width: 136rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
+    .menu__icon {
+        width: 3.2rem;
+        height: 3.5rem
+    }
+
+    .menu__icon span {
+        height: 3px;
+    }
+
     .header_logo img,
     .footer_logo {
-        width: 9.5rem;
+        width: 12.1rem;
+        height: 3.9rem;
     }
 
     .header_contacts_info span,
@@ -1784,6 +1928,11 @@ body.page6 #pagination li:nth-of-type(6) {
     .service_type_item_logo {
         width: 2.7rem;
         height: 2.7rem;
+    }
+
+    .circle_text_item p {
+        font-size: 1rem;
+        line-height: 1.8rem;
     }
 
     .apply_service_checkbox .apply_service_checkbox_wrap {
@@ -1818,6 +1967,15 @@ body.page6 #pagination li:nth-of-type(6) {
     .circle_text_item p {
         font-size: 1.1rem;
         line-height: 2.2rem;
+    }
+
+    .details_btn {
+        bottom: 3rem;
+    }
+
+    .work_section_down_btn {
+        left: 4rem;
+        right: 4rem;
     }
 
     .philosophy_logo span {
@@ -1928,15 +2086,58 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 19px;
     }
 
-    .header_decoration_first {
-        width: 5.8rem;
-        height: 5.8rem;
-        border-radius: 5.8rem;
+    header,
+    .menu {
+        padding: 8rem 14rem;
+
+    }
+
+    .menu_visible {
+        height: 70rem;
+    }
+
+    .header_background img {
+        width: 150rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
+    .menu__icon {
+        width: 3.5rem;
+        height: 3.8rem
+    }
+
+    .menu__icon span {
+        height: 3px;
     }
 
     .header_logo img,
     .footer_logo {
-        width: 10.5rem;
+        width: 12.1rem;
+        height: 3.9rem;
+    }
+
+    .header_decoration_first {
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 5.8rem;
     }
 
     .header_contacts_info span,
@@ -1996,6 +2197,15 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 3rem;
         height: 3rem;
         top: -4.8rem;
+    }
+    
+    .details_btn {
+        bottom: 4rem;
+    }
+
+    .work_section_down_btn {
+        left: 4rem;
+        right: 4rem;
     }
 
     .philosophy_logo span {
@@ -2167,6 +2377,54 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 20px;
     }
 
+    header,
+    .menu {
+        padding: 10rem 15rem;
+
+    }
+
+    .menu_visible {
+        height: 80rem;
+    }
+
+    .header_background img {
+        width: 174rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
+    .menu__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .menu__icon span {
+        height: 3px;
+    }
+
+    .header_logo img,
+    .footer_logo {
+        width: 12.1rem;
+        height: 3.9rem;
+    }
+
     .header_decoration_first {
         width: 6rem;
         height: 6rem;
@@ -2183,11 +2441,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .next_screen img {
         width: 1.3rem;
-    }
-
-    .header_logo img,
-    .footer_logo {
-        width: 9.5rem;
     }
 
     .header_contacts_info span,
@@ -2232,6 +2485,15 @@ body.page6 #pagination li:nth-of-type(6) {
     .philosophy_decoration_first,
     .our_work_decoration_first {
         left: -14rem;
+    }
+
+    .details_btn {
+        bottom: 4rem;
+    }
+
+    .work_section_down_btn {
+        left: 4rem;
+        right: 4rem;
     }
 
     .decoration_line_move {
@@ -2448,6 +2710,54 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 21px;
     }
 
+    header,
+    .menu {
+        padding: 10rem 15rem;
+
+    }
+
+    .menu_visible {
+        height: 80rem;
+    }
+
+    .header_background img {
+        width: 190rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
+    .menu__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .menu__icon span {
+        height: 3px;
+    }
+
+    .header_logo img,
+    .footer_logo {
+        width: 12.2rem;
+        height: 4rem;
+    }
+
     .btn {
         border-radius: 3rem;
     }
@@ -2458,11 +2768,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .next_screen img {
         width: 1.5rem;
-    }
-
-    .header_logo img,
-    .footer_logo {
-        width: 9.5rem;
     }
 
     .header_contacts_info span,
@@ -2549,6 +2854,15 @@ body.page6 #pagination li:nth-of-type(6) {
     .footer_rights_logo a {
         font-size: 1.3rem;
         line-height: 3.5rem;
+    }
+
+    .details_btn {
+        bottom: 4rem;
+    }
+
+    .work_section_down_btn {
+        left: 4rem;
+        right: 4rem;
     }
 
     .philosophy_logo span {
@@ -2728,15 +3042,6 @@ body.page6 #pagination li:nth-of-type(6) {
         left: -30.8rem;
     }
 
-    .header_logo img,
-    .footer_logo {
-        width: 14.5rem;
-    }
-
-    .footer_logo {
-        height: 5.6rem;
-    }
-
 }
 
 @media screen and (min-width: 2401px) and (max-width: 2560px) {
@@ -2744,9 +3049,52 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 22px;
     }
 
+    header,
+    .menu {
+        padding: 10rem 15rem;
+
+    }
+
+    .menu_visible {
+        height: 80rem;
+    }
+
+    .header_background img {
+        width: 190rem;
+    }
+
+    .menu_contacts {
+        width: 40%;
+    }
+
+    .menu_contacts span {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu_social_links img {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0;
+    }
+
+    .menu_logo img {
+        width: 150%;
+    }
+
+    .menu__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .menu__icon span {
+        height: 3px;
+    }
+
     .header_logo img,
     .footer_logo {
-        width: 9.5rem;
+        width: 12.2rem;
+        height: 4rem;
     }
 
     .header_contacts_info span,
@@ -2851,6 +3199,10 @@ body.page6 #pagination li:nth-of-type(6) {
     .footer_rights_logo a {
         font-size: 1.7rem;
         line-height: 3.7rem;
+    }
+
+    .details_btn {
+        bottom: 4rem;
     }
 
     .philosophy_logo span {
