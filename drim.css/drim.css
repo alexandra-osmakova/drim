@@ -18,7 +18,7 @@ body {
 header {
     position: relative;
     width: 100%;
-    padding: 3rem 8rem;
+    padding:  2rem 2.1rem 2rem 7.2rem;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -37,12 +37,13 @@ header {
 
 .header_background {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1.18rem;
+    right: -0.1rem;
 }
 
 .header_background img {
-    width: 95rem;
+    width: 88.8rem;
+    height: 49.9rem;
 }
 
 .menu {
@@ -168,22 +169,21 @@ header {
 
 .header_decoration_first {
     position: absolute;
-    top: -1rem;
-    left: -1.5rem;
-    width: 5.6rem;
-    height: 5.6rem;
-    ;
-    border-radius: 5.6rem;
-    background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
-    -moz-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
-    /* rgba used for opacity */
-    box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
+    top: -0.6rem;
+    left: -1.4rem;
+    width: 5rem;
+}
+
+.header_decoration_first img {
+    width: 100%;
 }
 
 .header_logo,
 .header_contacts {
     width: 50%;
+}
+.header_logo {
+    padding-top: 0.6rem;
 }
 
 .header_contacts_info {
@@ -191,8 +191,8 @@ header {
 }
 
 .header_logo img {
-    width: 8.1rem;
-    height: 2.6rem;
+    width: 7.6rem;
+    height: 2.5rem;
 }
 
 .header_contacts {
@@ -204,7 +204,7 @@ header {
 
 .header_contacts_info span {
     margin: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.87rem;
     line-height: 4rem;
     color: #ffffff;
     font-family: "Montserrat";
@@ -281,7 +281,7 @@ header {
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto 2rem;
-    padding: 1rem 0rem;
+    padding: 5rem 0rem;
 }
 
 .about ul {
@@ -289,17 +289,17 @@ header {
     width: 30%;
     list-style: none;
     padding: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3.3rem;
     margin-top: 0;
 }
 
 .about li {
-    margin: 0 0 1.7rem;
+    margin: 0 0 0.6rem;
 }
 
 .about a {
     text-decoration: unset;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     line-height: 3.75rem;
     color: #40a2d3;
     font-weight: bold;
@@ -338,7 +338,8 @@ header {
 }
 
 .about_title_item:hover .underline_title {
-    left: 4.2rem;
+    left: 3.68rem;
+    top: 2.6rem;
     color: rgba(227, 24, 125, 1);
 }
 
@@ -356,8 +357,8 @@ header {
 .btn {
     cursor: pointer;
     background-color: #40a1d3;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.8rem 0.75rem;
+    font-size: 0.93rem;
     color: white;
     border-radius: 2rem;
     text-align: center;
@@ -376,16 +377,19 @@ header {
 }
 
 .about_btn {
-    width: 22%;
+    margin-left: 0.18rem;
+    width: 12.4rem;
+
 }
 
 .arrow_btn {
-    width: 2.5rem;
+    width: 4.56rem;
+    height: 1.9rem;
 }
 
 
 .next_screen {
-    margin: 0.8rem auto 3.8rem;
+    margin: 6.1rem auto -3.3rem;
     box-sizing: border-box;
     text-align: center;
 }
@@ -418,7 +422,7 @@ header {
 
 
 .title_style {
-    font-size: 2rem;
+    font-size: 2.06rem;
     line-height: 4.4rem;
     color: #40a2d3;
     text-transform: uppercase;
@@ -430,7 +434,7 @@ header {
 .service_type,
 .philosophy_content {
     display: flex;
-    padding: 0 2rem;
+    padding: 0 1.875rem;
     box-sizing: border-box;
     margin: 2rem auto;
 }
@@ -441,21 +445,22 @@ header {
 
 .service_decoration_first {
     position: absolute;
-    top: 7rem;
-    left: 18.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    top: 5.2rem;
+    left: 20.68rem;
+    width: 2.37rem;
+    height: 2.37rem;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
-    border-radius: 2.5rem;
+    border-radius: 2.37rem;
 }
 
 .service_decoration_second {
     position: absolute;
-    top: 15rem;
-    right: -7rem;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 1rem;
+
+    top: 14.8rem;
+    right: -4.5rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
     filter: blur(3px);
     /* px used instead of rem */
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
@@ -463,8 +468,13 @@ header {
 
 .service_decoration_third {
     position: absolute;
-    top: 1.8rem;
+    top: 1.625rem;
     left: -8rem;
+}
+
+.decoration_line_move {
+    width: 128%;
+    height: 1rem;
 }
 
 .service_type_row {
@@ -477,10 +487,10 @@ header {
     width: 33%;
     position: relative;
     box-sizing: border-box;
-    padding: 4rem 2rem 2rem;
-    height: 28rem;
+    padding: 4rem 1.56rem 2rem;
+    height: 26.5rem;
     overflow: hidden;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0.125rem;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -545,8 +555,8 @@ header {
 }
 
 .service_type_item:hover {
-    margin: 0rem 0.5rem;
-    height: 32rem;
+    margin: 0rem 0.125rem;
+    height: 29.875rem;
     box-shadow: 0rem 0.7rem 1rem rgba(0, 43, 59, 0.32);
     /* rgba used instead of hex to change opacity */
 }
@@ -576,16 +586,19 @@ header {
 }
 
 .service_type_item:hover .service_type_item_logo {
-    width: 10rem;
-    height: 10rem;
-    top: -9rem;
-    left: -6rem;
+    width: 10.125rem;
+    height: 10.125rem;
+    top: -9.875rem;
+    left: -4.75rem;
     opacity: 0.1;
 }
 
 .service_type_item h3 {
-    font-size: 1.5rem;
+    font-size: 1.43rem;
     line-height: 2rem;
+    font-weight: 200;
+    margin-top: 4.25rem;
+    margin-bottom: 0.81rem;
     color: #ffffff;
 }
 
@@ -593,8 +606,8 @@ header {
     position: absolute;
     width: 2.5rem;
     height: 2.5rem;
-    top: -4rem;
-    left: 0rem;
+    top: -4.06rem;
+    left: 0.375rem;
 }
 
 .first_service_logo {
@@ -629,7 +642,7 @@ header {
 
 .service_type_item p,
 .service_type_item span {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     color: rgba(255, 255, 255, 0);
     /* rgba used instead of hex to change opacity on :hover */
     line-height: 1.5rem;
@@ -672,19 +685,14 @@ header {
     left: -8rem;
 }
 
-.philosophy_logo,
-.philosophy_text {
-    margin: 0 1rem 0 0;
-}
-
 .philosophy_logo {
     position: relative;
 }
 
 .philosophy_logo span {
+    font-size: 7.5rem;
     opacity: 0.8;
     text-transform: uppercase;
-    font-size: 8rem;
     font-weight: bold;
     background: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
     -webkit-background-clip: text;
@@ -693,28 +701,28 @@ header {
 
 .philosophy_logo div {
     position: absolute;
-    top: 8.5rem;
-    right: 7.9rem;
-    width: 2rem;
-    height: 2rem;
+    top: 7.875rem;
+    right: 7.68rem;
+    width: 1.25rem;
+    height: 1.25rem;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
-    border-radius: 2rem;
+    border-radius: 1.25rem;
     opacity: 0.8;
     filter: blur(3px);
     /* px used instead of rem */
 }
 
 .philosophy_text {
-    padding: 0 2rem;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
+    padding: 0.625rem 2rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     color: #333333;
     font-weight: bold;
 }
 
 .philosophy_btn {
     margin: 2.6rem 0 0;
-    width: 40%;
+    width: 30%;
 }
 
 .circle_block {
@@ -747,24 +755,23 @@ header {
 
 .circle_decoration_third {
     position: absolute;
-    top: 1.8rem;
-    left: 0rem;
+    top: 1.625rem;
+    left: -2.875rem;
 }
 
 .circle_block h2 {
     display: block;
     width: 80%;
-    margin: 0 auto;
-    padding-left: 1rem;
+    margin: -0.5rem auto 7rem;
 }
 
 .circle_content {
     position: relative;
     box-sizing: border-box;
-    width: 32rem;
-    height: 32.2rem;
-    margin: 2rem auto;
-    background-image: url(../img/circle.svg);
+    width: 29.375rem;
+    height: 29.375rem;
+    margin: 0rem auto;
+    background-image: url(../img/circle_section_background.png);
     background-size: cover;
     background-position: center;
 }
@@ -775,7 +782,7 @@ header {
 }
 
 .circle_content_item {
-    width: 20rem;
+    width: 25rem;
     position: absolute;
     display: flex;
     align-items: center;
@@ -785,9 +792,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 3.6rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 100%;
     background-color: #ffffff;
     border: 1px solid #e3177d;
     /* px used instead of rem */
@@ -801,6 +808,7 @@ header {
 .circle_step span {
     font-size: 1.8rem;
     line-height: 2.6rem;
+    font-weight: bold;
     color: #e3187d;
     text-align: center;
 
@@ -811,6 +819,10 @@ header {
 }
 
 .circle_content_item h3 {
+    font-size: 1.31rem;
+    line-height: 2.125rem;
+    color: #40a2d3;
+    font-weight: bold;
     margin: 0 2rem;
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -819,25 +831,31 @@ header {
 }
 
 .first_step {
-    top: -5.5rem;
-    left: 6.5rem;
+    top: -3.625rem;
+    left: 1.43rem;
     flex-direction: column;
     justify-content: center;
 }
 
-.first_step div {
-    margin-top: 2rem;
+.second_step {
+    top: 1.4rem;
+    right: -8.25rem;
+    flex-direction: column-reverse;
 }
 
-.second_step {
-    top: 5.2rem;
-    left: 26.5rem;
+.second_step h3 {
+    margin-left: 11rem;
+    margin-bottom: 0.3rem;
 }
 
 
 .third_step {
-    top: 17.3rem;
-    left: 29.8rem;
+    top: 16.56rem;
+    right: -22.18rem;
+}
+
+.third_step h3 {
+    margin-left: 0.81rem;;
 }
 
 .fouth_step {
@@ -862,17 +880,11 @@ header {
 
 }
 
-.circle_content_item h3 {
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-    color: #40a2d3;
-    font-weight: bold;
-}
 
 .circle_content_item:hover .circle_step {
     color: #ffffff;
     background-color: #40a1d3;
-    border: 1px solid rgba(18, 71, 97, 0.38);
+    border: 1px solid rgba(18, 71, 97, 0);
     /* px used instead of rem */
     box-shadow: 0 0.4rem 0.8rem rgba(18, 71, 97, 0.38);
     /* rgba used instead of hex to change opacity on :hover */
@@ -915,7 +927,7 @@ header {
 .philosophy,
 .services,
 .apply {
-    width: 80%;
+    width: 87.5%;
     margin: 0 auto 6rem;
 }
 
@@ -1123,13 +1135,6 @@ header {
     top: 3rem;
     left: -9.5rem;
     width: 5.6rem;
-    height: 5.6rem;
-    border-radius: 5.6rem;
-    background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
-    -moz-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
-    /* rgba used instead of hex to change opacity */
-    box-shadow: inset 1.25rem 1.25rem 1.25rem rgba(255, 255, 255, .4), inset -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, .4);
 }
 
 .apply_decoration_second {
@@ -1473,7 +1478,7 @@ footer {
 #pagination li {
     position: relative;
     margin: 0.3rem 0;
-    background-color: #ffffff;
+    background-color: #00b3f6;
     border-radius: 0.2rem;
     border: 1px solid #00b3f6;
     /* px used instead of rem */
@@ -1495,10 +1500,6 @@ footer {
     left: 0;
     top: 0;
     border-radius: 0.2rem;
-}
-
-.first_screen_pagination {
-    background: #ffffff;
 }
 
 .pagination_invisible {
@@ -1859,6 +1860,7 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 0.3rem;
         height: 0.3rem;
         border-radius: 0.3rem;
+        margin: 0.3rem 0;
     }
 }
 
@@ -2090,6 +2092,7 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 0.4rem;
+        margin: 0.4rem 0;
     }
 }
 
@@ -2148,8 +2151,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .header_decoration_first {
         width: 5.8rem;
-        height: 5.8rem;
-        border-radius: 5.8rem;
     }
 
     .header_contacts_info span,
@@ -2353,8 +2354,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .apply_decoration_first {
         width: 5.9rem;
-        height: 5.9rem;
-        border-radius: 5.9rem;
     }
 
     .apply_decoration_second {
@@ -2387,6 +2386,7 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 0.4rem;
+        margin: 0.4rem 0;
     }
 }
 
@@ -2445,8 +2445,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .header_decoration_first {
         width: 6rem;
-        height: 6rem;
-        border-radius: 6rem;
     }
 
     .btn {
@@ -2667,8 +2665,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .apply_decoration_first {
         width: 6rem;
-        height: 6rem;
-        border-radius: 6rem;
     }
 
     .apply_decoration_second {
@@ -2727,6 +2723,7 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 0.4rem;
+        margin: 0.4rem 0;
     }
 }
 
@@ -3005,8 +3002,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .apply_decoration_first {
         width: 6.6rem;
-        height: 6.6rem;
-        border-radius: 6.6rem;
     }
 
     .apply_decoration_second {
@@ -3072,6 +3067,7 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 0.5rem;
+        margin: 0.5rem 0;
     }
 
 }
@@ -3142,8 +3138,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .header_decoration_first {
         width: 7.6rem;
-        height: 7.6rem;
-        border-radius: 7.6rem;
     }
 
     .btn {
@@ -3370,8 +3364,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .apply_decoration_first {
         width: 7.6rem;
-        height: 7.6rem;
-        border-radius: 7.6rem;
     }
 
     .apply_decoration_second {
@@ -3440,5 +3432,7 @@ body.page6 #pagination li:nth-of-type(6) {
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 0.5rem;
+        margin: 0.5rem 0;
     }
+
 }

@@ -86,11 +86,11 @@ for (var i = 0; i < linkNav.length; i++) {
     }, false);
 }
 
-/*window.addEventListener("scroll", overflow);
+window.addEventListener("scroll", overflow);
 
 function overflow() {
     document.documentElement.classList.add('no_scroll'); 
-} */
+} 
 
 var menu__icon = document.getElementsByClassName('menu__icon')[0];
 var menu = document.getElementsByClassName('menu')[0];
