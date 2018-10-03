@@ -55,7 +55,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 3rem 8rem;
+    padding: 2.5rem 7.125rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -377,14 +377,36 @@ header {
 }
 
 .about_btn {
+    position: relative;
     margin-left: 0.18rem;
     width: 12.4rem;
 
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.btn:hover .arrow_btn {
+    margin-left: 7rem;
+}
+
+.about_btn span {
+    position: absolute;
+    top: 17px;
+    left: 22px;
 }
 
 .arrow_btn {
-    width: 4.56rem;
-    height: 1.9rem;
+    margin-left: 4rem;
+    width: 2.25rem;
+    height: 1.75rem;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 
@@ -721,8 +743,15 @@ header {
 }
 
 .philosophy_btn {
+    position: relative;
     margin: 2.6rem 0 0;
     width: 30%;
+}
+
+.philosophy_btn span {
+    position: absolute;
+    top: 0.9rem;
+    left: 1rem;
 }
 
 .circle_block {
@@ -732,24 +761,23 @@ header {
 
 .circle_decoration_first {
     position: absolute;
-    top: 1rem;
-    right: 5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 2.5rem;
+    top: 8.5rem;
+    right: 5.68rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
     background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
-    filter: blur(3px);
+    filter: blur(5px);
     /* px used instead of rem  */
 }
 
 .circle_decoration_second {
     position: absolute;
-    top: 19rem;
-    left: 8rem;
-    width: 1.6rem;
-    height: 1.6rem;
-    ;
-    border-radius: 1.6rem;
+    top: 21rem;
+    left: 8.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
 }
 
@@ -761,7 +789,7 @@ header {
 
 .circle_block h2 {
     display: block;
-    width: 80%;
+    width: 82%;
     margin: -0.5rem auto 7rem;
 }
 
@@ -778,7 +806,14 @@ header {
 
 .circle_content_btn {
     width: 16%;
-    margin: 6rem auto;
+    margin: 4.75rem auto;
+    position: relative;
+}
+
+.circle_content_btn span {
+    position: absolute;
+    top: 1.125rem;
+    left: 1.625rem;
 }
 
 .circle_content_item {
@@ -832,7 +867,7 @@ header {
 
 .first_step {
     top: -3.625rem;
-    left: 1.43rem;
+    left: 1.875rem;
     flex-direction: column;
     justify-content: center;
 }
@@ -859,25 +894,43 @@ header {
 }
 
 .fouth_step {
-    width: 23rem;
-    top: 28rem;
-    left: 21.6rem;
+    width: 28rem;
+    top: 26.375rem;
+    left: 6.31rem;
+    flex-direction: column;
+}
+
+.fouth_step h3 {
+    margin-left: 11.56rem;
 }
 
 .fifth_step {
-    top: 28rem;
+    top: 26.3rem;
     left: -5rem;
+    flex-direction: column-reverse;
+}
+
+.fifth_step h3 {
+    margin-right: 5rem;
 }
 
 .sixth_step {
-    top: 17.3rem;
-    left: -9rem;
+    top: 16.44rem;
+    left: -8.125rem;
+}
+
+.sixth_step h3 {
+    margin-right: 1rem;
 }
 
 .seventh_step {
-    top: 4.5rem;
-    left: -13.2rem;
+    top: 1.8rem;
+    left: -9.87rem;
+    flex-direction: column;
+}
 
+.seventh_step h3 {
+    margin-right: 8.43rem;
 }
 
 
@@ -902,7 +955,7 @@ header {
     padding: 3rem;
     height: 22rem;
     position: absolute;
-    top: 8rem;
+    top: 6.625rem;
     left: 0;
     opacity: 0;
 
@@ -913,8 +966,8 @@ header {
 }
 
 .circle_text_item p {
-    font-size: 0.8rem;
-    line-height: 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     color: #333333;
     text-align: center;
 }
@@ -925,18 +978,23 @@ header {
 
 .our_works,
 .philosophy,
-.services,
-.apply {
+.services {
     width: 87.5%;
+    margin: 0 auto 6rem;
+}
+
+.apply {
+    width: 81.7%;
     margin: 0 auto 6rem;
 }
 
 .our_works {
     position: relative;
+    padding-top: 1rem;
 }
 
 .work_examples {
-    margin: 2rem auto;
+    margin: 2.3rem auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -945,14 +1003,14 @@ header {
 
 .our_work_decoration_first {
     position: absolute;
-    top: 1.8rem;
+    top: 2.75rem;
     left: -8rem;
 }
 
 .work_examples_item {
     width: 45%;
     box-sizing: border-box;
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     margin: 1rem;
     position: relative;
 
@@ -986,11 +1044,12 @@ header {
 }
 
 .work_examples_item p {
+    width: 60%;
     margin: 2rem 0;
     color: rgba(255, 255, 255, 0);
     /* rgba used instead of hex to change opacity */
-    font-size: 0.8rem;
-    line-height: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     position: relative;
 
     -o-transition: all 0.5s ease;
@@ -1001,8 +1060,8 @@ header {
 
 .work_item_btn {
     opacity: 0;
-    font-size: 0.8rem;
-    line-height: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
@@ -1086,6 +1145,7 @@ header {
     left: 2.5rem;
     top: 2.5rem;
     position: absolute;
+    color: #ffffff;
 }
 
 .work_example_third {
@@ -1115,34 +1175,48 @@ header {
 }
 
 .work_examples_btn {
-    width: 25%;
-    margin: 2rem auto 0;
+    width: 21%;
+    margin: 3.75rem auto 0;
+    position: relative;
+}
+
+.work_examples_btn span {
+    position: absolute;
+    top: 1.125rem;
+    left: 1.25rem;
+}
+
+.work_examples_btn .arrow_btn {
+    margin-left: 8rem;
+}
+
+.work_examples_btn:hover .arrow_btn {
+    margin-left: 11rem;
 }
 
 .apply {
     background-color: #ffffff;
     position: relative;
     z-index: 2;
-    padding: 6rem;
+    padding: 3.75rem 6rem 10rem;
     box-sizing: border-box;
-    margin: 8rem auto 0;
-    border: 3px solid #45A4D1;
+    margin: 7.375rem auto 0;
+    border: 7px solid #45A4D1;
     /* px used instead of rem */
 }
 
 .apply_decoration_first {
     position: absolute;
     top: 3rem;
-    left: -9.5rem;
-    width: 5.6rem;
+    left: -8.93rem;
 }
 
 .apply_decoration_second {
     position: absolute;
-    bottom: 2rem;
-    right: 22rem;
-    width: 2rem;
-    height: 2rem;
+    bottom: 2.8rem;
+    right: 16.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     filter: blur(3px);
     /* px used instead of rem */
     border-radius: 100%;
@@ -1156,14 +1230,16 @@ header {
 
 
 .apply p {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     color: #333333;
+    margin-top: -0.3rem;
 }
 
 .apply_content,
 form {
     width: 100%;
     margin: 0 auto;
+    padding: 0.3rem 1.5rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1174,10 +1250,20 @@ form {
     margin: 0 auto;
 }
 
+.apply_contacts {
+    padding-left: 2.8rem;
+    box-sizing: border-box;
+}
+
 
 .apply_project_info h3,
 .apply_contacts h3 {
     color: #45A4D1;
+}
+
+
+.apply_service {
+    margin-bottom: 3.25rem;
 }
 
 .apply_service h4,
@@ -1188,6 +1274,14 @@ form {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5rem;
+}
+
+.apply_contacts h4 {
+    font-size: 0.875rem;
+}
+
+.apply_service h4 {
+    margin: 0.625rem 0;
 }
 
 .apply_contacts h4 {
@@ -1206,13 +1300,14 @@ form {
     user-select: none;
     width: 100%;
     padding-bottom: 0.5rem;
+    margin-bottom: 0.875rem;
 }
 
 .apply_service_checkbox span {
     font-size: 0.8rem;
     color: #333333;
     text-align: center;
-    margin-left: 1.5rem;
+    margin-left: 0.625rem;
 }
 
 .apply_service_checkbox_wrap {
@@ -1282,6 +1377,10 @@ form {
     color: #e3177d;
 }
 
+.apply_task {
+    margin-top: -2.5rem;
+}
+
 .apply_task input,
 .apply_contacts input {
     width: 80%;
@@ -1292,6 +1391,7 @@ form {
     line-height: 1rem;
     display: block;
     margin-top: 1rem;
+    margin-right: -5rem;
 }
 
 .agreement a {
@@ -1299,16 +1399,33 @@ form {
 }
 
 .apply_btn {
-    width: 35%;
-    margin: 4.5rem 0 0;
+    outline: none;
+    width: 25%;
+    position: absolute;
+    bottom: 4.875rem;
+    left: 8.75rem;
+}
+
+.apply_btn span {
+    position: absolute;
+    top: 1.06rem;
+    left: 1.3rem
+}
+
+.apply_btn .arrow_btn {
+    margin-left: 7rem;
+}
+
+.apply_btn:hover .arrow_btn {
+    margin-left: 10rem;
 }
 
 .apply textarea,
 .apply_service_text {
     resize: none;
+    outline: none;
     width: 80%;
     height: 1rem;
-    padding: 1rem 0;
     margin-bottom: 2.8rem;
     border-top: unset;
     border-left: unset;
@@ -1317,10 +1434,15 @@ form {
     /* px used instead of rem */
 }
 
+.apply_service_text {
+    margin-bottom: 1.56rem;
+}
+
 
 .file-input-wrapper {
     width: 100%;
     height: 2rem;
+    margin-top: -2.7rem;
     overflow: hidden;
     position: relative;
 }
@@ -1347,8 +1469,17 @@ form {
     width: auto;
     margin-left: 1rem;
     font-size: 0.8rem;
-    color: #333333;
     text-align: center;
+    border-bottom: 1px solid rgba(51, 51, 51, 0);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.file-input-wrapper:hover .btn-file-input span {
+    border-bottom: 1px solid rgba(51, 51, 51, 1);
 }
 
 .load_logo {
@@ -1359,12 +1490,19 @@ form {
     background-position: center;
 }
 
+.apply_contacts_input {
+    font-size: 0.93rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+
 footer {
     position: relative;
     margin: 0 auto;
     width: 80%;
     height: 20rem;
-    padding: 8rem 1rem 0;
+    padding: 8.125rem 1rem 0;
     display: flex;
     box-sizing: border-box;
 }
@@ -1391,20 +1529,47 @@ footer {
 .footer_line {
     display: block;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.8125rem;
     line-height: 2rem;
     color: #333333;
+    border-bottom: 1px solid rgba(227, 24, 125, 0);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.styled_footer_line {
+    width: 56%;
+}
+
+.styled_footer_line:hover {
+    color: #e3187d;
+    border-bottom: 1px solid rgba(227, 24, 125, 1);
 }
 
 
 .footer_work_types span {
+    display: block;
+    width: 87%;
     color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.footer_work_types span:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
 .footer_contacts_item span,
 .footer_rights_logo span,
 .footer_rights_logo a {
     line-height: 1.5rem;
+    width: 120%;
 }
 
 .footer_contacts_item_tytle,
@@ -1412,14 +1577,7 @@ footer {
     font-weight: bold;
 }
 
-.styled_footer_item {
-    text-decoration: underline;
-    color: #e3187d;
-    display: block;
-    width: 100%;
-    font-size: 0.8rem;
-    line-height: 2rem;
-}
+
 
 .social_link_item {
     width: 1rem;
@@ -1434,10 +1592,51 @@ footer {
     background-position: center;
 }
 
+.socils_link_hover_first {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    background-image: url(../img/Icons/vk-social-network-logo_hover.svg);
+    background-size: cover;
+    background-position: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .social_link_second {
     background-image: url(../img/Icons/instagram-social-network-logo-of-photo-camera.svg);
     background-size: cover;
     background-position: center;
+}
+
+.socil_link_hover_second {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    background-image: url(../img/Icons/instagram-social-network-logo-of-photo-camera_hover.svg);
+    background-size: cover;
+    background-position: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.social_el{
+    position: relative;
+    cursor: pointer;
+}
+
+.social_el:hover .footer_hover_el {
+    opacity: 1;
 }
 
 .footer_rights_logo {
@@ -1463,7 +1662,8 @@ footer {
     position: absolute;
     top: -13rem;
     left: -16rem;
-    bottom: 0
+    bottom: 0;
+    clip: rect(auto, auto, 490px, auto);
 }
 
 #pagination {
@@ -1471,7 +1671,7 @@ footer {
     top: 22rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 6.3rem;
+    right: 6rem;
     list-style: none;
 }
 
@@ -1506,8 +1706,17 @@ footer {
     opacity: 0;
 }
 
+.header_pagination {
+    background-color: #ffffff!important;
+    border: 1px solid #ffffff!important;
+}
 
-body.page1 #pagination li:nth-of-type(1),
+.header_pagination_main_item {
+    transform: scale(2);
+    background-color: unset!important;
+    border: 1px solid #ffffff!important;
+}
+
 body.page2 #pagination li:nth-of-type(2),
 body.page3 #pagination li:nth-of-type(3),
 body.page4 #pagination li:nth-of-type(4),

@@ -13,8 +13,7 @@ function go_visible(e) {
         for (var i = 0; i < text.length; i++) {
             if (text[i].dataset.number == target) {
                 text[i].classList.add('circle_text_visible');
-            }
-            else {
+            } else {
                 text[i].classList.remove('circle_text_visible');
             }
         }
@@ -32,7 +31,7 @@ function pagination() {
     switch (true) {
         case (offset > (windowHeight * 7.75)):
             pagination.classList.add('pagination_invisible');
-        break;
+            break;
         case (offset > (windowHeight * 5.75)):
             pagination.classList = '';
             body.classList = 'page6';
@@ -50,11 +49,20 @@ function pagination() {
             body.classList = 'page3';
             break;
         case (offset > (windowHeight * .75)):
-            pagination.classList = '';
+            pagination.firstElementChild.classList.remove('header_pagination_main_item')
+            var a = pagination.children;
+            for (var i = 1; i < a.length; i++) {
+                a[i].classList.remove('header_pagination');
+            }
+            paginationclassList = '';
             body.classList = 'page2';
             break;
-        default:
-            body.classList = 'page1';
+        case (offset == (windowHeight * 0)):
+            var a = pagination.children;
+            pagination.firstElementChild.classList.add('header_pagination_main_item');
+            for (var i = 1; i < a.length; i++) {
+                a[i].classList.add('header_pagination');
+            }
     }
 }
 
@@ -62,25 +70,26 @@ pagination();
 
 window.addEventListener("scroll", pagination);
 
-var linkNav = document.querySelectorAll('[href^="#"]'), 
-    V =  0.2; 
+var linkNav = document.querySelectorAll('[href^="#"]'),
+    V = 0.2;
 for (var i = 0; i < linkNav.length; i++) {
-    linkNav[i].addEventListener('click', function(e) { 
-        e.preventDefault(); 
-        var w = window.pageYOffset,  
-            hash = this.href.replace(/[^#]*(.*)/, '$1'); 
-        t = document.querySelector(hash).getBoundingClientRect().top, 
+    linkNav[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        var w = window.pageYOffset,
+            hash = this.href.replace(/[^#]*(.*)/, '$1');
+        t = document.querySelector(hash).getBoundingClientRect().top,
             start = null;
-        requestAnimationFrame(step); 
+        requestAnimationFrame(step);
+
         function step(time) {
             if (start === null) start = time;
             var progress = time - start,
-                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-            window.scrollTo(0,r);
+                r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+            window.scrollTo(0, r);
             if (r != w + t) {
                 requestAnimationFrame(step)
             } else {
-                location.hash = hash 
+                location.hash = hash
             }
         }
     }, false);
@@ -89,8 +98,8 @@ for (var i = 0; i < linkNav.length; i++) {
 window.addEventListener("scroll", overflow);
 
 function overflow() {
-    document.documentElement.classList.add('no_scroll'); 
-} 
+    document.documentElement.classList.add('no_scroll');
+}
 
 var menu__icon = document.getElementsByClassName('menu__icon')[0];
 var menu = document.getElementsByClassName('menu')[0];
