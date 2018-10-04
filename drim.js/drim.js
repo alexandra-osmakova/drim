@@ -49,16 +49,17 @@ function pagination() {
             body.classList = 'page3';
             break;
         case (offset > (windowHeight * .75)):
-            pagination.firstElementChild.classList.remove('header_pagination_main_item')
+            pagination.firstElementChild.classList.remove('header_pagination_main_item');
             var a = pagination.children;
-            for (var i = 1; i < a.length; i++) {
+            for (var i = 0; i < a.length; i++) {
                 a[i].classList.remove('header_pagination');
             }
-            paginationclassList = '';
+            pagination.classList = '';
             body.classList = 'page2';
             break;
-        case (offset == (windowHeight * 0)):
+        case (offset < (windowHeight * 0.75)):
             var a = pagination.children;
+            a[1].classList.remove('page2');
             pagination.firstElementChild.classList.add('header_pagination_main_item');
             for (var i = 1; i < a.length; i++) {
                 a[i].classList.add('header_pagination');
