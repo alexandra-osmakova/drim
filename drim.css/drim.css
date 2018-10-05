@@ -1661,7 +1661,7 @@ footer {
 .footer_background img {
     position: absolute;
     top: -27rem;
-    left: -7rem;
+    left: -8rem;
 }
 
 #pagination {
@@ -1727,6 +1727,111 @@ body.page6 #pagination li:nth-of-type(6) {
     border: 1px solid #e3187d;
     opacity: 1;
     /* px used instead of rem */
+}
+
+@media screen and (min-width: 768px) and (max-width: 840px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    .decoration_line_move {
+        width: 110%;
+        height: 0.8rem;
+    }
+
+    .circle_decoration_third {
+        left: -4rem;
+    }
+
+    .work_section_down_btn {
+        right: 1rem;
+    }
+
+    .philosophy_btn {
+        width: 25%;
+    }
+
+    .work_examples_btn {
+        width: 26%;
+    }
+
+    .apply_decoration_first {
+        left: -8rem;
+    }
+
+    .apply_decoration_first img{
+        width: 72%;
+    }
+
+    .footer_background img {
+        width: 160%;
+        left: -11rem;
+    }
+
+    .footer_FAQ {
+        padding-left: 2rem;
+    }
+
+    .apply_btn {
+        width: 32%;
+    }
+
+    .service_type_item {
+        padding: 2rem 1.56rem 2rem;
+    }
+
+    .philosophy_content {
+        flex-direction: column;
+    }
+
+    .philosophy_text {
+        padding: 0.625rem;
+    }
+
+    .apply_project_info, .apply_contacts {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .apply_contacts {
+        padding-left: 0;
+    }
+
+    .footer_contacts {
+        position: absolute;
+        top: 10rem;
+        left: 54%;
+    }
+}
+
+@media screen and (min-width: 841px) and (max-width: 1000px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .decoration_line_move {
+        height: 0.8rem;
+    }
+
+    .circle_decoration_third {
+        left: -3.875rem;
+    }
+
+    .footer_FAQ {
+        padding-left: 3rem;
+    }
+
+    .philosophy_btn {
+        width: 35%;
+    }
+
+    .work_examples_btn {
+        width: 23%;
+    }
+
+    .apply_btn {
+        width: 27%;
+    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1440px) {
