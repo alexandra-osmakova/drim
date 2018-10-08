@@ -679,7 +679,6 @@ header {
     position: absolute;
     bottom: 2rem;
     opacity: 0;
-    ;
     margin: 4rem 0 0;
     display: flex;
     justify-content: flex-start;
@@ -745,7 +744,7 @@ header {
 .philosophy_btn {
     position: relative;
     margin: 2.6rem 0 0;
-    width: 30%;
+    width: 13.875rem;
 }
 
 .philosophy_btn span {
@@ -805,7 +804,7 @@ header {
 }
 
 .circle_content_btn {
-    width: 16%;
+    width: 14.25rem;
     margin: 4.75rem auto;
     position: relative;
 }
@@ -1175,7 +1174,7 @@ header {
 }
 
 .work_examples_btn {
-    width: 21%;
+    width: 16.25rem;
     margin: 3.75rem auto 0;
     position: relative;
 }
@@ -1400,7 +1399,7 @@ form {
 
 .apply_btn {
     outline: none;
-    width: 25%;
+    width: 16rem;
     position: absolute;
     bottom: 4.875rem;
     left: 8.75rem;
@@ -1557,7 +1556,7 @@ footer {
 .footer_work_types span {
     display: block;
     width: 91%;
-    color: #ffffff;
+    color: ;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
 
     -o-transition: all 0.5s ease;
@@ -1659,6 +1658,7 @@ footer {
 
 
 .footer_background img {
+    width: auto;
     position: absolute;
     top: -27rem;
     left: -8rem;
@@ -1729,6 +1729,554 @@ body.page6 #pagination li:nth-of-type(6) {
     /* px used instead of rem */
 }
 
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, #pagination {
+        display: none;
+    }
+
+    .header_background img {
+        width: 52.8rem;
+    }
+
+    .header_background {
+        top: -10.18rem;
+    }
+
+    .title_style {
+        text-align: center;
+        margin: 0;
+        line-height: 3rem;
+    }
+
+    .service_type {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .service_type_row {
+        flex-direction: column;
+    }
+
+    .service_type_item {
+        width: 86%;
+        margin: 2rem auto;
+    }
+
+    .service_type_item:hover {
+        margin: 0rem auto;
+    }
+
+    .philosophy_content {
+        flex-direction: column;
+    }
+
+    .philosophy_text {
+        padding: 0.625rem;
+    }
+
+    .philosophy h2 {
+        display: block;
+        width: 50%;
+        margin: 2rem auto;
+    }
+
+    .work_examples_item {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .work_example_second {
+        background-position: top;
+    }
+
+    .apply_project_info, .apply_contacts {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .apply_contacts {
+        padding-left: 0;
+    }
+
+    .apply p {
+        margin-top: 0.7rem;
+    }
+
+    .apply_decoration_first {
+        left: -5.93rem;
+    }
+
+    .apply_decoration_first img {
+        width: 50%;
+    }
+
+    .apply {
+        padding: 2rem 2rem 10rem;
+        width: 90%;
+        border: 3px solid #45A4D1;
+    }
+
+    .apply_btn {
+        left: 6rem;
+    }
+
+    .agreement {
+        margin-right: unset;
+    }
+
+    .apply_decoration_second {
+        right: 2.4rem;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+     }
+     .footer_work_types, .footer_contacts, .footer_social_links, .footer_FAQ {
+         width: 50%;
+     }
+ 
+     .footer_rights_logo {
+         margin: 4rem auto 2rem;
+         width: 100%;
+         flex-direction: unset;
+     }
+ 
+     .footer_rights_logo .footer_line {
+         width: 100%;
+     }
+ 
+     .footer_FAQ {
+         padding: 0;
+     }
+
+     .full_menu, .menu_contacts {
+        width: 100%;
+     }
+
+     .full_menu a {
+        font-size: 2.8rem;
+     }
+
+
+     .circle_content {
+        width: 23.375rem;
+        height: 23.375rem;
+     }
+
+     .first_step {
+        left: -0.5rem;
+     }
+
+     .second_step {
+        top: -0.6rem;
+        right: -9.25rem;
+     }
+
+     .second_step h3 {
+        margin-left: 5.3rem;
+        margin-bottom: 1.5rem;
+     }
+
+     .third_step {
+        top: 8.56rem;
+        right: -12.3rem;
+        flex-direction: column-reverse;
+     }
+
+     .third_step h3 {
+        margin-left: 5.7rem;
+     }
+
+     .fouth_step {
+        top: 18.375rem;
+        left: 7.31rem;
+        width: 25rem;    
+     }
+
+     .fifth_step {
+        top: 18.3rem;
+        left: -9rem;
+     }
+
+     .sixth_step {
+        top: 7.9rem;
+        left: -12.3rem;
+        flex-direction: column;
+     }
+
+     .sixth_step h3 {
+        margin-right: 7rem;
+     }
+
+     .seventh_step {
+        top: 0.8rem;
+        left: -9.87rem;
+     }
+
+     .seventh_step h3 {
+        margin-right: 3.43rem;
+     }
+
+     .circle_text_item {
+        top: 2.625rem;
+     }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    .header_background img {
+        width: 52.8rem;
+    }
+
+    .header_background {
+        top: -10.18rem;
+    }
+
+    .title_style {
+        text-align: center;
+        margin: 0;
+        line-height: 3rem;
+    }
+
+    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, #pagination{
+        display: none;
+    }
+
+    .service_type {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .service_type_row {
+        flex-direction: column;
+    }
+
+    .service_type_item {
+        width: 86%;
+        margin: 2rem auto;
+    }
+
+    .service_type_item:hover {
+        margin: 0rem auto;
+    }
+
+    .philosophy_content {
+        flex-direction: column;
+    }
+
+    .philosophy_text {
+        padding: 0.625rem;
+    }
+
+
+    .work_examples_item {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .work_example_second {
+        background-position: top;
+    }
+
+    .apply_project_info, .apply_contacts {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .apply_contacts {
+        padding-left: 0;
+    }
+
+    .apply p {
+        margin-top: 0.7rem;
+    }
+
+    .apply_decoration_first {
+        left: -5.93rem;
+    }
+
+    .apply_decoration_first img {
+        width: 50%;
+    }
+
+    .apply {
+        padding: 3.75rem 3rem 10rem;
+    }
+
+    .apply_btn {
+        left: 6rem;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+     }
+     .footer_work_types, .footer_contacts, .footer_social_links, .footer_FAQ {
+         width: 50%;
+     }
+ 
+     .footer_rights_logo {
+         margin: 4rem auto 2rem;
+         width: 100%;
+         flex-direction: unset;
+     }
+ 
+     .footer_rights_logo .footer_line {
+         width: 100%;
+     }
+ 
+     .footer_FAQ {
+         padding: 0;
+     }
+
+     .full_menu, .menu_contacts {
+        width: 100%;
+     }
+
+     .circle_content {
+        width: 23.375rem;
+        height: 23.375rem;
+     }
+
+     .first_step {
+        left: -0.5rem;
+     }
+
+     .second_step {
+        top: 0.4rem;
+        right: -9.25rem;
+     }
+
+     .third_step {
+        top: 10.56rem;
+        right: -23.18rem;
+     }
+
+     .fouth_step {
+        top: 19.375rem;
+        left: 4.31rem;
+     }
+
+     .fifth_step {
+        top: 19.3rem;
+        left: -8rem;
+     }
+
+     .sixth_step {
+        top: 9.9rem;
+        left: -8.125rem;
+     }
+
+     .seventh_step {
+        top: 0.8rem;
+        left: -9.87rem;
+     }
+
+     .circle_text_item {
+        top: 2.625rem;
+     }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    .header_background img {
+        width: 60.8rem;
+    }
+
+    .header_background {
+        top: -8.18rem;
+    }
+
+    .title_style {
+        text-align: center;
+        margin: 0;
+        line-height: 3rem;
+    }
+
+    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, #pagination {
+        display: none;
+    }
+
+    .service_type {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .service_type_row {
+        flex-direction: column;
+    }
+
+    .service_type_item {
+        width: 95%;
+    }
+
+    .philosophy_content {
+        flex-direction: column;
+    }
+
+    .philosophy_text {
+        padding: 0.625rem;
+    }
+
+    .work_examples_item {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .work_example_second {
+        background-position: top;
+    }
+
+    .apply_project_info, .apply_contacts {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .apply_contacts {
+        padding-left: 0;
+    }
+
+    .apply p {
+        margin-top: 0.7rem;
+    }
+
+    .apply_decoration_first {
+        left: -5.93rem;
+    }
+
+    .apply_decoration_first img {
+        width: 50%;
+    }
+
+    .apply_decoration_second {
+        right: 5.4rem;
+    }
+
+    .apply {
+        padding: 3.75rem 3rem 10rem;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+     }
+     .footer_work_types, .footer_contacts, .footer_social_links, .footer_FAQ {
+         width: 50%;
+     }
+ 
+     .footer_rights_logo {
+         margin: 4rem auto 2rem;
+         width: 100%;
+         flex-direction: unset;
+     }
+ 
+     .footer_rights_logo .footer_line {
+         width: 100%;
+     }
+ 
+     .footer_FAQ {
+         padding: 0;
+     }
+
+     .full_menu, .menu_contacts {
+        width: 100%;
+     }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    html, body {
+        font-size: 11px;
+    }
+
+    .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first, #pagination {
+        left: -10rem;
+    }
+
+    .circle_decoration_third {
+        left: -5.875rem;
+    }
+
+    .philosophy_content {
+        flex-direction: column;
+    }
+
+    .philosophy_text {
+        padding: 0.625rem;
+    }
+
+
+    .apply_project_info, .apply_contacts {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .apply_contacts {
+        padding-left: 0;
+    }
+
+    .work_section_down_btn {
+        right: 1rem;
+    }
+
+    .work_examples_item {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .work_example_second {
+        background-position: top;
+    }
+
+    .service_type {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .service_type_row {
+        flex-direction: column;
+    }
+
+    .service_type_item {
+        width: 95%;
+    }
+
+    .footer_content {
+       flex-wrap: wrap;
+    }
+    .footer_work_types, .footer_contacts, .footer_social_links, .footer_FAQ {
+        width: 50%;
+    }
+
+    .footer_rights_logo {
+        margin: 4rem auto 2rem;
+        width: 100%;
+        flex-direction: unset;
+    }
+
+    .footer_rights_logo .footer_line {
+        width: 100%;
+    }
+
+    .footer_FAQ {
+        padding: 0;
+    }
+
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 840px) {
     html, body {
         font-size: 12px;
@@ -1745,14 +2293,6 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .work_section_down_btn {
         right: 1rem;
-    }
-
-    .philosophy_btn {
-        width: 25%;
-    }
-
-    .work_examples_btn {
-        width: 26%;
     }
 
     .apply_decoration_first {
@@ -1772,9 +2312,6 @@ body.page6 #pagination li:nth-of-type(6) {
         padding-left: 2rem;
     }
 
-    .apply_btn {
-        width: 32%;
-    }
 
     .service_type_item {
         padding: 2rem 1.56rem 2rem;
@@ -1802,6 +2339,49 @@ body.page6 #pagination li:nth-of-type(6) {
         top: 10rem;
         left: 54%;
     }
+
+    .work_examples_item {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .work_example_second {
+        background-position: top;
+    }
+
+    .service_type {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .service_type_row {
+        flex-direction: column;
+    }
+
+    .service_type_item {
+        width: 95%;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+     }
+     .footer_work_types, .footer_contacts, .footer_social_links, .footer_FAQ {
+         width: 60%;
+     }
+ 
+     .footer_rights_logo {
+         margin: 4rem auto 2rem;
+         width: 100%;
+         flex-direction: unset;
+     }
+ 
+     .footer_rights_logo .footer_line {
+         width: 100%;
+     }
+ 
+     .footer_FAQ {
+         padding: 0;
+     }
 }
 
 @media screen and (min-width: 841px) and (max-width: 1000px) {
@@ -1821,17 +2401,6 @@ body.page6 #pagination li:nth-of-type(6) {
         padding-left: 3rem;
     }
 
-    .philosophy_btn {
-        width: 35%;
-    }
-
-    .work_examples_btn {
-        width: 23%;
-    }
-
-    .apply_btn {
-        width: 27%;
-    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1440px) {
