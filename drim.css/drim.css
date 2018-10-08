@@ -1747,7 +1747,8 @@ body.page6 #pagination li:nth-of-type(6) {
         padding: 2rem;
     }
 
-    .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, #pagination, .footer_background  {
+    .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, #pagination, .footer_background, .circle_content_text 
+     {
         display: none;
     }
 
@@ -1878,68 +1879,70 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 2.8rem;
      }
 
-
      .circle_content {
-        width: 23.375rem;
-        height: 23.375rem;
+         background-image: unset;
+     }
+
+     .circle_content_item {
+         width: 30rem;
+     }
+
+     .circle_content::after {
+            content:"";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 20%;
+            border-left: 2px dotted #e3177d;
      }
 
      .first_step {
-        left: -0.5rem;
-     }
-
-     .second_step {
-        top: -0.6rem;
-        right: -9.25rem;
-     }
-
-     .second_step h3 {
-        margin-left: 5.3rem;
-        margin-bottom: 1.5rem;
-     }
-
-     .third_step {
-        top: 8.56rem;
-        right: -12.3rem;
-        flex-direction: column-reverse;
-     }
-
-     .third_step h3 {
-        margin-left: 5.7rem;
-     }
-
-     .fouth_step {
-        top: 18.375rem;
-        left: 7.31rem;
-        width: 25rem;    
-     }
-
-     .fifth_step {
-        top: 18.3rem;
         left: -9rem;
      }
 
-     .sixth_step {
-        top: 7.9rem;
-        left: -12.3rem;
-        flex-direction: column;
+     .second_step {
+         flex-direction: unset;
+         top: 3.1rem;
+         right: -5rem;
      }
 
-     .sixth_step h3 {
-        margin-right: 7rem;
+     .second_step h3 {
+         margin-left: 1rem;
+     }
+
+     .third_step {
+        top: 7.7rem;
+        right: -5rem;
+     }
+
+     .third_step h3, .fouth_step h3, .fifth_step h3, .sixth_step h3, .seventh_step h3 {
+         margin-left: 1rem;
+     }
+
+     .fouth_step {
+         width: 19rem;
+         flex-direction: unset;
+         top: 12rem;
+         left: 4.3rem;
+     }
+
+     .fifth_step {
+        flex-direction: row-reverse;    
+        top: 17.3rem;
+        left: -9.5rem;
+     }
+
+     .sixth_step {
+        flex-direction: row-reverse;
+        top: 22rem;
+        left: -17rem;
      }
 
      .seventh_step {
-        top: 0.8rem;
-        left: -9.87rem;
-     }
-
-     .seventh_step h3 {
-        margin-right: 3.43rem;
-     }
-
-     .circle_text_item {
-        top: 2.625rem;
+        top: 26.7rem;
+        left: -2.7rem;
+        flex-direction: row-reverse;
      }
 
      .footer_work_types span {
@@ -1971,7 +1974,7 @@ body.page6 #pagination li:nth-of-type(6) {
         line-height: 3rem;
     }
 
-    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, #pagination, .footer_background {
+    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, #pagination, .footer_background, .circle_content_text  {
         display: none;
     }
 
@@ -2070,47 +2073,70 @@ body.page6 #pagination li:nth-of-type(6) {
      }
 
      .circle_content {
-        width: 23.375rem;
-        height: 23.375rem;
-     }
+        background-image: unset;
+    }
 
-     .first_step {
-        left: -0.5rem;
-     }
+    .circle_content_item {
+        width: 30rem;
+    }
 
-     .second_step {
-        top: 0.4rem;
-        right: -9.25rem;
-     }
+    .circle_content::after {
+           content:"";
+           position: absolute;
+           z-index: -1;
+           top: 0;
+           bottom: 0;
+           left: 20%;
+           border-left: 2px dotted #e3177d;
+    }
 
-     .third_step {
-        top: 10.56rem;
-        right: -23.18rem;
-     }
+    .first_step {
+       left: -9rem;
+    }
 
-     .fouth_step {
-        top: 19.375rem;
-        left: 4.31rem;
-     }
+    .second_step {
+        flex-direction: unset;
+        top: 3.1rem;
+        right: -5rem;
+    }
 
-     .fifth_step {
-        top: 19.3rem;
-        left: -8rem;
-     }
+    .second_step h3 {
+        margin-left: 1rem;
+    }
 
-     .sixth_step {
-        top: 9.9rem;
-        left: -8.125rem;
-     }
+    .third_step {
+       top: 7.7rem;
+       right: -5rem;
+    }
 
-     .seventh_step {
-        top: 0.8rem;
-        left: -9.87rem;
-     }
+    .third_step h3, .fouth_step h3, .fifth_step h3, .sixth_step h3, .seventh_step h3 {
+        margin-left: 1rem;
+    }
 
-     .circle_text_item {
-        top: 2.625rem;
-     }
+    .fouth_step {
+        width: 19rem;
+        flex-direction: unset;
+        top: 12rem;
+        left: 4.3rem;
+    }
+
+    .fifth_step {
+       flex-direction: row-reverse;    
+       top: 17.3rem;
+       left: -9.5rem;
+    }
+
+    .sixth_step {
+       flex-direction: row-reverse;
+       top: 22rem;
+       left: -17rem;
+    }
+
+    .seventh_step {
+       top: 26.7rem;
+       left: -2.7rem;
+       flex-direction: row-reverse;
+    }
 
      .footer_work_types span {
         color: #333333;
@@ -2141,7 +2167,7 @@ body.page6 #pagination li:nth-of-type(6) {
         line-height: 3rem;
     }
 
-    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, #pagination {
+    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, #pagination,  .circle_content_text  {
         display: none;
     }
 
@@ -2252,6 +2278,72 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .footer_work_types span:hover {
         border-bottom: 1px solid rgba(227, 23, 125, 1);
+    }
+
+    .circle_content {
+        background-image: unset;
+    }
+
+    .circle_content_item {
+        width: 30rem;
+    }
+
+    .circle_content::after {
+           content:"";
+           position: absolute;
+           z-index: -1;
+           top: 0;
+           bottom: 0;
+           left: 20%;
+           border-left: 2px dotted #e3177d;
+    }
+
+    .first_step {
+       left: -9rem;
+    }
+
+    .second_step {
+        flex-direction: unset;
+        top: 3.1rem;
+        right: -5rem;
+    }
+
+    .second_step h3 {
+        margin-left: 1rem;
+    }
+
+    .third_step {
+       top: 7.7rem;
+       right: -5rem;
+    }
+
+    .third_step h3, .fouth_step h3, .fifth_step h3, .sixth_step h3, .seventh_step h3 {
+        margin-left: 1rem;
+    }
+
+    .fouth_step {
+        width: 19rem;
+        flex-direction: unset;
+        top: 12rem;
+        left: 4.3rem;
+    }
+
+    .fifth_step {
+       flex-direction: row-reverse;    
+       top: 17.3rem;
+       left: -9.5rem;
+    }
+
+    .sixth_step {
+       flex-direction: row-reverse;
+       top: 22rem;
+       left: -17rem;
+    }
+
+    .seventh_step {
+       top: 26.7rem;
+       left: -2.7rem;
+       flex-direction: row-reverse;
     }
 
 }
