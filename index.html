@@ -13,10 +13,10 @@
 
 <body>
     <div class="main">
-       <header id="page1" class="section">
-            <div class="header_background">
+        <header id="page1" class="section">
+            <!--   <div class="header_background">
                 <img src="./img/header_background_img.svg" alt="">
-            </div>
+            </div> -->
             <div class="header_nav_section">
                 <div class="menu">
                     <div class="menu_logo">
@@ -111,7 +111,7 @@
                     <img class='about_arrow down' src="./img/down_scroll.svg" alt="">
                 </div>
             </div>
-        </header> 
+        </header>
         <section id="page2" class="services section">
             <div class="service_decoration_first"></div>
             <div class="service_decoration_second"></div>
@@ -455,119 +455,124 @@
                 <img class='arrow_btn' src="./img/arrow_btn.png" alt="">
             </div>
         </section>
-        <section id="page6" class="apply section">
-            <div class="apply_decoration_first">
-                <img src="./img/decoration_item.png" alt="">
-            </div>
-            <div class="apply_decoration_second"></div>
-            <h2 class="title_style apply_text_style">Отправить заявку</h2>
-            <p class="apply_text_style">Заполните форму заявки, мы перезвоним вам в ближайшее время и обсудим ваш
-                проект </p>
-            <div class="apply_content">
-                <form id="contact_form" enctype="multipart/form-data" method='post' action="/mail.php">
-                    <div class="apply_project_info">
-                        <h3 class="apply_title ">Информация о проекте</h3>
-                        <div class="apply_service">
-                            <h4>Услуга</h4>
-                            <label class="apply_service_checkbox">
-                                <input class="input_refresh" type="checkbox" name="development">
-                                <div class="apply_service_checkbox_wrap">
-                                    <img src="./img/Icons/tick.svg" alt="">
+        <div class="down_background">
+            <section id="page6" class="apply section">
+                <div class="apply_decoration_first">
+                    <img src="./img/decoration_item.png" alt="">
+                </div>
+                <div class="apply_decoration_second"></div>
+                <h2 class="title_style apply_text_style">Отправить заявку</h2>
+                <p class="apply_text_style">Заполните форму заявки, мы перезвоним вам в ближайшее время и обсудим ваш
+                    проект </p>
+                <div class="apply_content">
+                    <form id="contact_form" enctype="multipart/form-data" method='post' action="/mail.php">
+                        <div class="apply_project_info">
+                            <h3 class="apply_title ">Информация о проекте</h3>
+                            <div class="apply_service">
+                                <h4>Услуга</h4>
+                                <label class="apply_service_checkbox">
+                                    <input class="input_refresh" type="checkbox" name="development">
+                                    <div class="apply_service_checkbox_wrap">
+                                        <img src="./img/Icons/tick.svg" alt="">
+                                    </div>
+                                    <span>Разработка сайтов</span>
+                                </label>
+                                <label class="apply_service_checkbox">
+                                    <input type="checkbox" name="support">
+                                    <div class="apply_service_checkbox_wrap">
+                                        <img src="./img/Icons/tick.svg" alt="">
+                                    </div>
+                                    <span>Техническая поддержка</span>
+                                </label>
+                                <label class="apply_service_checkbox">
+                                    <input type="checkbox" name="advertising">
+                                    <div class="apply_service_checkbox_wrap">
+                                        <img src="./img/Icons/tick.svg" alt="">
+                                    </div>
+                                    <span>Продвижение и реклама</span>
+                                </label>
+                            </div>
+                            <h4>Название вашей компании</h4>
+                            <input name='company_name' class='apply_service_text input_refresh' type="text">
+                            <div class="apply_task">
+                                <h4>Опишите задачу</h4>
+                                <br>
+                                <textarea class='input_refresh ' name='apply_task' name="area" cols=”25” rows=”5” wrap=”on”></textarea>
+                                <div class="file-input-wrapper">
+                                    <button class="btn-file-input">
+                                        <div class='load_logo'></div>
+                                        <span>Прикрепить ТЗ</span>
+                                    </button>
+                                    <input type="file" name="file" />
                                 </div>
-                                <span>Разработка сайтов</span>
-                            </label>
-                            <label class="apply_service_checkbox">
-                                <input type="checkbox" name="support">
-                                <div class="apply_service_checkbox_wrap">
-                                    <img src="./img/Icons/tick.svg" alt="">
-                                </div>
-                                <span>Техническая поддержка</span>
-                            </label>
-                            <label class="apply_service_checkbox">
-                                <input type="checkbox" name="advertising">
-                                <div class="apply_service_checkbox_wrap">
-                                    <img src="./img/Icons/tick.svg" alt="">
-                                </div>
-                                <span>Продвижение и реклама</span>
-                            </label>
+                            </div>
+                            <span class="agreement">Отправляя заявку, вы соглашаетесь с
+                                <a href="#">политикой конфиденциальности</a>
+                            </span>
                         </div>
-                        <h4>Название вашей компании</h4>
-                        <input name='company_name' class='apply_service_text input_refresh' type="text">
-                        <div class="apply_task">
-                            <h4>Опишите задачу</h4>
-                            <br>
-                            <textarea class = 'input_refresh ' name='apply_task' name="area" cols=”25” rows=”5” wrap=”on”></textarea>
-                            <div class="file-input-wrapper">
-                                <button class="btn-file-input">
-                                    <div class='load_logo'></div>
-                                    <span>Прикрепить ТЗ</span>
-                                </button>
-                                <input type="file" name="file" />
+                        <div class="apply_contacts">
+                            <h3 class="apply_title">Контактная информация</h3>
+                            <input name='name' class='apply_service_text apply_contacts_input input_refresh' type="text"
+                                placeholder="Ваше имя">
+                            <input name='phone' class='apply_service_text apply_contacts_input input_refresh' type="text"
+                                placeholder="Номер телефона">
+                            <input name='email' class='apply_service_text apply_contacts_input input_refresh' type="text"
+                                placeholder="Электронный адрес">
+                        </div>
+                        <button class="apply_btn btn form_control submit" type="submit">
+                            <span>Отправить заявку</span>
+                            <img class='arrow_btn' src="./img/arrow_btn.png" alt="">
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div class="footer_content">
+                    <div class="footer_work_types">
+                        <span class='footer_line'>Разработка сайтов</span>
+                        <span class='footer_line'>Техническая поддержка</span>
+                        <span class='footer_line'>Продвижение и реклама</span>
+                    </div>
+                    <div class="footer_FAQ">
+                        <span class='footer_line styled_footer_line'>О компании</span>
+                        <span class='footer_line styled_footer_line'>Кейсы</span>
+                        <span class='footer_line styled_footer_line'>FAQ</span>
+                        <span class='footer_line styled_footer_line'>Контакты</span>
+                    </div>
+                    <div class="footer_contacts">
+                        <div class="footer_contacts_item">
+                            <span class="footer_line footer_contacts_item_tytle">Телефон для связи:</span>
+                            <span class='footer_line'>+7 (812) 418-85-89</span>
+                        </div>
+                        <div class="footer_contacts_item">
+                            <span class="footer_line footer_contacts_item_tytle">Электронный адрес:</span>
+                            <span class='footer_line'>info@drimagency.ru</span>
+                        </div>
+                    </div>
+                    <div class="footer_social_links">
+                        <span class="footer_line footer_social_links_tytle">Социальные сети:</span>
+                        <div>
+                            <div class="social_el">
+                                <div class="social_link_item social_link_first"></div>
+                                <div class="socils_link_hover_first footer_hover_el"></div>
+                            </div>
+                            <div class="social_el">
+                                <div class="social_link_item social_link_second"></div>
+                                <div class="socil_link_hover_second footer_hover_el"></div>
                             </div>
                         </div>
-                        <span class="agreement">Отправляя заявку, вы соглашаетесь с
-                            <a href="#">политикой конфиденциальности</a>
-                        </span>
                     </div>
-                    <div class="apply_contacts">
-                        <h3 class="apply_title">Контактная информация</h3>
-                        <input name='name' class='apply_service_text apply_contacts_input input_refresh' type="text" placeholder="Ваше имя">
-                        <input name='phone' class='apply_service_text apply_contacts_input input_refresh' type="text" placeholder="Номер телефона">
-                        <input name='email' class='apply_service_text apply_contacts_input input_refresh' type="text" placeholder="Электронный адрес">
-                    </div>
-                    <button class="apply_btn btn form_control submit" type="submit">
-                        <span>Отправить заявку</span>
-                        <img class='arrow_btn' src="./img/arrow_btn.png" alt="">
-                    </button>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div class="footer_content">
-                <div class="footer_work_types">
-                    <span class='footer_line'>Разработка сайтов</span>
-                    <span class='footer_line'>Техническая поддержка</span>
-                    <span class='footer_line'>Продвижение и реклама</span>
-                </div>
-                <div class="footer_FAQ">
-                    <span class='footer_line styled_footer_line'>О компании</span>
-                    <span class='footer_line styled_footer_line'>Кейсы</span>
-                    <span class='footer_line styled_footer_line'>FAQ</span>
-                    <span class='footer_line styled_footer_line'>Контакты</span>
-                </div>
-                <div class="footer_contacts">
-                    <div class="footer_contacts_item">
-                        <span class="footer_line footer_contacts_item_tytle">Телефон для связи:</span>
-                        <span class='footer_line'>+7 (812) 418-85-89</span>
-                    </div>
-                    <div class="footer_contacts_item">
-                        <span class="footer_line footer_contacts_item_tytle">Электронный адрес:</span>
-                        <span class='footer_line'>info@drimagency.ru</span>
+                    <div class="footer_rights_logo">
+                        <div class="footer_logo"></div>
+                        <span class='footer_line'>© 2018 DRIM. Все права защищены</span>
+                        <a class='footer_line' href="#">Политика конфиденциальности</a>
                     </div>
                 </div>
-                <div class="footer_social_links">
-                    <span class="footer_line footer_social_links_tytle">Социальные сети:</span>
-                    <div>
-                        <div class="social_el">
-                            <div class="social_link_item social_link_first"></div>
-                            <div class="socils_link_hover_first footer_hover_el"></div>
-                        </div>
-                        <div class="social_el">
-                            <div class="social_link_item social_link_second"></div>
-                            <div class="socil_link_hover_second footer_hover_el"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_rights_logo">
-                    <div class="footer_logo"></div>
-                    <span class='footer_line'>© 2018 DRIM. Все права защищены</span>
-                    <a class='footer_line' href="#">Политика конфиденциальности</a>
-                </div>
-            </div>
-           <div class="footer_background">
-                <img src="./img/footer_background.svg" alt="">
-            </div>
-        </footer>
+                <!--  <div class="footer_background">
+                    <img src="./img/footer_background.svg" alt="">
+                </div> -->
+            </footer>
+        </div>
     </div>
     <ul id="pagination">
         <li>

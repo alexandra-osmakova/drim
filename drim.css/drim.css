@@ -23,6 +23,10 @@ header {
     justify-content: space-between;
     box-sizing: border-box;
     flex-wrap: wrap;
+    background-image: url(../img/header_background_pic.svg);
+    background-size: 155%;
+    background-repeat: no-repeat;
+    background-position: 65% 10%;
 }
 
 .header_contact_section,
@@ -1502,16 +1506,24 @@ form {
     padding: 1rem 0;
 }
 
+.down_background {
+    background-image: url(../img/);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
 footer {
     position: relative;
-    margin: 0 auto;
-    width: 80%;
-    padding: 6.125rem 1rem 0;
+    width: 100%;
+    padding: 6.125rem 1rem 6.125rem;
     box-sizing: border-box;
 }
 
 .footer_content {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .footer_work_types,
@@ -1662,18 +1674,6 @@ footer {
     background-position: center;
 }
 
-.footer_background {
-    position: absolute;
-    top: -27rem;
-    left: -8rem;
-}
-
-.footer_background img {
-    width: 74.8rem;
-    height: 47.9rem;
-}
-
-
 #pagination {
     position: fixed;
     top: 22rem;
@@ -1749,19 +1749,12 @@ body.page6 #pagination li:nth-of-type(6) {
 
     header {
         padding: 2rem;
+        background-position: 100% 0;
     }
 
     .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text 
      {
         display: none;
-    }
-
-    .header_background img {
-        width: 52.8rem;
-    }
-
-    .header_background {
-        top: -10.18rem;
     }
 
     .title_style {
@@ -1956,6 +1949,10 @@ body.page6 #pagination li:nth-of-type(6) {
         -webkit-appearance: none;
         border-radius: 0;
     }
+
+    .down_background {
+        background-image: unset;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -1966,12 +1963,8 @@ body.page6 #pagination li:nth-of-type(6) {
         -webkit-overflow-scrolling: touch;
     }
 
-    .header_background img {
-        width: 52.8rem;
-    }
-
-    .header_background {
-        top: -10.18rem;
+    header {
+        background-position: 85% 0;
     }
 
     .title_style {
@@ -2161,12 +2154,8 @@ body.page6 #pagination li:nth-of-type(6) {
         -webkit-overflow-scrolling: touch;
     }
 
-    .header_background img {
-        width: 60.8rem;
-    }
-
-    .header_background {
-        top: -8.18rem;
+    header {
+        background-position: 85% 0;
     }
 
     .title_style {
@@ -2269,16 +2258,6 @@ body.page6 #pagination li:nth-of-type(6) {
          padding: 0;
      }
 
-     .footer_background img {
-        width: 39.8rem;
-        height: 26.9rem;
-     }
-
-     .footer_background {
-        top: 9rem;
-        left: -6rem;
-     }
-
      .footer_work_types span {
         color: #333333;
         border-bottom: 1px solid rgba(227, 23, 125, 0);
@@ -2354,6 +2333,11 @@ body.page6 #pagination li:nth-of-type(6) {
         border-radius: 0;
     }
 
+    .down_background {
+        background-size: 100%;
+        background-position: 100% 100%;
+    }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 767px) {
@@ -2362,6 +2346,10 @@ body.page6 #pagination li:nth-of-type(6) {
         overflow-x: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+
+    header {
+        background-position: 85% 0;
     }
 
     .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first {
@@ -2439,16 +2427,6 @@ body.page6 #pagination li:nth-of-type(6) {
         padding: 0;
     }
 
-    .footer_background {
-        top: -2rem;
-        left: -7rem;
-    }
-
-    .footer_background img {
-        width: 49.8rem;
-        height: 34.9rem;
-    }
-
     .footer_work_types span {
         color: #333333;
         border-bottom: 1px solid rgba(227, 23, 125, 0);
@@ -2487,6 +2465,10 @@ body.page6 #pagination li:nth-of-type(6) {
         overflow-x: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+
+    header {
+        background-position: 85% 0;
     }
 
     .decoration_line_move {
@@ -2593,15 +2575,6 @@ body.page6 #pagination li:nth-of-type(6) {
          padding: 0;
      }
 
-     .footer_background {
-        top: -7rem;
-        left: -7rem;
-     }
-
-     .footer_background img {
-        width: 62.8rem;
-        height: 42.9rem;
-     }
      .footer_work_types span {
         color: #333333;
         border-bottom: 1px solid rgba(227, 23, 125, 0);
@@ -2633,9 +2606,13 @@ body.page6 #pagination li:nth-of-type(6) {
     }
 }
 
-@media screen and (min-width: 841px) and (max-width: 1000px) {
+@media screen and (min-width: 841px) and (max-width: 1024px) {
     html, body {
         font-size: 14px;
+    }
+
+    header {
+        background-position: 85% 0;
     }
 
     .decoration_line_move {
@@ -2650,18 +2627,13 @@ body.page6 #pagination li:nth-of-type(6) {
         padding-left: 3rem;
     }
 
-    .footer_background {
-        top: -27rem;
-        left: -9rem;
-    }
-
-    .footer_background img {
-        width: 74.8rem;
-        height: 40.9rem;
-    }
-
     .menu_contacts {
         padding: 0 5.5rem;
+    }
+
+    .down_background {
+        background-size: 170%;
+        background-position: 30% 100%;
     }
 
 }
@@ -2671,14 +2643,13 @@ body.page6 #pagination li:nth-of-type(6) {
         font-size: 17px;
     }
 
-    .footer_background img {
-        width: 76.8rem;
-        height: 49.9rem;
+    header {
+        background-position: 70% 0;
     }
 
-    .footer_background {
-        top: -27rem;
-        left: -8.5rem;
+    .down_background {
+        background-size: 110%;
+        background-position: 25% 100%;
     }
 
 }
@@ -2688,6 +2659,10 @@ body.page6 #pagination li:nth-of-type(6) {
     body {
         font-size: 24px;
     } 
+
+    header {
+        background-position: 70% 0;
+    }
 
     .footer_FAQ {
         width: 26%;
@@ -2705,14 +2680,9 @@ body.page6 #pagination li:nth-of-type(6) {
         left: -1rem;
     }
 
-    .footer_background {
-        top: -21rem;
-        left: -8rem;
-    }
-
-    .footer_background img {
-        width: 70.8rem;
-        height: 38.9rem;
+    .down_background {
+        background-size: 160%;
+        background-position: 25% 100%;
     }
 }
 
@@ -2720,6 +2690,10 @@ body.page6 #pagination li:nth-of-type(6) {
     html,
     body {
         font-size: 28px;
+    }
+
+    header {
+        background-position: 70% 0;
     }
 
     .footer_FAQ {
@@ -2734,14 +2708,9 @@ body.page6 #pagination li:nth-of-type(6) {
         left: 0;
     }
 
-    .footer_background {
-        top: -23rem;
-        left: -8rem;
-    }
-
-    .footer_background img {
-        width: 61.8rem;
-        height: 41.9rem;
+    .down_background {
+        background-size: 160%;
+        background-position: 30% 100%;
     }
 
     .menu_contacts {
@@ -2753,6 +2722,10 @@ body.page6 #pagination li:nth-of-type(6) {
     html,
     body {
         font-size: 32px;
+    }
+
+    header {
+        background-position: 70% 0;
     }
 
     .apply_decoration_first {
@@ -2769,5 +2742,10 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .menu_contacts {
         padding: 0 5.5rem;
+    }
+
+    .down_background {
+        background-size: 160%;
+        background-position: 30% 100%;
     }
 }
