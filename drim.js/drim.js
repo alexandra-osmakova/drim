@@ -94,7 +94,7 @@ for (var i = 0; i < linkNav.length; i++) {
             }
         }
     }, false);
-}
+}  
 
 window.addEventListener("scroll", overflow);
 
@@ -116,3 +116,5 @@ var header_burger_menu = document.getElementsByClassName("header_burger_menu")[0
 menu__icon.addEventListener('click', function () {
     header_burger_menu.classList.toggle('menu_state_open');
 })
+
+document.body.addEventListener('touchstart', function () {});

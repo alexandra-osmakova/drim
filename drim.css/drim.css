@@ -370,6 +370,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: unset;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1741,13 +1742,16 @@ body.page6 #pagination li:nth-of-type(6) {
 @media screen and (min-width: 320px) and (max-width: 374px) {
     html, body {
         font-size: 10px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     header {
         padding: 2rem;
     }
 
-    .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, #pagination, .footer_background, .circle_content_text 
+    .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text 
      {
         display: none;
     }
@@ -1883,10 +1887,6 @@ body.page6 #pagination li:nth-of-type(6) {
          background-image: unset;
      }
 
-     .circle_content_item {
-         width: 30rem;
-     }
-
      .circle_content::after {
             content:"";
             position: absolute;
@@ -1897,52 +1897,30 @@ body.page6 #pagination li:nth-of-type(6) {
             border-left: 2px dotted #e3177d;
      }
 
-     .first_step {
-        left: -9rem;
+     .btns {
+        padding-left: 4.3rem;
      }
 
-     .second_step {
-         flex-direction: unset;
-         top: 3.1rem;
-         right: -5rem;
+     .first_step, .second_step, .third_step, .fouth_step, .fifth_step, .sixth_step, .seventh_step {
+         position: static;
+         align-items: center;
+         width: auto;
+         justify-content: flex-start;
+         margin: 1.1rem 0;
      }
 
-     .second_step h3 {
-         margin-left: 1rem;
-     }
-
-     .third_step {
-        top: 7.7rem;
-        right: -5rem;
-     }
-
-     .third_step h3, .fouth_step h3, .fifth_step h3, .sixth_step h3, .seventh_step h3 {
-         margin-left: 1rem;
-     }
-
-     .fouth_step {
-         width: 19rem;
-         flex-direction: unset;
-         top: 12rem;
-         left: 4.3rem;
-     }
-
-     .fifth_step {
-        flex-direction: row-reverse;    
-        top: 17.3rem;
-        left: -9.5rem;
-     }
-
-     .sixth_step {
+     .first_step, .fifth_step, .sixth_step, .seventh_step {
         flex-direction: row-reverse;
-        top: 22rem;
-        left: -17rem;
+        justify-content: flex-end;
+     } 
+
+     .second_step, .fouth_step {
+         flex-direction: unset;
      }
 
-     .seventh_step {
-        top: 26.7rem;
-        left: -2.7rem;
-        flex-direction: row-reverse;
+
+     .circle_content_item h3 {
+         margin: 0 0 0 1rem;
      }
 
      .footer_work_types span {
@@ -1953,11 +1931,39 @@ body.page6 #pagination li:nth-of-type(6) {
      .footer_work_types span:hover {
          border-bottom: 1px solid rgba(227, 23, 125, 1);
      }
+
+     #pagination {
+        display: none;
+    }
+
+    .our_works {
+        width: 80%;
+    }
+
+    .work_examples {
+        padding: 0rem;
+    }
+
+    .work_examples_item {
+        padding: 6rem 2rem;
+    }
+
+    .work_section_down_btn .arrow_btn {
+        margin-left: 2rem;
+    }
+
+    .input_refresh {
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
     html, body {
         font-size: 10px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .header_background img {
@@ -1974,7 +1980,7 @@ body.page6 #pagination li:nth-of-type(6) {
         line-height: 3rem;
     }
 
-    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, #pagination, .footer_background, .circle_content_text  {
+    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text  {
         display: none;
     }
 
@@ -2076,10 +2082,6 @@ body.page6 #pagination li:nth-of-type(6) {
         background-image: unset;
     }
 
-    .circle_content_item {
-        width: 30rem;
-    }
-
     .circle_content::after {
            content:"";
            position: absolute;
@@ -2090,53 +2092,31 @@ body.page6 #pagination li:nth-of-type(6) {
            border-left: 2px dotted #e3177d;
     }
 
-    .first_step {
-       left: -9rem;
-    }
+    .btns {
+        padding-left: 4.3rem;
+     }
 
-    .second_step {
-        flex-direction: unset;
-        top: 3.1rem;
-        right: -5rem;
-    }
+     .first_step, .second_step, .third_step, .fouth_step, .fifth_step, .sixth_step, .seventh_step {
+         position: static;
+         align-items: center;
+         width: auto;
+         justify-content: flex-start;
+         margin: 1.1rem 0;
+     }
 
-    .second_step h3 {
-        margin-left: 1rem;
-    }
+     .first_step, .fifth_step, .sixth_step, .seventh_step {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+     } 
 
-    .third_step {
-       top: 7.7rem;
-       right: -5rem;
-    }
+     .second_step, .fouth_step {
+         flex-direction: unset;
+     }
 
-    .third_step h3, .fouth_step h3, .fifth_step h3, .sixth_step h3, .seventh_step h3 {
-        margin-left: 1rem;
-    }
 
-    .fouth_step {
-        width: 19rem;
-        flex-direction: unset;
-        top: 12rem;
-        left: 4.3rem;
-    }
-
-    .fifth_step {
-       flex-direction: row-reverse;    
-       top: 17.3rem;
-       left: -9.5rem;
-    }
-
-    .sixth_step {
-       flex-direction: row-reverse;
-       top: 22rem;
-       left: -17rem;
-    }
-
-    .seventh_step {
-       top: 26.7rem;
-       left: -2.7rem;
-       flex-direction: row-reverse;
-    }
+     .circle_content_item h3 {
+         margin: 0 0 0 1rem;
+     }
 
      .footer_work_types span {
         color: #333333;
@@ -2146,11 +2126,39 @@ body.page6 #pagination li:nth-of-type(6) {
     .footer_work_types span:hover {
         border-bottom: 1px solid rgba(227, 23, 125, 1);
     }
+
+    #pagination {
+        display: none;
+    }
+
+    .our_works {
+        width: 80%;
+    }
+
+    .work_examples {
+        padding: 0rem;
+    }
+
+    .work_examples_item {
+        padding: 6rem 2rem;
+    }
+
+    .work_section_down_btn .arrow_btn {
+        margin-left: 2rem;
+    }
+
+    .input_refresh {
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
 }
 
 @media screen and (min-width: 425px) and (max-width: 600px) {
     html, body {
         font-size: 10px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .header_background img {
@@ -2167,7 +2175,7 @@ body.page6 #pagination li:nth-of-type(6) {
         line-height: 3rem;
     }
 
-    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, #pagination,  .circle_content_text  {
+    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen,  .circle_content_text  {
         display: none;
     }
 
@@ -2267,8 +2275,8 @@ body.page6 #pagination li:nth-of-type(6) {
      }
 
      .footer_background {
-        top: 8rem;
-        left: -5rem;
+        top: 9rem;
+        left: -6rem;
      }
 
      .footer_work_types span {
@@ -2284,10 +2292,6 @@ body.page6 #pagination li:nth-of-type(6) {
         background-image: unset;
     }
 
-    .circle_content_item {
-        width: 30rem;
-    }
-
     .circle_content::after {
            content:"";
            position: absolute;
@@ -2298,52 +2302,56 @@ body.page6 #pagination li:nth-of-type(6) {
            border-left: 2px dotted #e3177d;
     }
 
-    .first_step {
-       left: -9rem;
+    .btns {
+        padding-left: 4.3rem;
+     }
+
+     .first_step, .second_step, .third_step, .fouth_step, .fifth_step, .sixth_step, .seventh_step {
+         position: static;
+         align-items: center;
+         width: auto;
+         justify-content: flex-start;
+         margin: 1.1rem 0;
+     }
+
+     .first_step, .fifth_step, .sixth_step, .seventh_step {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+     } 
+
+     .second_step, .fouth_step {
+         flex-direction: unset;
+     }
+
+
+     .circle_content_item h3 {
+         margin: 0 0 0 1rem;
+     }
+
+
+    #pagination {
+        display: none;
     }
 
-    .second_step {
-        flex-direction: unset;
-        top: 3.1rem;
-        right: -5rem;
+    .our_works {
+        width: 80%;
     }
 
-    .second_step h3 {
-        margin-left: 1rem;
+    .work_examples {
+        padding: 0rem;
     }
 
-    .third_step {
-       top: 7.7rem;
-       right: -5rem;
+    .work_examples_item {
+        padding: 6rem 2rem;
     }
 
-    .third_step h3, .fouth_step h3, .fifth_step h3, .sixth_step h3, .seventh_step h3 {
-        margin-left: 1rem;
+    .work_section_down_btn .arrow_btn {
+        margin-left: 2rem;
     }
 
-    .fouth_step {
-        width: 19rem;
-        flex-direction: unset;
-        top: 12rem;
-        left: 4.3rem;
-    }
-
-    .fifth_step {
-       flex-direction: row-reverse;    
-       top: 17.3rem;
-       left: -9.5rem;
-    }
-
-    .sixth_step {
-       flex-direction: row-reverse;
-       top: 22rem;
-       left: -17rem;
-    }
-
-    .seventh_step {
-       top: 26.7rem;
-       left: -2.7rem;
-       flex-direction: row-reverse;
+    .input_refresh {
+        -webkit-appearance: none;
+        border-radius: 0;
     }
 
 }
@@ -2351,9 +2359,12 @@ body.page6 #pagination li:nth-of-type(6) {
 @media screen and (min-width: 601px) and (max-width: 767px) {
     html, body {
         font-size: 11px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first, #pagination {
+    .service_decoration_third, .philosophy_decoration_first, .our_work_decoration_first {
         left: -10rem;
     }
 
@@ -2451,11 +2462,31 @@ body.page6 #pagination li:nth-of-type(6) {
         padding: 0 5.5rem;
     }
 
+    #pagination {
+        display: none;
+    }
+
+    .our_works {
+        width: 80%;
+    }
+
+    .work_examples {
+        padding: 0rem;
+    }
+
+    .input_refresh {
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 840px) {
     html, body {
         font-size: 12px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .decoration_line_move {
@@ -2582,6 +2613,23 @@ body.page6 #pagination li:nth-of-type(6) {
 
     .menu_contacts {
         padding: 0 5.5rem;
+    }  
+
+    #pagination {
+        display: none;
+    }
+
+    .our_works {
+        width: 90%;
+    }
+
+    .work_examples {
+        padding: 0rem;
+    }
+
+    .input_refresh {
+        -webkit-appearance: none;
+        border-radius: 0;
     }
 }
 
