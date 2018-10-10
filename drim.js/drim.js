@@ -94,7 +94,7 @@ for (var i = 0; i < linkNav.length; i++) {
             }
         }
     }, false);
-}  
+}
 
 window.addEventListener("scroll", overflow);
 
@@ -118,3 +118,26 @@ menu__icon.addEventListener('click', function () {
 })
 
 document.body.addEventListener('touchstart', function () {});
+
+var clientWidth = document.documentElement.clientWidth;
+var aboutTitleItem = document.getElementsByClassName('service_type_item');
+
+window.onload = function () {
+    window.setInterval(hey, 100);
+}
+
+function hey() {
+    if (clientWidth == 320) {
+        for (var i = 0; i < aboutTitleItem.length; i++) {
+            var bounding = aboutTitleItem[i].getBoundingClientRect();
+            if (
+                bounding.top >= 0 &&
+                bounding.left >= 0 &&
+                bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ) {
+                aboutTitleItem[i].setAttribute("data-aos", "fade-up")
+            }
+        }
+    }
+}
