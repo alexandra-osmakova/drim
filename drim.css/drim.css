@@ -1507,7 +1507,7 @@ form {
 }
 
 .down_background {
-    /*background-image: url(../img/footer_background_pic.svg);*/
+    background-image: url(../img/footer_background_pic.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 100% 100%;
