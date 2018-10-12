@@ -1499,6 +1499,10 @@ form {
     background-position: center;
 }
 
+.apply_btn {
+    margin-top: 7.5rem;
+}
+
 .apply_contacts_input {
     font-size: 0.93rem;
     font-weight: normal;
