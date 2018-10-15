@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./drim_inner_page__create__css/drim_inner_page__create.css">
     <link rel="stylesheet" href="./drim_inner_page__create__css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -86,7 +88,8 @@
                     <span class="logo_text_style">reate</span>
                 </div>
         </header>
-        <section class="abilities">
+        <section id="page2" class="abilities">
+            <div class="decoration_line" data-aos="fade-right" ></div>
             <h2 class="even_tytle_style">НАШИ ВОЗМОЖНОСТИ ПО РАЗРАБОТКЕ САЙТОВ</h2>
             <h3>Специалисты студии DRIM работают в web более четырехсот лет</h3>
             <div class="abilities_types">
@@ -165,7 +168,8 @@
                 </div>
             </div>
         </section>
-        <section class="dev_steps">
+        <section id="page3" class="dev_steps">
+            <div class="decoration_line" data-aos="fade-right" ></div>
             <div class="dev_steps__text">
                 <h2 class="odd_tytle_style">ЭТАПЫ РАЗРАБОТКИ</h2>
                 <p>Проектируем удобный интерфейс, создаем дизайн, внедряем креатив, Lorem ipsum dolor sit amet,
@@ -174,7 +178,7 @@
                     vitae quam diam.</p>
             </div>
             <div class="dev_steps__images">
-                <div class="dev_steps__images_item">
+                <div class="dev_steps__images_item" data-number='1'>
                     <div class="dev_step__numbering">01</div>
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg class="svg_img" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
@@ -207,7 +211,7 @@
                     </svg>
 
                 </div>
-                <div class="dev_steps__images_item">
+                <div class="dev_steps__images_item" data-number='2'>
                     <div class="dev_step__numbering">02</div>
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg class="svg_img" enable-background="new 0 0 511.999 511.999" version="1.1" viewBox="0 0 511.999 511.999"
@@ -223,7 +227,7 @@
                     </svg>
 
                 </div>
-                <div class="dev_steps__images_item">
+                <div class="dev_steps__images_item" data-number='3'>
                     <div class="dev_step__numbering">03</div>
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg class="svg_img" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
@@ -239,7 +243,7 @@
                     </svg>
 
                 </div>
-                <div class="dev_steps__images_item">
+                <div class="dev_steps__images_item" data-number='4'>
                     <div class="dev_step__numbering">04</div>
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg class="svg_img" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
@@ -261,7 +265,7 @@
                     </svg>
 
                 </div>
-                <div class="dev_steps__images_item">
+                <div class="dev_steps__images_item" data-number='5'>
                     <div class="dev_step__numbering">05</div>
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg class="svg_img" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
@@ -291,7 +295,7 @@
                     </svg>
 
                 </div>
-                <div class="dev_steps__images_item">
+                <div class="dev_steps__images_item" data-number='6'>
                     <div class="dev_step__numbering">06</div>
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg class="svg_img" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
@@ -314,7 +318,7 @@
             </div>
             <div class="dev_steps__carousel swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="dev_steps_carousel_item__wrap swiper-slide">
+                    <div class="dev_steps_carousel_item__wrap swiper-slide" data-number = '1'>
                         <div class="dev_steps_carousel_item">
                             <span>01.</span>
                             <h3>Проектирование</h3>
@@ -327,7 +331,7 @@
                         </div>
                     </div>
 
-                    <div class="dev_steps_carousel_item__wrap swiper-slide">
+                    <div class="dev_steps_carousel_item__wrap swiper-slide" data-number = '2'>
                         <div class="dev_steps_carousel_item">
                             <span>02.</span>
                             <h3>Проектирование</h3>
@@ -339,7 +343,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="dev_steps_carousel_item__wrap swiper-slide">
+                    <div class="dev_steps_carousel_item__wrap swiper-slide" data-number = '3'>
                         <div class="dev_steps_carousel_item">
                             <span>03.</span>
                             <h3>Проектирование</h3>
@@ -351,7 +355,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="dev_steps_carousel_item__wrap swiper-slide">
+                    <div class="dev_steps_carousel_item__wrap swiper-slide" data-number = '4'>
                         <div class="dev_steps_carousel_item">
                             <span>04.</span>
                             <h3>Проектирование</h3>
@@ -363,7 +367,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="dev_steps_carousel_item__wrap swiper-slide">
+                    <div class="dev_steps_carousel_item__wrap swiper-slide" data-number = '5'>
                         <div class="dev_steps_carousel_item">
                             <span>05.</span>
                             <h3>Проектирование</h3>
@@ -375,7 +379,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="dev_steps_carousel_item__wrap swiper-slide">
+                    <div class="dev_steps_carousel_item__wrap swiper-slide" data-number = '6'>
                         <div class="dev_steps_carousel_item">
                             <span>06.</span>
                             <h3>Проектирование</h3>
@@ -392,7 +396,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </section>
-        <section class="body_apply_form">
+        <section id="page4" class="body_apply_form">
             <div class="body_apply_form__wrap"></div>
             <div class="body_apply__content">
                 <h2 class="even_tytle_style">ЕСЛИ ВАМ НЕДОСТАТОЧНО ИНФОРМАЦИИ <br>ДЛЯ ПРИНЯТИЯ РЕШЕНИЯ</h2>
@@ -410,6 +414,7 @@
             </div>
         </section>
         <section id="page5" class="our_works section">
+            <div class="decoration_line" data-aos="fade-right" ></div>
             <h2 class="odd_tytle_style our_works_title">Наши работы</h2>
             <div class="work_examples">
                 <div class="work_examples_item work_example_first">
@@ -481,7 +486,8 @@
                 </div>
             </div>
         </section>
-        <section class="arguments">
+        <section id="page6" class="arguments">
+            <div class="decoration_line" data-aos="fade-right" ></div>
             <h2 class="even_tytle_style">ПОЧЕМУ СТОИТ ЗАКАЗАТЬ САЙТ В DRIM?</h2>
             <p class="argument_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tortor
                 efficitur sem pulvinar consectetur sed eget massa. Suspendisse sit amet lorem eu nisi ultricies
@@ -593,7 +599,7 @@
             </p>
         </section>
         <div class="down_background">
-            <section id="page6" class="apply section">
+            <section id="page7" class="apply section">
                 <h2 class="odd_tytle_style apply_title">Оставить заявку на разработку сайта</h2>
                 <p class="apply_text">Заполните форму заявки, мы перезвоним вам в ближайшее время и обсудим ваш
                     проект </p>
@@ -604,7 +610,7 @@
                     <input class="footer_apply_form_input" name="email" type="text" placeholder="Электронный адрес">
                     <div class="task_block">
                         <textarea class="input_refresh " name="apply_task" cols="”25”" rows="”5”" wrap="”on”"
-                            placeholder="Прикрепить задачу"></textarea>
+                            placeholder="Опишите задачу"></textarea>
                     </div>
                     <div class="file-input-wrapper">
                         <button class="btn-file-input">
@@ -658,8 +664,32 @@
                 </div>
             </footer>
         </div>
+        <ul id="pagination">
+                <li>
+                    <a href="#page1"></a>
+                </li>
+                <li>
+                    <a href="#page2"></a>
+                </li>
+                <li>
+                    <a href="#page3"></a>
+                </li>
+                <li>
+                    <a href="#page4"></a>
+                </li>
+                <li>
+                    <a href="#page5"></a>
+                </li>
+                <li>
+                    <a href="#page6"></a>
+                </li>
+                <li>
+                    <a href="#page7"></a>
+                </li>
+            </ul>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-        <script src="./drim_inner_page_create__js/drim.js"></script>
+        <script src="./drim_inner_page_create__js/drim_inner_page_create.js"></script>
 </body>
 
 </html>
