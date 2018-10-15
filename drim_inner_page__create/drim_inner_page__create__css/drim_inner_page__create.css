@@ -247,27 +247,24 @@ header {
     top: 1rem;
     width: 0%;
     left: 50%;
+    background-color: #ffffff;
 }
 
 .header_burger_menu.menu_state_open .menu__icon span:nth-child(2) {
     transform: rotate(45deg);
+    background-color: #ffffff;
 }
 
 .header_burger_menu.menu_state_open .menu__icon span:nth-child(3) {
     transform: rotate(-45deg);
+    background-color: #ffffff;
 }
 
 .header_burger_menu.menu_state_open .menu__icon span:nth-child(4) {
     top: 1rem;
     width: 0%;
     left: 50%;
-}
-
-
-.header_burger_menu.menu_state_open .menu__icon span:nth-child(1) {
-    top: 1rem;
-    width: 0%;
-    left: 50%;
+    background-color: #ffffff;
 }
 
 .about {
@@ -541,14 +538,18 @@ header {
 
 
 .dev_steps__carousel {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.dev_steps_carousel_item__wrap {
 }
 
 .dev_steps_carousel_item {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     position: relative;
-    margin: 2rem;
 }
 
 .dev_steps_carousel_item h3 {
@@ -595,6 +596,7 @@ header {
 }
 
 .tns-controls button:first-child {
+    z-index: 10;
     outline: none;
     cursor: pointer;
     background-image: url(../img/scroll-arrow-to-down.svg);
@@ -613,6 +615,7 @@ header {
 }
 
 .tns-controls button:last-child {
+    z-index: 10;
     outline: none;
     cursor: pointer;
     background-image: url(../img/scroll-arrow-to-down.svg);
@@ -682,6 +685,13 @@ header {
     background-color: unset;
     border: unset;
     border-bottom: 1px solid #ffffff;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .body_apply_form_input::placeholder {
+     color: #ffffff;
+     opacity: 1;
+     font-family: 'Montserrat', sans-serif;
  }
 
  .body_apply_form__btn {
@@ -703,6 +713,13 @@ header {
     color: #ffffff;
     margin-top: 3rem;
     margin-left: 1.25rem;
+ }
+
+ .confidential_politics a {
+     text-decoration: none;
+     font-size: 0.75rem;
+     color: #ffffff;
+     border-bottom: 1px solid #ffffff;
  }
 
 .our_works, .apply {
@@ -1013,20 +1030,39 @@ header {
     background-color: unset;
     border: unset;
     border-bottom: 1px solid #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer_apply_form_input::placeholder {
+    color:#333333;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .task_block textarea {
+    padding-top: 1.25rem;
+    opacity: 1;
     resize: none;
     outline: none;
     border: unset;
+    color:#333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.task_block textarea::placeholder {
+    color:#333333;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .file-input-wrapper {
-    width: 50%;
+    width: 35%;
     height: 2rem;
     margin-top: 0.3125rem;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    bottom: 22rem;
+    right: 6rem;
 }
 
 .file-input-wrapper>input[type="file"] {
@@ -1053,6 +1089,8 @@ header {
     font-size: 0.8rem;
     text-align: center;
     border-bottom: 1px solid rgba(51, 51, 51, 0);
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1073,13 +1111,35 @@ header {
 }
 
 .apply_btn {
+    outline: none;
     margin-top: 7.5rem;
-    margin-left: 2.25rem;
+    margin-left: 3.25rem;
+}
+
+.apply_btn span {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 0.94rem;
+}
+
+.apply_btn .arrow_btn {
+    margin-left: 2rem;
+}
+
+.apply_btn:hover .arrow_btn {
+    margin-left: 3.5rem;
 }
 
 .footer_apply_agreement {
     color: #333333;
-    margin-left: 2.5rem;
+    margin: 4.5rem auto 2rem;
+    width: 85%;
+}
+
+.footer_apply_agreement a {
+    text-decoration: none;
+    color: #00b3f6;
+    border-bottom: 1px solid #00b3f6;
 }
 
 .down_background {

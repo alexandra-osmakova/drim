@@ -19,11 +19,10 @@ var slider = tns({
     container: '.dev_steps_slider',
     loop: false,
     items: 1,
-    slideBy: 1,
+    slideBy: 'page',
     autoplay: false,
     swipeAngle: false,
     speed: 400,
-    autoHeight: true,
     autoWidth: true,
     controlsText:"  ",
   });
