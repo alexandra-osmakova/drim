@@ -515,10 +515,67 @@ header {
 
 .dev_steps__images_item {
     border-radius: 100%;
-    border: 2px solid #e2e2e2;
+    border: 2px solid rgba(226, 226, 226, 1);
     width: 4.8125rem;
     height: 4.8125rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.dev_step__numbering {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 100%;
+    box-shadow: 0rem 0.0635rem 0.4375rem rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    font-size: 0.5625rem;
+    color: #40a2d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.svg_img {
+    width: 2.125rem;
+    height: 2.125rem;
+}
+
+.svg_img path{
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.dev_steps__images_item:hover, .dev_steps__images_item.activ_item  {
+    box-shadow: 0rem 0.25rem 1.125rem rgba(0,51,77,0.38);
+    background-color: #3fa1d3;
+    border: 2px solid rgba(226, 226, 226, 0);
+}
+
+.dev_steps__images_item:hover .svg_change_color, .dev_steps__images_item.activ_item .svg_change_color  {
+    fill: #ffffff;
+}
+
+.dev_steps__images_item:hover .dev_step__numbering, .dev_steps__images_item.activ_item .dev_step__numbering {
+    box-shadow: 0rem 0.0625rem 0.44rem rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    color: #333333;
 }
 
 .dev_steps__images_item:nth-of-type(1)::after,
@@ -543,8 +600,6 @@ header {
     padding-top: 1rem;
 }
 
-.dev_steps_carousel_item__wrap {
-}
 
 .dev_steps_carousel_item {
     width: 70%;
@@ -580,57 +635,29 @@ header {
     font-weight: bold;
 }
 
-.tns-outer {
-    position: relative;
-}
-
-.tns-nav {
-    display: none;
-}
-
-.tns-controls {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.tns-controls button:first-child {
-    z-index: 10;
+.swiper-button-prev {
     outline: none;
-    cursor: pointer;
-    background-image: url(../img/scroll-arrow-to-down.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 5rem;
-    left: 1rem;
-    border: unset;
-    width: 2rem;
-    height: 2rem;
+    background-image: url(../img/scroll-arrow-to-down.svg)!important;
 
     transform:matrix(0.00,1.00,-1.00,0.00,0,0);
     -ms-transform:matrix(0.00,1.00,-1.00,0.00,0,0);
     -webkit-transform:matrix(0.00,1.00,-1.00,0.00,0,0);
 }
 
-.tns-controls button:last-child {
-    z-index: 10;
+.swiper-button-next {
     outline: none;
-    cursor: pointer;
-    background-image: url(../img/scroll-arrow-to-down.svg);
+    background-image: url(../img/scroll-arrow-to-down.svg)!important;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 5rem;
-    right: 1rem;
     border: unset;
-    width: 2rem;
-    height: 2rem;
 
     transform:matrix(-0.00,-1.00,1.00,-0.00,0,0);
 -ms-transform:matrix(-0.00,-1.00,1.00,-0.00,0,0);
 -webkit-transform:matrix(-0.00,-1.00,1.00,-0.00,0,0);
+}
+
+.swiper-slide {
+    margin-top: 1rem;
 }
 
 .body_apply_form {
