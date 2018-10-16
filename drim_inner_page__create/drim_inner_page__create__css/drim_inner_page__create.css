@@ -757,6 +757,16 @@ header {
     margin: 7.75rem auto;
 }
 
+.our_works__decoration_item {
+    width: 1.625rem;
+    height: 1.625rem;
+    border-radius: 100%;
+    background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
+    position: absolute;
+    top: 9rem;
+    right: -2rem;
+}
+
 .work_examples {
     margin: 2.3rem auto;
     width: 100%;
@@ -1021,6 +1031,27 @@ header {
     margin: 7.375rem auto 0;
     border: 7px solid #45A4D1;
     /* px used instead of rem */
+}
+
+.apply__decoration_item:nth-of-type(1) {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-image: linear-gradient(96deg, #e3177d 0%, #3fa1d3 100%);
+    position: absolute;
+    top: 2rem;
+    left: -9.5rem;
+}
+
+.apply__decoration_item:nth-of-type(2) {
+    width: 1.625rem;
+    height: 1.625rem;
+    border-radius: 100%;
+    filter: blur(3px);
+    position: absolute;
+    bottom: 3rem;
+    right: 3.5rem;
+    background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
 }
 
 .apply_title {
@@ -1300,10 +1331,6 @@ footer {
     top: 8.4375rem;
     width: 7.25rem;
     height: 0.75rem;
-    background-image: url(../img/decoration_line.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; 
 }
 
 .our_works .decoration_line {
@@ -1316,7 +1343,7 @@ footer {
     top: 22rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 6rem;
+    right: 6.4rem;
     list-style: none;
 }
 
@@ -1325,10 +1352,8 @@ footer {
     margin: 0.4rem 0;
     background-color: #ffffff;
     border-radius: 48%;
-    border: 1px solid #00b3f6;
-    /* px used instead of rem */
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.31rem;
+    height: 0.31rem;
     transition: all .2s ease;
 }
 
@@ -1340,8 +1365,8 @@ footer {
 #pagination a {
     position: absolute;
     text-decoration: none;
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.31rem;
+    height: 0.31rem;
     left: 0;
     top: 0;
     border-radius: 0.3rem;
@@ -1351,19 +1376,31 @@ footer {
     opacity: 0;
 }
 
-body.page1 #pagination li:nth-of-type(1),
-body.page2 #pagination li:nth-of-type(2),
-body.page3 #pagination li:nth-of-type(3),
-body.page4 #pagination li:nth-of-type(4),
-body.page5 #pagination li:nth-of-type(5),
-body.page6 #pagination li:nth-of-type(6),
-body.page7 #pagination li:nth-of-type(7)  {
-    -webkit-transform: scale(2);
-    transform: scale(2);
+.odd_pagination {
+    border: 1px solid #00b3f6;    
     background-color: #ffffff;
-    border: 1px solid #e3187d;
-    opacity: 1;
-    /* px used instead of rem */
 }
+
+.even_pagination {
+    background-color: #ffffff!important;
+    border: 1px solid #ffffff!important;
+    transform: unset!important;
+}
+
+
+.even_pagination__activ {
+    -webkit-transform: scale(2)!important;
+    transform: scale(2)!important;
+    background-color: unset!important;
+    border: 1px solid #ffffff!important;
+}
+
+.odd_pagination__activ {
+    border: 1px solid #e3187d;    
+    background-color: unset;
+    -webkit-transform: scale(2)!important;
+    transform: scale(2)!important;
+}
+
 
 

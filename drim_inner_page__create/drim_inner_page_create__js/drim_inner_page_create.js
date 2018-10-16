@@ -79,40 +79,59 @@ function changeSlide (event) {
     var offset = document.documentElement.scrollTop;
     var windowHeight = document.documentElement.clientHeight;
     var body = document.body;
-    var pagination = document.getElementById('pagination')
+    var pagination = document.getElementById('pagination');
+    var paginationChildren = pagination.children;
 
     switch (true) {
-        case (offset > (windowHeight * 10)):
-            pagination.classList = '';
-            pagination.classList.add('pagination_invisible');
-        break;
         case (offset > (windowHeight * 8.75)):
-            pagination.classList = '';
-            body.classList = 'page7';
+            for(var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('odd_pagination');
+                }
+                paginationChildren[6].classList.add('odd_pagination__activ');
             break;
         case (offset > (windowHeight * 6.75)):
-            pagination.classList = '';
-            body.classList = 'page6';
+            for(var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('even_pagination');
+                }
+                paginationChildren[5].classList.add('even_pagination__activ');
             break;
-        case (offset > (windowHeight * 4.5)):
-            pagination.classList = '';
-            body.classList = 'page5';
+        case (offset > (windowHeight * 4)):
+            for(var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('odd_pagination');
+                }
+                paginationChildren[4].classList.add('odd_pagination__activ'); 
             break;
-        case (offset > (windowHeight * 3.75)):
-            pagination.classList = '';
-            body.classList = 'page4';
+        case (offset > (windowHeight * 3)):
+            for(var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('even_pagination');
+                }
+                paginationChildren[3].classList.add('even_pagination__activ'); 
             break;
-        case (offset > (windowHeight * 1.75)):
-            pagination.classList = '';
-            body.classList = 'page3';
+        case (offset > (windowHeight * 2)):
+            for(var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('odd_pagination');
+                }
+                paginationChildren[2].classList.add('odd_pagination__activ'); 
             break;
         case (offset > (windowHeight * .75)):
-            pagination.classList = '';
-            body.classList = 'page2';
+            for(var i = 0; i < paginationChildren.length; i++) {
+            paginationChildren[i].classList = '';
+            paginationChildren[i].classList.add('even_pagination');
+            }
+            paginationChildren[1].classList.add('even_pagination__activ');   
             break;
-        default:
-            body.classList.add('page1');
-            body.classList = 'page1';
+        case (offset < (windowHeight * .75)):
+            for(var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('odd_pagination');
+            }
+            paginationChildren[0].classList.add('odd_pagination__activ');
+            break;
     }
 }
 
