@@ -23,42 +23,42 @@ function pagination() {
 
     switch (true) {
         case (offset > (windowHeight * 6.75)):
-            for(var i = 0; i < paginationChildren.length; i++) {
+            for (var i = 0; i < paginationChildren.length; i++) {
                 paginationChildren[i].classList = '';
                 paginationChildren[i].classList.add('even_pagination');
-                }
-                paginationChildren[5].classList.add('even_pagination__activ');
+            }
+            paginationChildren[5].classList.add('even_pagination__activ');
             break;
         case (offset > (windowHeight * 4)):
-            for(var i = 0; i < paginationChildren.length; i++) {
+            for (var i = 0; i < paginationChildren.length; i++) {
                 paginationChildren[i].classList = '';
                 paginationChildren[i].classList.add('odd_pagination');
-                }
-                paginationChildren[4].classList.add('odd_pagination__activ'); 
+            }
+            paginationChildren[4].classList.add('odd_pagination__activ');
             break;
-        case (offset > (windowHeight * 2.8  )):
-            for(var i = 0; i < paginationChildren.length; i++) {
+        case (offset > (windowHeight * 2.8)):
+            for (var i = 0; i < paginationChildren.length; i++) {
                 paginationChildren[i].classList = '';
                 paginationChildren[i].classList.add('odd_pagination');
-                }
-                paginationChildren[3].classList.add('odd_pagination__activ'); 
+            }
+            paginationChildren[3].classList.add('odd_pagination__activ');
             break;
         case (offset > (windowHeight * 1.6)):
-            for(var i = 0; i < paginationChildren.length; i++) {
+            for (var i = 0; i < paginationChildren.length; i++) {
                 paginationChildren[i].classList = '';
                 paginationChildren[i].classList.add('odd_pagination');
-                }
-                paginationChildren[2].classList.add('odd_pagination__activ'); 
+            }
+            paginationChildren[2].classList.add('odd_pagination__activ');
             break;
         case (offset > (windowHeight * .75)):
-            for(var i = 0; i < paginationChildren.length; i++) {
-            paginationChildren[i].classList = '';
-            paginationChildren[i].classList.add('even_pagination');
+            for (var i = 0; i < paginationChildren.length; i++) {
+                paginationChildren[i].classList = '';
+                paginationChildren[i].classList.add('even_pagination');
             }
-            paginationChildren[1].classList.add('even_pagination__activ');   
+            paginationChildren[1].classList.add('even_pagination__activ');
             break;
         case (offset < (windowHeight * .75)):
-            for(var i = 0; i < paginationChildren.length; i++) {
+            for (var i = 0; i < paginationChildren.length; i++) {
                 paginationChildren[i].classList = '';
                 paginationChildren[i].classList.add('odd_pagination');
             }
@@ -99,51 +99,78 @@ for (var i = 0; i < linkNav.length; i++) {
 
 AOS.init();
 
+window.onload = function () {
+    for (var i = 0; i < servises_types_card.length; i++) {
+        servises_types_card[i].classList.add(servises_types_card_style[i])
+    }
+}
 
+var servises_types_card_style = ['servises_types_card_first', 'servises_types_card_second', 'servises_types_card_third', 'servises_types_card_fourth']
 var progress_steps = document.getElementsByClassName('services_types__progress_steps')[0];
 var progress_line_number = document.getElementsByClassName('services_types__progress_line_number');
 var progress_line_item = document.getElementsByClassName('services_types__progress_line_item');
 var servises_types_card = document.getElementsByClassName('servises_types_card');
+var services_type__card_container = document.getElementsByClassName('services_type__card_container')[0];
+var n = 0;
 
 progress_steps.addEventListener('click', progressChange);
 
 function progressChange(e) {
-    if(e.target.classList.contains('services_types__progress_line_number')) {
-        for(var i = 0; i < progress_line_number.length; i++) {
+    if (e.target.classList.contains('services_types__progress_line_number')) {
+        for (var i = 0; i < progress_line_number.length; i++) {
             progress_line_number[i].classList.remove('activ_progress_line');
         }
         e.target.classList.add('activ_progress_line');
-        if(e.target.id === 'progress_line_number_first') {
-            for(var j = 0; j < progress_line_item.length; j++) {
+        if (e.target.id === 'progress_line_number_first') {
+            for (var j = 0; j < progress_line_item.length; j++) {
                 progress_line_item[j].classList.remove('activ_progress_line');
-                servises_types_card[j].classList.remove('activ_card')
             }
-            progress_line_item[0].classList.add('activ_progress_line')
-            servises_types_card[0].classList.add('activ_card')
-        }
-        else if(e.target.id === 'progress_line_number_second') {
-            for(var j = 0; j < progress_line_item.length; j++) {
+            progress_line_item[0].classList.add('activ_progress_line');
+            n = 0;
+            changedCard();
+        } else if (e.target.id === 'progress_line_number_second') {
+            for (var j = 0; j < progress_line_item.length; j++) {
                 progress_line_item[j].classList.remove('activ_progress_line');
-                servises_types_card[j].classList.remove('activ_card')
             }
-            progress_line_item[1].classList.add('activ_progress_line')
-            servises_types_card[1].classList.add('activ_card')
-        }
-        else if(e.target.id === 'progress_line_number_third') {
-            for(var j = 0; j < progress_line_item.length; j++) {
+            progress_line_item[1].classList.add('activ_progress_line');
+            n = 1;
+            changedCard();
+        } else if (e.target.id === 'progress_line_number_third') {
+            for (var j = 0; j < progress_line_item.length; j++) {
                 progress_line_item[j].classList.remove('activ_progress_line');
-                servises_types_card[j].classList.remove('activ_card')
             }
-            progress_line_item[2].classList.add('activ_progress_line')
-            servises_types_card[2].classList.add('activ_card')
-        }
-        else if(e.target.id === 'progress_line_number_fourth') {
-            for(var j = 0; j < progress_line_item.length; j++) {
+            progress_line_item[2].classList.add('activ_progress_line');
+            n = 2;
+            changedCard();
+        } else if (e.target.id === 'progress_line_number_fourth') {
+            for (var j = 0; j < progress_line_item.length; j++) {
                 progress_line_item[j].classList.remove('activ_progress_line');
-                servises_types_card[j].classList.remove('activ_card')
             }
-            progress_line_item[3].classList.add('activ_progress_line')
-            servises_types_card[3].classList.add('activ_card')
+            progress_line_item[3].classList.add('activ_progress_line');
+            n = 3;
+            changedCard();
         }
     }
+}
+
+
+function changedCard() {
+    for (var i = 0; i < servises_types_card.length; i++) {
+        for(var k = 0; k < servises_types_card_style.length; k++) {
+            servises_types_card[i].classList.remove(servises_types_card_style[k])
+        }
+        servises_types_card[i].classList.remove('activ_card');
+    }
+
+    var arr = [].slice.call(servises_types_card);
+    var clone = ([]).concat(arr);
+   var newCards = (clone.splice(n, 1)).concat(clone);
+
+    console.log(newCards)
+    for (var j = 0; j < newCards.length; j++) {
+        newCards[j].classList.add(servises_types_card_style[j])
+    }
+
+    newCards[0].classList.add('activ_card');
+
 }
