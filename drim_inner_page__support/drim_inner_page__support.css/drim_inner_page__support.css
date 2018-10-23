@@ -267,12 +267,19 @@ header {
 .about {
     width: 100%;
     margin: 0 auto 2rem;
-    padding: 5rem 0rem;
     display: flex;
 }
 
 .section_text, .section_logo {
     width: 50%;
+}
+
+.section_text {
+    padding: 5rem 0rem;
+}
+
+.section_logo {
+    margin-top: -5rem;
 }
 
 .section_text h2 {
@@ -310,7 +317,7 @@ header {
     color: #333333;
     position: absolute;
     left: 7.7rem;
-    bottom: 9.5rem;
+    bottom: 14.3rem;
 }
 
 
@@ -371,6 +378,7 @@ header {
 }
 
 .advantages {
+    position: relative;
     width: 100%;
     padding: 5.9375rem 8rem;
     background-color: #e3187d;
@@ -424,6 +432,17 @@ header {
     width: 100%;
     background-color: #ffffff;
     padding: 7.75rem 8.25rem;
+}
+
+.abilities_decoration_item {
+    width: 2.3125rem;
+    height: 2.3125rem;
+    filter: blur(3px);
+    border-radius: 100%;
+    background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
+    position: absolute;
+    top: 27rem;
+    right: 3rem;
 }
 
 .tytle_style {
@@ -553,6 +572,17 @@ header {
     padding: 7.75rem 8.25rem;
 }
 
+.services_types_decoration_item {
+    width: 1rem;
+    height: 1rem;
+    background-image: linear-gradient(124deg, #e3177d 0%, #3fa1d3 100%);
+    border-radius: 100%;
+    filter: blur(3px);
+    position: absolute;
+    bottom: 1.5rem;
+    left: 23rem;
+}
+
 .services_types_content {
     width: 50%;
     margin: 0 auto;
@@ -570,6 +600,11 @@ header {
     background-color: #e3187d;
     position: relative;
     opacity: 0;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .services_types__progress_steps {
@@ -602,6 +637,11 @@ header {
     font-weight: bold;
     text-align: center;
     opacity: 0.5;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .activ_progress_line {
@@ -612,6 +652,11 @@ header {
     width: 100%;
     padding: 4.125rem 3.1875rem 3.3125rem;
     position: relative;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .services_types__card_number {
@@ -630,6 +675,7 @@ header {
 
 
 .services_type__card_btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -698,9 +744,14 @@ header {
     opacity: 0.4;
 }
 
-/*.activ_card {
-    z-index: 10;
-} */
+.activ_card {
+    width: 100%!important;
+    opacity: 1!important;
+    top: 6rem!important;
+    left: 0!important;
+    right: 0!important;
+    z-index: 10!important;
+}   
 
 .our_works, .apply {
     width: 87.5%;
@@ -714,8 +765,8 @@ header {
     border-radius: 100%;
     background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
     position: absolute;
-    top: 9rem;
-    right: -2rem;
+    bottom: 29rem;
+    right: 3.2rem;
 }
 
 .work_examples {
@@ -1233,4 +1284,81 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#pagination {
+    position: fixed;
+    top: 22rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 6.4rem;
+    list-style: none;
+}
+
+#pagination li {
+    position: relative;
+    margin: 0.4rem 0;
+    background-color: #ffffff;
+    border-radius: 48%;
+    width: 0.31rem;
+    height: 0.31rem;
+    transition: all .2s ease;
+}
+
+#pagination li:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#pagination a {
+    position: absolute;
+    text-decoration: none;
+    width: 0.31rem;
+    height: 0.31rem;
+    left: 0;
+    top: 0;
+    border-radius: 0.3rem;
+}
+
+.pagination_invisible {
+    opacity: 0;
+}
+
+.odd_pagination {
+    border: 1px solid #00b3f6;    
+    background-color: #ffffff;
+}
+
+.even_pagination {
+    background-color: #ffffff!important;
+    border: 1px solid #ffffff!important;
+    transform: unset!important;
+}
+
+
+.even_pagination__activ {
+    -webkit-transform: scale(2)!important;
+    transform: scale(2)!important;
+    background-color: unset!important;
+    border: 1px solid #ffffff!important;
+}
+
+.odd_pagination__activ {
+    border: 1px solid #e3187d;    
+    background-color: unset;
+    -webkit-transform: scale(2)!important;
+    transform: scale(2)!important;
+}
+
+.decoration_line {
+    position: absolute;
+    left: -0.625rem;
+    top: 8.4375rem;
+    width: 7.25rem;
+    height: 0.75rem;
+}
+
+.our_works .decoration_line {
+    top: 0.9375rem;
+    left: -6.5rem;
 }
