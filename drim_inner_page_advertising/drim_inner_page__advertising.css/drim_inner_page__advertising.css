@@ -108,10 +108,8 @@ header {
     display: block;
 }
 
-.menu_social_links img {
-    width: 1rem;
-    height: 1rem;
-    margin: 0.5rem 0.5rem 0 0;
+.menu_social_links {
+    display: flex;
 }
 
 .styled_full_menu_item {
@@ -377,9 +375,10 @@ header {
 
 .call_to_action {
     width: 100%;
-    padding: 9.1875rem 8.125rem;
+    padding: 8rem 8.125rem;
     background-color: #3fa1d3;
     display: flex;
+    position: relative;
 }
 
 .call_to_action_item {
@@ -440,9 +439,36 @@ header {
     margin-top: 2.875rem;
 }
 
+.call_to_action .arrow_btn {
+    margin-left: 0rem;
+}
+
+.call_to_action .btn:hover .arrow_btn {
+    margin-left: 3rem;
+}
+
 .advantages {
+    position: relative;
     width: 100%;
     padding: 8.0625rem 8.125rem;
+}
+
+.advantages_decoration_item {
+    width: 1.625rem;
+    height: 1.625rem;
+    border-radius: 100%;
+    background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
+    position: absolute;
+    filter: blur(2px);
+    top: 13rem;
+    right: 3rem;
+}
+
+.advantages h2 {
+    font-size: 2.0625rem;
+    color: #40a2d3;
+    font-weight: bold;
+    margin-bottom: 4.625rem;
 }
 
 .advantages_content {
@@ -458,7 +484,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    margin: 1rem auto 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
 
     -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -534,7 +561,7 @@ header {
 
 .additional_info {
     width: 100%;
-    padding: 9.1875rem 8.125rem;
+    padding: 8rem 8.125rem;
     background-color: #3fa1d3;
     display: flex;
     flex-wrap: wrap;
@@ -628,6 +655,14 @@ header {
     margin: 2.875rem 0 0 0;
 }
 
+.additional_info_btn .arrow_btn {
+    margin-left: 0;
+}
+
+.additional_info_btn:hover .arrow_btn {
+    margin-left: 2rem;
+}
+
 .additional_info_content {
     width: 70%;
 }
@@ -667,8 +702,20 @@ header {
 }
 
 .our_works {
+    position: relative;
     width: 100%;
     padding: 7.6875rem 8.125rem 2rem;
+}
+
+.our_works_decoration_item {
+    width: 1.625rem;
+    height: 1.625rem;
+    border-radius: 100%;
+    background-image: linear-gradient(-16deg, #e3177d 0%, #3fa1d3 100%);
+    position: absolute;
+    filter: blur(2px);
+    top: 13rem;
+    right: 3rem;
 }
 
 .our_works h2 {
@@ -1053,7 +1100,8 @@ header {
 
  .faq {
      width: 100%;
-     padding: 8.0625rem 8.125rem;
+     padding: 8rem 8.125rem;
+     position: relative;
  }
 
  .faq h2 {
@@ -1502,4 +1550,76 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.decoration_line {
+    position: absolute;
+    width: 7.25rem;
+    height: 0.75rem;
+    left: -0.625rem;
+    top: 8.4375rem;
+}
+
+#pagination {
+    position: fixed;
+    top: 22rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 6.4rem;
+    list-style: none;
+}
+
+#pagination li {
+    position: relative;
+    margin: 0.4rem 0;
+    background-color: #ffffff;
+    border-radius: 48%;
+    width: 0.31rem;
+    height: 0.31rem;
+    transition: all .2s ease;
+}
+
+#pagination li:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#pagination a {
+    position: absolute;
+    text-decoration: none;
+    width: 0.31rem;
+    height: 0.31rem;
+    left: 0;
+    top: 0;
+    border-radius: 0.3rem;
+}
+
+.pagination_invisible {
+    opacity: 0;
+}
+
+.odd_pagination {
+    border: 1px solid #00b3f6;    
+    background-color: #ffffff;
+}
+
+.even_pagination {
+    background-color: #ffffff!important;
+    border: 1px solid #ffffff!important;
+    transform: unset!important;
+}
+
+
+.even_pagination__activ {
+    -webkit-transform: scale(2)!important;
+    transform: scale(2)!important;
+    background-color: unset!important;
+    border: 1px solid #ffffff!important;
+}
+
+.odd_pagination__activ {
+    border: 1px solid #e3187d;    
+    background-color: unset;
+    -webkit-transform: scale(2)!important;
+    transform: scale(2)!important;
 }
