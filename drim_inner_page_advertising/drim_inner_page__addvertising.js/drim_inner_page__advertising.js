@@ -1,10 +1,12 @@
 var menu__icon = document.getElementsByClassName('menu__icon')[0];
 var menu = document.getElementsByClassName('menu')[0];
+var body = document.documentElement;
 
 menu__icon.addEventListener('click', menu_open);
 
 function menu_open() {
     menu.classList.toggle('menu_visible');
+    body.classList.toggle('no_scroll');
 }
 
 var header_burger_menu = document.getElementsByClassName("header_burger_menu")[0];
@@ -21,9 +23,23 @@ var slider = tns({
     nav: false,
 });
 
+var accardion_item = document.getElementsByClassName('acc_input');
+var accardion_cross = document.getElementsByClassName('circle-plus');
+var accardion = document.getElementsByClassName('ac-container')[0];
 
-$('.circle-plus').on('click', function () {
-    $(this).toggleClass('opened');
+window.onload = function() {
+    accardion_cross[0].classList.add('opened');
+}
+
+accardion.addEventListener('click', function () {
+    for (var i = 0; i < accardion_item.length; i++) {
+        if (accardion_item[i].checked) {
+            for(var j = 0; j < accardion_cross.length; j++) {
+                accardion_cross[j].classList.remove('opened');
+            }
+            accardion_cross[i].classList.add('opened');
+        }
+    }
 })
 
 AOS.init();
@@ -118,36 +134,19 @@ for (var i = 0; i < linkNav.length; i++) {
 
 new WOW().init();
 
-function counter() {
-    var options = {
-        useEasing: true,
-        useGrouping: true,
-        separator: ',',
-        decimal: '.',
-        prefix: '+',
-        suffix: '%'
-    };
-    var demo = new CountUp('first_number_to_count', 0, 450, 0, 2.5, options);
-    if (!demo.error) {
-        demo.start();
-    } else {
-        console.error(demo.error);
-    }
 
-    var options = {
-        useEasing: true,
-        useGrouping: true,
-        separator: ',',
-        decimal: '.',
-        prefix: '+',
-        suffix: '%'
-    };
-    var demo = new CountUp('second_number_to_count', 0, 650, 0, 2.5, options);
-    if (!demo.error) {
-        demo.start();
-    } else {
-        console.error(demo.error);
-    }
+var second_client_progress = document.getElementsByClassName('second_client');
+var slider_controls =document.querySelectorAll('.tns-controls button');
+
+for(var i = 0; i < slider_controls.length; i++) {
+    slider_controls[i].addEventListener('click', function() {
+        for(var j = 0; j < second_client_progress.length; j++) {
+            second_client_progress[j].classList.add('activ_animation');
+        }
+
+        
+        slider_controls[0].lastChild.style.setProperty = "content:url(url(../img/scroll-arrow-to-down_white.svg))";
+        slider_controls[1].lastChild.style.setProperty = "content:url(url(../img/scroll-arrow-to-down_white.svg))";
+        console.log(slider_controls[1].lastChilds)
+    })
 }
-
-counter()

@@ -798,14 +798,13 @@ header {
     text-align: center;
 }
 
-.progress_number {
+.progress_number, .number_to-count {
     margin-bottom: 0.625rem;
     font-size: 2.5rem;
     line-height: 1.375rem;
     color: #e3187d;
     font-weight: bold;
     text-align: left;
-    display: block;
     width: 100%;
 }
 
@@ -894,36 +893,106 @@ header {
     
 }
 
-.first_progres_line{
-    background-color: #3fa1d3;
-    width: 7rem;
-    margin: 0 1rem 0 0
+.no_scroll {
+    overflow-y: hidden;
 }
+
+.activ_animation {
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+.first_progres_line{
+    width: 6.5rem;
+    background-color: #3fa1d3;
+    margin: 0 1rem 0 0;
+    animation-name: line_grow_first;
+}
+
+@keyframes line_grow_first {
+    from {
+        width: 5.5rem;
+    }
+    to {
+        width: 6.5rem;
+    }
+  }
 
 .second_progres_line{
     background-color: #00bb1f;
     width: 9rem;
+    animation-name: line_grow_second;
 }
+
+@keyframes line_grow_second {
+    from {
+        width: 5.5rem;
+    }
+    to {
+        width: 9rem;
+    }
+  }
 
 .third_progres_line {
     background-color: #FD8C25;
     width: 7.5rem;
+    animation-name: line_grow_third;
 }
+
+@keyframes line_grow_third {
+    from {
+        width: 5.5rem;
+    }
+    to {
+        width: 7.5rem;
+    }
+  }
 
 .fourth_progres_line {
     background-color: #B2B2B1;
     width: 7.2rem;
+    animation-name: line_grow_fourth;
 }
+
+@keyframes line_grow_fourth {
+    from {
+        width: 5.5rem;
+    }
+    to {
+        width: 7.2rem;
+    }
+  }
 
 .fifth_progres_line {
     background-color: #E1227D;
     width: 10.5rem;
+    animation-name: line_grow_fifth;
 }
+
+@keyframes line_grow_fifth {
+    from {
+        width: 5.5rem;
+    }
+    to {
+        width: 10.5rem;
+    }
+  }
 
 .sixth_progres_line {
     background-color: #FD686A;
     width: 7.5rem;
+    animation-name: line_grow_sixth;
 }
+
+@keyframes line_grow_sixth {
+    from {
+        width: 5.5rem;
+    }
+    to {
+        width: 7.5rem;
+    }
+  }
 
 .second_client_progress {
     width: 45%;
