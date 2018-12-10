@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 44" width="19" height="44">
+	<defs>
+		<image width="19" height="44" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAsCAMAAACwonOGAAAAolBMVEUAAAD/AG3/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG7/AG3/AG3/AG7/AG7/AG7/AG3/AG7/AG7/AG58LW8ZAAAANnRSTlMA0monadbqMevTGtfvODoZGNXzQELUFxXR9kpLzxTO+VNUzRMRzPxdXsoPyP7k5cYOxP/DDMmnP4ytAAAAfUlEQVR4nGNggAFGRgYMMCo2KjZYxJiYUcWYWRgYWNnYkcXYOTgZGLi4eXgRYnw8rPxASkBQSBgmJiIkKgZWLi4hKQURk5aUEYdaIysnrwASU5RXUobbraKqps7IqKGmqYLkOC1tHV09HX0tFBcbGBoZGRugecPEVN8EygQAr6IHyonigt0AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="скролл вниз" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
