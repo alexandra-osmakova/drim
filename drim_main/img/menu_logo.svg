@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 42" width="129" height="42">
+	<defs>
+		<image width="129" height="42" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAqCAMAAACjpchPAAAAgVBMVEX///////////8AAAD///////////////////////////////////////////////////////////////////////8BAQEBAQEBAQEBAQH97fUBAQEBAQEBAQEBAQEBAQH96vMBAQEBAQEBAQEBAQEBAQEBAQH////////////////MjQOcAAAAK3RSTlPw+EYA/0j3SjodCBwgBmJ2IQ/mTg7Tu4hmEeUid//uROjdqsxVM5kJ0irYRZCDpAAAAWtJREFUeJzt2FlzgyAQAGBTel/2SD0Ki0UNPf7/D+wCaR9ADDLD2Fj3QRkhzjcsrBOybJM+TshIZJvT9HE2Kjj/F4KLg4LLq7RxfVBwMzYidWjB7SpYBUsX3N3nef4wp+DxCd//PKdg+xJUlY9IUKgoq9rtKT0921dXoMZS3WLYmiYAE5y5tn1PYwveXIEaa97AsTVVIBhr8WflgICxDgmBgk41eogQFHjdIZ26ArxKAGsShgUCoNbD2zgBqX5m0RawQEEhoCIqCSxSQPd3W9DzwCwUJbQqCV2sgAwKdPRhgp1Kg8SlEymovQJ7efgERKCVA40V9O5mQEFTDewRn0CCxCSQSEHdOQvOrIPSfe4T9MAxCTGCrmkq3Eut3aMFNQdhVUWfQBcjGiMwUTjV1+xGNz1egdRVKU4gWnuqfwV6OYQJTE2ZLJgey/s6r4JVsHBBwn/v7x9BgoQnGJ9fQYLU8dcF85/mzX6i+Q1y5W34IKw2KQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="logo копия 2" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

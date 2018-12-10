@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 13" width="32" height="13">
+	<defs>
+		<image width="32" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAANCAMAAAD/lpwuAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAJHRSTlMADek4Te8me+Ielt8Yk88MBLG4wMHs5o6lZbVvuwhL0wsKvxPt/e3pAAAASklEQVR4nGNgIBswMjETUMHCykZABTsHJwEVXNw8BFTw8vHjVyAgKMQgjA+IiIrhN0FcAr+8pJQAXnlpGVm88nLyCnjlFZWUQRQAuEMEmycDuaYAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Фигура 4" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
