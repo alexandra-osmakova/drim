@@ -3,7 +3,6 @@ var text = document.getElementsByClassName('circle_text_item');
 
 window.onload = function () {
     text[0].classList.add('circle_text_visible')
-    window.setInterval(hey, 100);
 }
 
 wrap.addEventListener('mouseover', go_visible, false);
@@ -122,20 +121,3 @@ document.body.addEventListener('touchstart', function () {});
 
 var clientWidth = document.documentElement.clientWidth;
 var aboutTitleItem = document.getElementsByClassName('service_type_item');
-
-
-function hey() {
-    if (clientWidth == 320) {
-        for (var i = 0; i < aboutTitleItem.length; i++) {
-            var bounding = aboutTitleItem[i].getBoundingClientRect();
-            if (
-                bounding.top >= 0 &&
-                bounding.left >= 0 &&
-                bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-            ) {
-                aboutTitleItem[i].setAttribute("data-aos", "fade-up")
-            }
-        }
-    }
-}
