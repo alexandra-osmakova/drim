@@ -2762,12 +2762,23 @@ body.page6 #pagination li:nth-of-type(6) {
     height: 12rem;
     overflow-y: scroll;
 }
-.animation_text{
+
+.animation_text {
     animation-name: topFadeOut;
     animation-delay: 0s;
     animation-duration: 2s;
     opacity: 1;
 }
+
+.phone-style {
+    margin: 1rem;
+    font-size: 0.87rem;
+    line-height: 4rem;
+    color: #ffffff;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
 @keyframes topFadeOut {
     0% {
         position: absolute;

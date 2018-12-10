@@ -4,8 +4,9 @@
     <list default="true" id="4bcef979-4e1d-4cff-a457-42a48aab0cad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drim_main/drim.css/drim.css" beforeDir="false" afterPath="$PROJECT_DIR$/drim_main/drim.css/drim.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drim_main/drim.js/drim.js" beforeDir="false" afterPath="$PROJECT_DIR$/drim_main/drim.js/drim.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strizman/strizman.css/strizman.css" beforeDir="false" afterPath="$PROJECT_DIR$/strizman/strizman.css/strizman.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strizman/strizman.html" beforeDir="false" afterPath="$PROJECT_DIR$/strizman/strizman.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,17 +24,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drim_main/drim.js/drim.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2038">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="469">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="396" column="16" selection-start-line="396" selection-start-column="16" selection-end-line="396" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#4;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/strizman/strizman.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="257" column="60" lean-forward="true" selection-start-line="257" selection-start-column="60" selection-end-line="257" selection-end-column="60" />
+            <state relative-caret-position="272">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strizman/strizman.css/reset.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strizman/strizman.css/strizman.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2769">
+              <caret line="451" column="33" selection-start-line="451" selection-start-column="33" selection-end-line="451" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strizman/strizman.js/strizman.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -42,16 +78,16 @@
         <entry file="file://$PROJECT_DIR$/drim_main/drim.css/magic.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drim_main/drim.css/drim.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="2782" lean-forward="true" selection-start-line="2782" selection-end-line="2782" />
+            <state relative-caret-position="292">
+              <caret line="2772" column="12" selection-start-line="2772" selection-start-column="1" selection-end-line="2772" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -61,6 +97,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.circle_text_item</find>
+      <find>func</find>
+      <find>functional_item</find>
+      <find>.functional_third_section</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,9 +108,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/drim_main/drim.js/drim.js" />
         <option value="$PROJECT_DIR$/drim_main/drim.css/drim.css" />
+        <option value="$PROJECT_DIR$/strizman/strizman.css/strizman.css" />
+        <option value="$PROJECT_DIR$/strizman/strizman.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -97,19 +138,19 @@
             <path>
               <item name="drim" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="drim_main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="strizman" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="drim" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="drim_main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="drim.css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="strizman" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="strizman.css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="drim" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="drim_main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="drim.js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="strizman" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="strizman.js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -159,7 +200,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2860000" />
+    <option name="totallyTimeSpent" value="7329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -195,31 +236,58 @@
     <entry file="file://$PROJECT_DIR$/.idea/drim.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="257" column="60" lean-forward="true" selection-start-line="257" selection-start-column="60" selection-end-line="257" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drim_main/drim.js/drim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2038">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drim_main/drim.css/magic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drim_main/drim.css/drim.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="2782" lean-forward="true" selection-start-line="2782" selection-end-line="2782" />
+        <state relative-caret-position="292">
+          <caret line="2772" column="12" selection-start-line="2772" selection-start-column="1" selection-end-line="2772" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drim_main/drim.js/drim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strizman/strizman.js/strizman.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strizman/strizman.css/reset.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strizman/strizman.css/strizman.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2769">
+          <caret line="451" column="33" selection-start-line="451" selection-start-column="33" selection-end-line="451" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strizman/strizman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="396" column="16" selection-start-line="396" selection-start-column="16" selection-end-line="396" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#4;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
