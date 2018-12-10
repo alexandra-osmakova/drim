@@ -12,3 +12,5 @@ var header_burger_menu = document.getElementsByClassName("header_burger_menu")[0
 menu__icon.addEventListener('click', function () {
     header_burger_menu.classList.toggle('menu_state_open');
 })
+
+new WOW().init();
