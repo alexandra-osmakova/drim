@@ -674,7 +674,7 @@ header {
 }
 
 .service_type_item p,
-.service_type_item span {
+.service_type_item span, .details_btn a  {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0);
     /* rgba used instead of hex to change opacity on :hover */
@@ -694,6 +694,14 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
+}
+
+.details_btn a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
 }
 
 .details_btn img {
@@ -1870,7 +1878,7 @@ body.page6 #pagination li:nth-of-type(6) {
             position: absolute;
             z-index: -1;
             top: 0;
-            bottom: 0;
+            bottom: 30%;
             left: 20%;
             border-left: 2px dotted #e3177d;
      }
@@ -2065,7 +2073,7 @@ body.page6 #pagination li:nth-of-type(6) {
            position: absolute;
            z-index: -1;
            top: 0;
-           bottom: 0;
+           bottom: 30%;
            left: 20%;
            border-left: 2px dotted #e3177d;
     }
@@ -2154,7 +2162,7 @@ body.page6 #pagination li:nth-of-type(6) {
     }
 
     .service_type {
-        flex-direction: row;
+        flex-direction: column;
         padding: 0;
     }
 
@@ -2261,7 +2269,7 @@ body.page6 #pagination li:nth-of-type(6) {
            position: absolute;
            z-index: -1;
            top: 0;
-           bottom: 0;
+           bottom: 30%;
            left: 20%;
            border-left: 2px dotted #e3177d;
     }
@@ -2331,6 +2339,10 @@ body.page6 #pagination li:nth-of-type(6) {
         overflow-x: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+
+    .circle_decoration_second {
+        display: none;
     }
 
     header {
@@ -2450,6 +2462,14 @@ body.page6 #pagination li:nth-of-type(6) {
         overflow-x: hidden;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+
+    .service_type_item_logo {
+        top: -3.06rem;
+    }
+
+    .circle_decoration_second {
+        left: 4.25rem;
     }
 
     header {
@@ -2619,6 +2639,10 @@ body.page6 #pagination li:nth-of-type(6) {
     .down_background {
         background-size: 170%;
         background-position: 30% 100%;
+    }
+
+    .service_type_item:hover h3 {
+        margin-top: -1rem;
     }
 
 }
