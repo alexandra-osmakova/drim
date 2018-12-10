@@ -12,9 +12,10 @@ function go_visible(e) {
         var target = e.target.dataset.number;
         for (var i = 0; i < text.length; i++) {
             if (text[i].dataset.number == target) {
-                text[i].classList.add('circle_text_visible');
+                text[i].classList.add('animation_text');
             } else {
                 text[i].classList.remove('circle_text_visible');
+                text[i].classList.remove('animation_text');
             }
         }
     }
