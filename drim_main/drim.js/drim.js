@@ -3,6 +3,7 @@ var text = document.getElementsByClassName('circle_text_item');
 
 window.onload = function () {
     text[0].classList.add('circle_text_visible')
+    window.setInterval(hey, 100);
 }
 
 wrap.addEventListener('mouseover', go_visible, false);
@@ -122,9 +123,6 @@ document.body.addEventListener('touchstart', function () {});
 var clientWidth = document.documentElement.clientWidth;
 var aboutTitleItem = document.getElementsByClassName('service_type_item');
 
-window.onload = function () {
-    window.setInterval(hey, 100);
-}
 
 function hey() {
     if (clientWidth == 320) {

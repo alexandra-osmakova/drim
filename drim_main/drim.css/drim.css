@@ -630,7 +630,7 @@ header {
     font-size: 1.43rem;
     line-height: 2rem;
     font-weight: 200;
-    margin-top: 4.25rem;
+    margin-top: 2.25rem;
     margin-bottom: 0.81rem;
     color: #ffffff;
 }
@@ -883,8 +883,8 @@ header {
 }
 
 .second_step {
-    top: 1.4rem;
-    right: -8.25rem;
+    top: 3.3rem;
+    right: -10.25rem;
     flex-direction: column-reverse;
 }
 
@@ -895,8 +895,8 @@ header {
 
 
 .third_step {
-    top: 16.56rem;
-    right: -22.18rem;
+    top: 20.56rem;
+    right: -21.18rem;
 }
 
 .third_step h3 {
@@ -905,44 +905,24 @@ header {
 
 .fouth_step {
     width: 28rem;
-    top: 26.375rem;
-    left: 6.31rem;
+    top: 20.375rem;
+    left: -11.69rem;
     flex-direction: column;
 }
 
 .fouth_step h3 {
-    margin-left: 11.56rem;
+    margin-right: 12.7rem;
 }
 
 .fifth_step {
-    top: 26.3rem;
-    left: -5rem;
+    top: 5.3rem;
+    left: -10rem;
     flex-direction: column-reverse;
 }
 
 .fifth_step h3 {
-    margin-right: 5rem;
+    margin-right: 9rem;
 }
-
-.sixth_step {
-    top: 16.44rem;
-    left: -8.125rem;
-}
-
-.sixth_step h3 {
-    margin-right: 1rem;
-}
-
-.seventh_step {
-    top: 1.8rem;
-    left: -9.87rem;
-    flex-direction: column;
-}
-
-.seventh_step h3 {
-    margin-right: 8.43rem;
-}
-
 
 .circle_content_item:hover .circle_step {
     color: #ffffff;
@@ -963,9 +943,9 @@ header {
 
 .circle_text_item {
     padding: 3rem;
-    height: 22rem;
+    height: auto;
     position: absolute;
-    top: 6.625rem;
+    top: 7.625rem;
     left: 0;
     opacity: 0;
 

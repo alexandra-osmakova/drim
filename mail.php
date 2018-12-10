@@ -8,7 +8,7 @@
     $development = $_POST['development'];
     $support = $_POST['support'];
     $advertising = $_POST['advertising'];
-    $file_name=$_FILES['file']['tmp_name'];
+    /*$file_name=$_FILES['file']['tmp_name'];
     $file_type=$_FILES['file']['type'];
     
     $boundary = md5(date('r', time()));
@@ -26,9 +26,7 @@
 	$message .= "Content-Transfer-Encoding: base64\r\n";
     $message .= "Content-Disposition: attachment; filename=".$file_name."\r\n"; 
     $message .= base64_encode(file_get_contents($file_name)); 
-	$message .= "\r\n\r\n--" . $boundary . "--"; 
-
-    $email_from = 'alexandra.osmakova@gmail.com';
+	$message .= "\r\n\r\n--" . $boundary . "--";  */
 
     $email_subject = "New Form Submission";
 
