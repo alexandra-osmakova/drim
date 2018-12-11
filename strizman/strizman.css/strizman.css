@@ -391,9 +391,10 @@ header {
 
 .functional {
     width: 100%;
-    padding:  7.4375rem 8rem 10rem;
+    padding:  7.4375rem 0rem 10rem 8rem;
     background-color: #ffffff;
     position: relative;
+    overflow-x: hidden;
 }
 
 .functional_item {
@@ -458,8 +459,7 @@ header {
 }
 
 .functional_text_section {
-    margin-top: 8rem;
-    margin-left: 8rem;
+    padding: 8rem 8rem 0
 }
 
 .functional_item:nth-of-type(2) {
@@ -593,29 +593,15 @@ header .decoration_line {
     100% { transform: translateY(15px); opacity: 0;}
 }
 
-
-.progress_animation {
-    animation: progress 2s infinite alternate;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-
-@keyframes progress {
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: -0.625rem;
-    }
-}
-
 .results {
     width: 100%;
     padding: 7.4375rem 8rem;
+    position: relative;
+}
+
+.result_info {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 }
 
 .results .title_style {
@@ -1040,8 +1026,7 @@ footer {
 }
 
 .footer_FAQ {
-    width: 24%;
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 .footer_line {
@@ -1168,14 +1153,14 @@ footer {
     background-repeat: no-repeat;
     background-position: right;
 }
-/*@media screen and (min-width: 2001px) and (max-width: 2560px) {
+@media screen and (min-width: 2001px) and (max-width: 2560px) {
     html,
     body {
         font-size: 32px;
     }
 
     .functional_first_section, .functional_third_section {
-        right: -38rem;
+        right: -35rem;
     }
 
     .img_group {
@@ -1184,6 +1169,10 @@ footer {
 
     .second_img {
         right: 2.5rem;
+    }
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
     }
 }
 
@@ -1194,7 +1183,15 @@ footer {
     }
 
     .functional_first_section, .functional_third_section {
-        right: -38rem;
+        right: -35rem;
+    }
+
+    .footer_FAQ {
+        padding-left: 0;
+    }
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
     }
 }
 
@@ -1205,7 +1202,15 @@ footer {
     }
 
     .functional_first_section, .functional_third_section {
-        right: -38rem;
+        right: -35rem;
+    }
+
+    .footer_FAQ {
+        padding-left: 2rem;
+    }
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
     }
 }
 
@@ -1218,6 +1223,15 @@ footer {
     .functional_first_section, .functional_third_section {
         right: -34rem;
     }
+
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
+    }
+
+    .footer_FAQ {
+        padding-left: 1rem;
+    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1440px) {
@@ -1229,6 +1243,14 @@ footer {
     .functional_first_section, .functional_third_section {
         right: -33rem;
     }
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
+    }
+
+    .footer_FAQ {
+        padding-left: 1rem;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1230px) {
@@ -1238,7 +1260,15 @@ footer {
     }
 
     .functional_first_section, .functional_third_section {
-        right: -35rem;
+        right: -32rem;
+    }
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
+    }
+
+    .footer_FAQ {
+        padding-left: 0;
     }
 }
 
@@ -1249,7 +1279,15 @@ footer {
     }
 
     .functional_first_section, .functional_third_section {
-        right: -37rem;
+        right: -32rem;
+    }
+
+    .work_section_down_btn {
+        flex-wrap: wrap;
+    }
+
+    .footer_FAQ {
+        padding-left: 0;
     }
 }
 
@@ -1259,9 +1297,35 @@ footer {
         font-size: 13px;
     }
 
+    .work_section_down_btn {
+        flex-wrap: wrap;
+    }
+
+    .footer_FAQ {
+        padding-left: 0;
+    }
+
     .functional_first_section, .functional_third_section {
         height: 30rem;
         width: 53rem;
+        right: -27rem;
+    }
+
+    .styled_footer_line {
+        width: 100%;
+    }
+
+    .work_examples_item {
+        padding: 2rem;
+    }
+
+    .client_review_content {
+        flex-wrap: wrap;
+    }
+
+    .client_text, .client_text p {
+        width: 100%;
+        padding: 0;
     }
 
     .img_group {
@@ -1284,6 +1348,69 @@ footer {
         font-size: 13px;
     }
 
+    .results_text_content, .results_in_numbers {
+        width: 100%;
+    }
+
+    .result_info {
+        flex-direction: column-reverse;
+    }
+
+    .results_in_numbers {
+        padding-left: 0;
+    }
+    .results_in_numbers__item {
+        margin-bottom: 1rem;
+    }
+
+    .client_review, .our_works {
+        padding: 7.4375rem 2rem;
+    }
+
+    .styled_footer_line {
+        width: 100%;
+    }
+
+    .client_review .title_style, .our_works .title_style {
+        display: block;
+        padding-left: 6rem;
+    }
+
+    .client_review_content {
+        flex-wrap: wrap;
+    }
+
+    .client_text, .client_text p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .team_content, .our_works_content , .footer_content{
+        flex-wrap: wrap;
+    }
+
+    .team_item {
+        width: 50%;
+    }
+
+    .work_examples_item {
+        width: 47%;
+        margin-right: 1rem;
+    }
+
+    .work_examples_item:nth-of-type(3) {
+        margin: 1rem auto 0;
+    }
+
+    .footer_work_types, .footer_contacts, .footer_rights_logo, .footer_FAQ {
+        width: 33%;
+    }
+
+    .footer_social_links {
+        width: 50%;
+        margin: 0;
+    }
+
     .task {
         padding: 7.4375rem 4rem;
     }
@@ -1298,7 +1425,7 @@ footer {
     }
 
     .functional_item__piece {
-        width: 100%;
+        width: 85%;
     }
 
     .functional_item {
@@ -1308,7 +1435,7 @@ footer {
     .functional_first_section, .functional_third_section {
         position: static;
         height: 23rem;
-        margin: 2rem auto;
+        margin: 2rem 0;
     }
 
     .functional_item:nth-of-type(3) .functional_item__piece{
@@ -1316,7 +1443,6 @@ footer {
     }
 
     .functional_text_section {
-        margin-top: 11rem;
         margin-left: 0rem;
         padding-left: 3rem;
     }
@@ -1353,7 +1479,82 @@ footer {
         font-size: 12px;
     }
 
-    .task, .solution, .functional, .mobile {
+    .results_text_content, .results_in_numbers {
+        width: 100%;
+    }
+
+    .result_info {
+        flex-direction: column-reverse;
+    }
+
+    .results_in_numbers {
+        padding-left: 0;
+    }
+    .results_in_numbers__item {
+        margin-bottom: 1rem;
+    }
+
+    .client_review, .our_works {
+        padding: 7.4375rem 2rem;
+    }
+
+    .styled_footer_line {
+        width: 100%;
+    }
+
+    .client_review_content {
+        flex-wrap: wrap;
+    }
+
+    .client_text, .client_text p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .team_content, .our_works_content , .footer_content{
+        flex-wrap: wrap;
+    }
+
+    .functional_text_section {
+        margin-top: 3rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .team_item {
+        width: 50%;
+    }
+
+    .work_examples_item {
+        width: 46%;
+        margin-right: 1rem;
+    }
+
+    .work_examples_item:nth-of-type(3) {
+        margin: 1rem auto 0;
+    }
+
+    .footer_work_types, .footer_contacts, .footer_FAQ, .footer_social_links {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer_FAQ {
+        padding: 0;
+    }
+
+    .footer_logo {
+        background-position: left;
+        margin: 1rem 0;
+    }
+
+    .footer_rights_logo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .task, .solution, .functional, .mobile, .results, .team {
         padding: 7.4375rem 4rem 2rem;
     }
 
@@ -1377,12 +1578,6 @@ footer {
 
     .functional_item:nth-of-type(3) .functional_item__piece{
         width: 50%;
-    }
-
-    .functional_text_section {
-        margin-top: 11rem;
-        margin-left: 0rem;
-        padding-left: 3rem;
     }
 
     .last_funational_section{
@@ -1429,6 +1624,10 @@ footer {
     .menu_contacts {
         padding: 0;
     }
+    
+    .work_item_btn {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
@@ -1437,7 +1636,90 @@ footer {
         font-size: 11px;
     }
 
-    .task, .solution, .functional, .mobile {
+    .results_text_content, .results_in_numbers {
+        width: 100%;
+    }
+
+    .functional_text_section {
+        margin-top: 3rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .result_info {
+        flex-direction: column-reverse;
+    }
+
+    .results_in_numbers {
+        padding-left: 0;
+    }
+    .results_in_numbers__item {
+        margin-bottom: 1rem;
+    }
+
+    .client_review, .our_works {
+        padding: 7.4375rem 2rem;
+    }
+
+    .styled_footer_line {
+        width: 100%;
+    }
+
+    .client_review_content {
+        flex-wrap: wrap;
+    }
+
+    .client_text, .client_text p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .team_content, .our_works_content , .footer_content{
+        flex-wrap: wrap;
+    }
+
+    .functional_text_section {
+        margin-top: 3rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .team_item {
+        width: 50%;
+    }
+
+    .work_examples_item {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 6rem 2rem;
+    }
+
+    .work_examples_item:nth-of-type(3) {
+        margin: 1rem auto 0;
+    }
+
+    .footer_work_types, .footer_contacts, .footer_FAQ, .footer_social_links {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer_FAQ {
+        padding: 0;
+    }
+
+    .footer_logo {
+        background-position: left;
+        margin: 1rem 0;
+    }
+
+    .footer_rights_logo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .task, .solution, .functional, .mobile, .results, .team {
         padding: 7.4375rem 4rem 2rem;
     }
 
@@ -1461,12 +1743,6 @@ footer {
 
     .functional_item:nth-of-type(3) .functional_item__piece{
         width: 50%;
-    }
-
-    .functional_text_section {
-        margin-top: 11rem;
-        margin-left: 0rem;
-        padding-left: 3rem;
     }
 
     .last_funational_section{
@@ -1514,6 +1790,14 @@ footer {
         padding: 0;
         margin: -4rem 0 0;
     }
+
+    .footer_FAQ .footer_line, .footer_social_links .footer_line {
+        text-align: right;
+    }
+
+    .footer_social_links div {
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -1522,7 +1806,98 @@ footer {
         font-size: 10px;
     }
 
-    .task, .solution, .functional, .mobile {
+    .footer_FAQ .footer_line, .footer_social_links .footer_line {
+        text-align: right;
+    }
+
+    .footer_social_links div {
+        justify-content: flex-end;
+    }
+
+    .results_text_content, .results_in_numbers {
+        width: 100%;
+    }
+
+    .functional_text_section {
+        margin-top: 3rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .result_info {
+        flex-direction: column-reverse;
+    }
+
+    .results_in_numbers {
+        padding-left: 0;
+    }
+    .results_in_numbers__item {
+        margin-bottom: 1rem;
+    }
+
+    .client_review, .our_works {
+        padding: 7.4375rem 2rem;
+    }
+
+    .styled_footer_line {
+        width: 100%;
+    }
+
+    .client_review_content {
+        flex-wrap: wrap;
+    }
+
+    .client_text, .client_text p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .team_content, .our_works_content , .footer_content{
+        flex-wrap: wrap;
+    }
+
+    .functional_text_section {
+        margin-top: 3rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+
+    .team_item {
+        width: 50%;
+    }
+
+    .work_examples_item {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 6rem 2rem;
+    }
+
+    .work_examples_item:nth-of-type(3) {
+        margin: 1rem auto 0;
+    }
+
+    .footer_work_types, .footer_contacts, .footer_FAQ, .footer_social_links {
+        width: 50%;
+        margin: 0;
+    }
+
+    .footer_FAQ {
+        padding: 0;
+    }
+
+    .footer_logo {
+        background-position: left;
+        margin: 1rem 0;
+    }
+
+    .footer_rights_logo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .task, .solution, .functional, .mobile, .results, .team {
         padding: 7.4375rem 4rem 2rem;
     }
 
@@ -1548,12 +1923,6 @@ footer {
         width: 50%;
     }
 
-    .functional_text_section {
-        margin-top: 11rem;
-        margin-left: 0rem;
-        padding-left: 3rem;
-    }
-
     .last_funational_section{
         margin-top: 0rem;
         margin-right: 0rem;
@@ -1599,4 +1968,4 @@ footer {
         padding: 0;
         margin: -4rem 0 0;
     }
-} */
+} 
