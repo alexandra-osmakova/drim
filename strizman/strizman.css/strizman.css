@@ -721,6 +721,450 @@ header .decoration_line {
     width: 100%;
 }
 
+.client_review {
+    position: relative;
+    width: 100%;
+    padding: 7.4375rem 8rem;
+}
+
+.client_review_content {
+    width: 100%;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0 1.8125rem rgba(0,0,0,0.13);
+    background-color: #f2f2f2;
+    border: 0.0625rem solid #eeeeee;
+    padding: 4.625rem 3.8125rem;
+    margin-top: 2.75rem;
+    display: flex;
+}
+
+.client_img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    background-image: url(../img/client_review.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.client_text {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4.4375rem;
+}
+
+.client_text p {
+    padding-left: 3rem;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #333333;
+}
+
+.client_text p:nth-of-type(1) {
+    margin-bottom: 1.5rem;
+}
+
+.client_text svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 2.4375rem;
+}
+
+.client_text span {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #333333;
+    font-weight: bold;
+    display: block;
+    width: 50%;
+    margin-top: 4.1875rem;
+    padding-left: 3rem;
+}
+
+.client_review_btn {
+    position: relative;
+    margin: 5.5rem auto 0;
+    width: 18.75rem;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.client_review_btn .arrow_btn {
+    margin-left: -3rem;
+}
+
+.client_review .btn:hover .arrow_btn {
+    margin-left: 1rem; 
+}
+
+.team {
+    position: relative;
+    width: 100%;
+    padding: 7.4375rem 8rem;
+}
+
+.team_content {
+    display: flex;
+    padding-top: 4rem;
+}
+
+.team_item {
+    width: 25%;
+}
+
+.team_item_title {
+    font-size: 1rem;
+    color: #333333;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5625rem;
+}
+
+.team_item_text {
+    font-size: 1rem;
+    margin-bottom: 0.5625rem;
+    color: #333333;
+    display: block;
+    width: 100%;
+}
+
+.our_works {
+    position: relative;
+    width: 100%;
+    padding: 7.4375rem 8rem;
+}
+
+.our_works_content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 4.4375rem;
+}
+
+
+.work_examples_item {
+    width: 33%;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    padding: 3rem 2rem;
+    position: relative;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.work_example_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00b3f6;
+    opacity: 0;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.work_examples_item_company_logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 5.8rem;
+}
+
+.work_examples_item p {
+    width: 100%;
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0);
+    /* rgba used instead of hex to change opacity */
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    position: relative;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.work_examples_item svg {
+    width: 8.8rem;
+}
+
+.work_item_btn {
+    opacity: 0;
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.work_item_btn .arrow_btn {
+    margin-left: 0;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.work_section_down_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    opacity: 1;
+    left: 2rem;
+    right: 2rem;
+    bottom: 1.5rem;
+}
+
+.work_section_down_btn .arrow_btn {
+    opacity: 0;
+}
+
+.hover_logo {
+    opacity: 0;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.work_example_third:hover .hover_logo {
+    opacity: 1;
+}
+
+.work_example_third:hover .work_example_third img {
+    opacity: 0;
+}
+
+
+.work_examples_item:hover {
+    box-shadow: 0rem 0.7rem 1rem rgba(0, 43, 59, 0.32);
+    /* rgba used instead of hex to change opacity */
+}
+
+.work_examples_item:hover .work_example_wrap {
+    opacity: 0.7;
+}
+
+.work_examples_item:hover p {
+    color: rgba(255, 255, 255, 1);
+    /* rgba used instead of hex to change opacity */
+}
+
+.work_examples_item:hover .work_item_btn {
+    opacity: 1;
+}
+
+.work_examples_item:hover .arrow_btn {
+    opacity: 1;
+}
+
+.work_example_first {
+    background-image: url(../../drim_main/img/our_works_img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work_example_second {
+    background-image: url(../../drim_main/img/our_works_img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work_example_logo {
+    display: block;
+    font-size: 1.5rem;
+    left: 2.5rem;
+    top: 2.5rem;
+    position: absolute;
+    color: #ffffff;
+}
+
+.work_example_third {
+    background-image: url(../../drim_main/img/our_works_img3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 6.125rem 1rem 6.125rem;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+.footer_content {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer_work_types,
+.footer_contacts,
+.footer_social_links,
+.footer_rights_logo,
+.footer_FAQ {
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.footer_social_links div {
+    display: flex;
+}
+
+.footer_FAQ {
+    width: 24%;
+    padding-left: 5rem;
+}
+
+.footer_line {
+    display: block;
+    width: 100%;
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    color: #333333;
+    border-bottom: 1px solid rgba(227, 24, 125, 0);
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.styled_footer_line {
+    width: 56%;
+}
+
+.styled_footer_line:hover {
+    color: #e3187d;
+    text-decoration: underline;
+}
+
+
+.footer_work_types span {
+    display: block;
+    width: 91%;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.footer_work_types span:hover {
+    color: #e3187d;
+    text-decoration: underline;
+}
+
+.footer_contacts_item span,
+.footer_rights_logo span,
+.footer_rights_logo a {
+    line-height: 1.5rem;
+    width: 120%;
+}
+
+.footer_contacts_item_tytle,
+.footer_social_links_tytle {
+    font-weight: bold;
+}
+
+
+.social_link_item {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem;
+
+}
+
+.social_link_first {
+    background-image: url(../../drim_main/img/Icons/vk-social-network-logo.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.socils_link_hover_first {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    background-image: url(../../drim_main/img/Icons/vk-social-network-logo_hover.svg);
+    background-size: cover;
+    background-position: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.social_link_second {
+    background-image: url(../../drim_main/img/Icons/instagram-social-network-logo-of-photo-camera.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.socil_link_hover_second {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    background-image: url(../../drim_main/img/Icons/instagram-social-network-logo-of-photo-camera_hover.svg);
+    background-size: cover;
+    background-position: center;
+
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.social_el {
+    position: relative;
+    cursor: pointer;
+}
+
+.social_el:hover .footer_hover_el {
+    opacity: 1;
+}
+
+.footer_rights_logo {
+    text-align: justify;
+}
+
+.footer_logo {
+    height: 2.6rem;
+    margin-bottom: 0.5rem;
+    background-image: url(../../drim_main/img/Logo\ 4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
 /*@media screen and (min-width: 2001px) and (max-width: 2560px) {
     html,
     body {
@@ -1152,4 +1596,4 @@ header .decoration_line {
         padding: 0;
         margin: -4rem 0 0;
     }
-}
+} */
