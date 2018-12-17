@@ -122,3 +122,5 @@ document.body.addEventListener('touchstart', function () {});
 
 var clientWidth = document.documentElement.clientWidth;
 var aboutTitleItem = document.getElementsByClassName('service_type_item');
+
+

@@ -19,17 +19,37 @@ body {
 header {
     position: relative;
     width: 100%;
-    padding: 2rem 2.1rem 2rem 7.2rem;
-    display: flex;
-    justify-content: space-between;
+    padding: 2rem 7.2rem;
     box-sizing: border-box;
-    flex-wrap: wrap;
-    background-image: url(../img/header_background_pic.svg);
-    background-size: 155%;
-    background-repeat: no-repeat;
-    background-position: 65% 10%;
-
 }
+
+.header_background {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#header_bg_svg {
+    width: 100%;
+    height: 45rem;
+  }
+  
+  #stop1 {
+    animation: change-color1 5s ease-in-out infinite alternate;
+  }
+  #stop2 {
+    animation: change-color2 5s ease-in-out infinite alternate;
+  }
+  @keyframes change-color1 {
+    0% {stop-color: #e3177d;}
+    100% {stop-color: #3fa1d3;}
+  }
+  @keyframes change-color2 {
+    0% {stop-color: #3fa1d3;}
+    100% {stop-color: #e3177d;}
+  }
 
 .header_contact_section,
 .header_nav_section {
@@ -39,17 +59,6 @@ header {
 
 .header_contact_section {
     display: flex;
-}
-
-.header_background {
-    position: absolute;
-    top: -1.18rem;
-    right: -0.1rem;
-}
-
-.header_background img {
-    width: 88.8rem;
-    height: 49.9rem;
 }
 
 .menu {
@@ -200,6 +209,7 @@ header {
 
 .header_contacts_info {
     z-index: 2;
+    display: flex;
 }
 
 .header_logo img {
@@ -210,16 +220,17 @@ header {
 .header_contacts {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .header_contacts_info span {
-    margin: 1rem;
     font-size: 0.87rem;
     line-height: 4rem;
     color: #ffffff;
     font-family: "Montserrat";
+    display: block;
+    margin-right: 2rem;
 }
 
 .header_burger_menu {
@@ -1487,17 +1498,10 @@ form {
     padding: 1rem 0;
 }
 
-.down_background {
-    background-image: url(../img/footer_background_pic.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-}
-
 footer {
     position: relative;
     width: 100%;
-    padding: 6.125rem 1rem 6.125rem;
+    padding: 6.125rem 1rem 2rem;
     box-sizing: border-box;
 }
 
@@ -1718,6 +1722,33 @@ body.page6 #pagination li:nth-of-type(6) {
     /* px used instead of rem */
 }
 
+.down_background {
+    position: relative;
+}
+
+.down_background_image {
+    position: absolute;
+    top: 47rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#stop3 {
+    animation: change-color3 5s ease-in-out infinite alternate;
+  }
+  #stop4 {
+    animation: change-color4 5s ease-in-out infinite alternate;
+  }
+  @keyframes change-color3 {
+    0% {stop-color: #e3177d;}
+    100% {stop-color: #5491C8;}
+  }
+  @keyframes change-color4 {
+    0% {stop-color: #5491C8;}
+    100% {stop-color: #E3187D;}
+  }
+
 @media screen and (min-width: 320px) and (max-width: 374px) {
     html, body {
         font-size: 10px;
@@ -1731,7 +1762,19 @@ body.page6 #pagination li:nth-of-type(6) {
         background-position: 100% 0;
     }
 
-    .header_decoration_first, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text {
+    .header_background {
+        position: absolute;
+        top: -11rem;
+        left: -11rem;
+        right: 0rem;
+        bottom: 0;
+    }
+    
+    .down_background_image {
+        display: none;
+    }
+
+    .header_decoration_first, .header_contacts_info span, .menu_logo, .next_screen, .service_decoration_first, .apply_decoration_first, .circle_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text {
         display: none;
     }
 
@@ -1928,9 +1971,6 @@ body.page6 #pagination li:nth-of-type(6) {
         border-radius: 0;
     }
 
-    .down_background {
-        background-image: unset;
-    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -1941,8 +1981,21 @@ body.page6 #pagination li:nth-of-type(6) {
         -webkit-overflow-scrolling: touch;
     }
 
+    .header_background {
+        position: absolute;
+        top: -9rem;
+        left: -11rem;
+        right: 0rem;
+        bottom: 0;
+    }
+    
+    .down_background_image, .header_decoration_first img, .header_contacts_info span {
+        display: none;
+    }
+
+
     header {
-        background-position: 85% 0;
+        padding: 2rem;
     }
 
     .title_style {
@@ -1951,7 +2004,7 @@ body.page6 #pagination li:nth-of-type(6) {
         line-height: 3rem;
     }
 
-    .service_decoration_first, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text {
+    .service_decoration_first, .header_contacts_info span, .circle_decoration_second, .menu_logo, .next_screen, .apply_decoration_second, .circle_decoration_first, .footer_background, .circle_content_text {
         display: none;
     }
 
@@ -2133,6 +2186,23 @@ body.page6 #pagination li:nth-of-type(6) {
 
     header {
         background-position: 85% 0;
+    }
+
+    .header_background {
+        position: absolute;
+        top: -7rem;
+        left: -11rem;
+        right: 0rem;
+        bottom: 0;
+    }
+    
+    .down_background_image, .header_decoration_first img, .header_contacts_info span {
+        display: none;
+    }
+
+
+    header {
+        padding: 2rem;
     }
 
     .title_style {
@@ -2447,6 +2517,14 @@ body.page6 #pagination li:nth-of-type(6) {
         -webkit-overflow-scrolling: touch;
     }
 
+    .header_background {
+        left: -18rem;
+    }
+
+    .down_background_image {
+        display: none;
+    }
+
     .service_type_item_logo {
         top: -3.06rem;
     }
@@ -2601,6 +2679,14 @@ body.page6 #pagination li:nth-of-type(6) {
 
     header {
         background-position: 85% 0;
+    }
+
+    .header_background {
+        left: -20rem;
+    }
+
+    .down_background_image {
+        top: 49rem;
     }
 
     .decoration_line_move {
@@ -2759,7 +2845,8 @@ body.page6 #pagination li:nth-of-type(6) {
 }
 
 .phone-style {
-    margin: 1rem;
+    display: block;
+    margin-right: 2rem;
     font-size: 0.87rem;
     line-height: 4rem;
     color: #ffffff;
@@ -2915,23 +3002,5 @@ body.page6 #pagination li:nth-of-type(6) {
         filter: blur(10px);
         filter: blur(8px);
         filter: blur(6px);
-
     }
-}
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
